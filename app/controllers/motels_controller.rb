@@ -1,6 +1,6 @@
 class MotelsController < ApplicationController
   load_and_authorize_resource
-  before_action :find_motel, only: [:show, :edit, :update, :destroy]
+  before_action :find_motel, only: [:edit, :update, :destroy]
 
   def index
     @motels = Motel.page(params[:page])
@@ -51,7 +51,7 @@ class MotelsController < ApplicationController
   end
 
   def find_motel
-    @motel = Motel.find(params[:id])
+    @motel = Motel.find_by params[:id]
 
     return if @motel
     flash[:danger] = t "flash.no_motel"

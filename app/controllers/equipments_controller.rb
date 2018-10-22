@@ -44,7 +44,7 @@ class EquipmentsController < ApplicationController
   private
 
   def find_equipment
-    @equipment = Equipment.find(params[:id])
+    @equipment = Equipment.find_by params[:id]
 
     return if @equipment
     flash[:danger] = t "flash.no_equipment"

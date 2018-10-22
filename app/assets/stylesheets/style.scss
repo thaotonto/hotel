@@ -1,6 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,500);
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Delius');
-@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -363,7 +361,7 @@ span.text-line{
 }
 
 // img
-.picture img {
+img {
   position: relative;
   height: 291px;
   border: 1px solid #e6dfdf;
@@ -388,8 +386,4 @@ span.text-line{
 
 .field:hover .middle {
   opacity: 1;
-}
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  height: 450px !important;
 }
