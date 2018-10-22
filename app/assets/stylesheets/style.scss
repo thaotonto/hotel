@@ -263,7 +263,7 @@ span.text-line{
 }
 
 //for address
-.address, .phone,  {
+.address, .phone {
   text-transform: capitalize;
   margin-left: 15px;
   font-size: 17px;
@@ -272,6 +272,26 @@ span.text-line{
   margin-left: 15px;
   font-size: 19px;
   margin-bottom: 50px;
+}
+
+.room-item:hover {
+  border-left: 20px solid #E8E8E8;
+  -webkit-transition: 1.5s;
+}
+.guest-no, .bed-number {
+  text-transform: capitalize;
+  margin-left: 35px;
+  font-size: 17px;
+}
+.price{
+  margin-left: 35px;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+.room-type {
+  margin-left: 15px;
+  font-size: 22px;
 }
 
 /* Button/link styles */

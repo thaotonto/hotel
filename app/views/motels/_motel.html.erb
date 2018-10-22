@@ -1,7 +1,9 @@
-<li>
-  <%= motel.name %>
-  <%= link_to t("delete"), motel_path(motel), method: :delete,
-        data: {confirm: t("delete_confirm")}, class: "delete" %>
-  <%= link_to t("edit"), edit_motel_path(motel), class: "delete"  %>
-  
-</li>
+
+    <%= link_to motel_path(motel) do %>
+      <div class="col-md-4 home-form ">
+        <%= image_tag motel.images[0].url if motel.images? %>
+        <h1><%= motel.name %></h1>
+        <h2>chat luong <%= motel.level %>✩ </h2>
+        <p><%= motel.address %></p>
+      </div>
+    <% end %>

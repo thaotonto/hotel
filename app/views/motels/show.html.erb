@@ -1,0 +1,57 @@
+<div class="col-md-12 title">    
+    <div class="name"><%= @motel.name %></div>
+    <span><%= @motel.level %> sao</span>
+</div>
+<div class="address">
+    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= @motel.address %>
+</div>
+<div class="phone"> 
+    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <%= @motel.phone %>
+</div>
+<div class="description">
+    description : <%= @motel.description %>
+</div>
+
+<span class="text-line">
+    Image
+</span>
+<div class="row" style="margin-top: 30px; margin-bottom:60px;">
+    <% @motel.images.each do |img| %>
+        <div class="col-md-2">
+        <%= image_tag img.url, height:'230' %>
+        </div>
+    <% end %>
+</div>
+
+<span class="text-line">
+    Room types
+</span>
+<% @motel.hotel_rooms.each do |hotel_rooms| %>
+    <div class="room-item">
+        <div class="room-type">
+            <%= hotel_rooms.room.room_type %>
+        </div>
+        <div class="bed-number">
+            <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Bed number : <%= hotel_rooms.room.bed_numbers %>
+        </div>
+        <div class="guest-no">
+            <span class="glyphicon glyphicon-user"></span> Max person :<%= hotel_rooms.room.guest_no %>
+        </div>
+        <div class="price">
+            <span class="glyphicon glyphicon-yen" aria-hidden="true"> Price :</span> <%= hotel_rooms.price %>
+        </div>
+    </div>
+<% end %>
+<span class="text-line">
+    Equipment
+</span>
+<% @motel.hotel_equips.each do |hotel_equips| %>
+    <div class="room-item">
+        <div class="room-type">
+            <span class="glyphicon glyphicon-object-align-bottom"></span> Equipment : <%= hotel_equips.equipment.name %>   
+        </div>
+        <div class="price">
+            <span class="glyphicon glyphicon-yen" aria-hidden="true"> Price :</span> <%= hotel_equips.price %>
+        </div>
+    </div>
+<% end %>
