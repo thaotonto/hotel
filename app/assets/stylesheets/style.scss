@@ -96,19 +96,37 @@ span.current {
   list-style-type: none;
   transition: 1s ease-in;
   background-color: #FCFAFA;
+  position: relative;
   &:hover {
-    background-color: #E8E8E8;
+    background-color: #C6A861;
+    color: white;
     a {
-      color: rgb(26, 21, 21);
+      color: white;
     }
   }
 }
 
 //end
 
-.delete {
+@mixin method {
+  position: absolute;
+  top: 20px;
   float: right;
+  padding: 5px;
+  &:hover{
+    border: 1px solid #E8E8E8;
+  }
 }
+.delete {
+  @include method;
+  right: 10px;
+}
+
+.edit {
+  @include method;
+  right: 70px;
+}
+
  // phan content
 .content a {
   color: #333;
@@ -171,7 +189,7 @@ span.current {
   width: 353px;
   position: relative;
   color: white;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .home-form::before, .home-form::after {
@@ -191,6 +209,9 @@ span.current {
   left: 0;
   top: 0;
   position: absolute;
+  &:hover {
+    background-color: #C6A861;
+  }
 }
 .home-form h1 {
   left: 50%;
@@ -218,7 +239,7 @@ span.current {
   z-index: 1;
   transform: translateX(-50%);
   font-style: italic;
-  font-size: 22px;
+  font-size: 14px;
   font-family: 'Alex Brush', cursive;
 }
 
@@ -361,7 +382,7 @@ span.text-line{
 }
 
 // img
-img {
+.field span.picture img {
   position: relative;
   height: 291px;
   border: 1px solid #e6dfdf;
@@ -386,4 +407,20 @@ img {
 
 .field:hover .middle {
   opacity: 1;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  line-height: 1;
+}
+
+.img-show {
+  display: flex;
+  margin-top: 30px; 
+  margin-bottom:60px;
+}
+.img-show img {
+  padding: 5px;
 }
