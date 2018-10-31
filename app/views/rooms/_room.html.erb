@@ -10,5 +10,5 @@
   </div>
   <%= link_to t("delete"), room_path(room), method: :delete,
         data: {confirm: t("delete_confirm")}, class: "delete" %>
-  <%= link_to t("edit"), edit_room_path(room), class: "edit" %>
+  <%= link_to t("change"), edit_room_path(room), class: "edit" %>
 </li>
