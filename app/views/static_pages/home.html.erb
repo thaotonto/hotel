@@ -1,18 +1,12 @@
-<%= render "slide" %>
-
+<%= render "motels/slide" %>
 <span class="text-line">
-Tha ho nghi duong, tron ven niem vui
+最新の口コミ。 お⁠得⁠な⁠料⁠金⁠。
 </span>
 
-<div class="row" style="margin-top:30px;">
-  <% @motels.each do |motel| %>
-    <%= link_to motel_path(motel) do %>
-      <div class="col-md-4 home-form ">
-        <%= image_tag motel.images[0].url if motel.images? %>
-        <h1><%= motel.name %></h1>
-        <h2>chat luong <%= motel.level %>✩ </h2>
-        <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= motel.address %></p>
-      </div>
-    <% end %>
-  <% end %>
+<div id="motels" class="row" style="margin-top:30px;">
+  <%= render partial: "static_pages/motel", collection: @motels %>
+</div>
+
+<div id="paginator1">
+  <%= paginate @motels, remote: true %>
 </div>
