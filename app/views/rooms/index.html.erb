@@ -1,3 +1,7 @@
+<%= form_tag(rooms_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+  <%= submit_tag "Search" %>
+<% end %>
 <%= provide :title, t("room.title") %>
 <%= link_to t("room.add_room"), new_room_path, class: "btn btn-custom3" %>
 <div class="content">

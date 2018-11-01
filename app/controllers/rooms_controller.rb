@@ -3,8 +3,13 @@ class RoomsController < ApplicationController
   before_action :find_room, only: [:edit, :update, :destroy]
 
   def index
-    @rooms = Room.page(params[:page])
-                 .per Settings.per_page
+    if params[:search]
+      @rooms = Room.search(params[:search]).page(params[:page])
+                    .per Settings.per_page
+    else
+      @rooms = Room.page(params[:page])
+                  .per Settings.per_page
+    end
   end
 
   def new

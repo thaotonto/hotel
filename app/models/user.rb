@@ -77,6 +77,9 @@ class User < ApplicationRecord
 
   private
 
+  def self.search(search)
+    where("name LIKE ? OR email LIKE ?", "%#{search}%", "%#{search}%")
+  end
   def password_complexity
     return if password.blank? || password =~ PASSWORD_VALIDATOR
 

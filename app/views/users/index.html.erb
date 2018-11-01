@@ -1,5 +1,9 @@
 <% provide :title, t("users.title") %>
 <h1><%= t "users.title" %></h1>
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+  <%= submit_tag "Search" %>
+<% end %>
 <table style="width:100%">
   <tr>
     <th><h3><%= t "users.name" %></h3></th>
