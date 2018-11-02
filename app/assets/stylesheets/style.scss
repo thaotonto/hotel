@@ -565,10 +565,22 @@ span.text-line{
 .img-show img {
   padding: 5px;
 }
-<<<<<<< HEAD
 
 td, th {
   padding: 10px 2px;
 }
-=======
->>>>>>> 3574029a3ce7881ba721c0e3f5238eb929fa4e91
+
+#search-form {
+  float: right;
+  margin-top: 20px;
+}
+
+#search-form input {
+  width: 250px;
+  padding: 6px 15px;
+  border: solid 1px #828282;
+  border-radius: 50px;
+}
+#search-form input[type="submit"] {
+  width: 70px;
+}

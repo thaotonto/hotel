@@ -1,3 +1,7 @@
+<%= form_tag(motels_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+  <%= submit_tag "Search" %>
+<% end %>
 <%= provide :title, t("hotel.title") %>
 <%= link_to t("hotel.add_hotel"), new_motel_path, class: "btn btn-custom3" %>
 <div class="content row">
