@@ -1,8 +1,18 @@
 <% provide :title, t("users.title") %>
 <h1><%= t "users.title" %></h1>
-<ul id="users" class="users">
-  <%= render @users %>
-</ul>
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: t("search") %>
+  <%= submit_tag t("search") %>
+<% end %>
+<table style="width:100%">
+  <tr>
+    <th><h3><%= t "users.name" %></h3></th>
+    <th><h3><%= t "users.email" %></h3></th>
+  </tr>
+  <tbody id="users" class="users">
+    <%= render @users %>
+  </tbody>
+</table>
 <div id="paginator">
   <%= paginate @users, remote: true %>
 </div>

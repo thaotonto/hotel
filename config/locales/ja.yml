@@ -16,6 +16,7 @@ ja:
   price: "値段（円）"
   duplicate: "重複%{collection}"
   change: "編集"
+  search: "検索"
 
   helpers:
     page_entries_info:

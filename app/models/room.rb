@@ -13,4 +13,8 @@ class Room < ApplicationRecord
   def beatify
     self.room_type = room_type.titleize
   end
+
+  def self.search(search)
+    where("room_type LIKE ? OR bed_numbers LIKE ? OR guest_no LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+  end
 end

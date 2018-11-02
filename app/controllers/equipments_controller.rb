@@ -3,8 +3,13 @@ class EquipmentsController < ApplicationController
   before_action :find_equipment, only: [:edit, :update, :destroy]
 
   def index
-    @equipments = Equipment.page(params[:page])
+    if params[:search]
+      @equipments = Equipment.search(params[:search]).page(params[:page])
+                    .per Settings.per_page
+    else
+      @equipments = Equipment.page(params[:page])
                            .per Settings.per_page
+    end
   end
 
   def new

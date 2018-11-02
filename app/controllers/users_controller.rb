@@ -2,8 +2,13 @@ class UsersController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @users = User.order_user.page(params[:page])
+    if params[:search]
+      @users = User.search(params[:search]).page(params[:page])
+                    .per Settings.per_page
+    else
+      @users = User.order_user.page(params[:page])
                  .per Settings.per_page
+    end
   end
 
   def show; end

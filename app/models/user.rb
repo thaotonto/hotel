@@ -94,6 +94,10 @@ class User < ApplicationRecord
     following.include? other_user
   end
 
+  def self.search(search)
+    where("name LIKE ? OR email LIKE ?", "%#{search}%", "%#{search}%")
+  end
+
   private
 
   def password_complexity

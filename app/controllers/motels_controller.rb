@@ -3,8 +3,13 @@ class MotelsController < ApplicationController
   before_action :find_motel, only: [:show, :edit, :update, :destroy]
 
   def index
-    @motels = Motel.page(params[:page])
-                   .per Settings.per_page
+    if params[:search]
+      @motels = Motel.search(params[:search]).page(params[:page])
+                    .per Settings.per_page
+    else
+      @motels = Motel.page(params[:page])
+                  .per Settings.per_page
+    end
   end
 
   def new
