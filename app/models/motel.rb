@@ -27,7 +27,6 @@ class Motel < ApplicationRecord
     validate_uniqueness_of_in_memory(
       hotel_rooms, [:motel_id, :room_id])
   end
-  private
   def self.search(search)
     where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end

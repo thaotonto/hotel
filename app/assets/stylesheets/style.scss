@@ -141,8 +141,7 @@ span.current {
   text-decoration: none;
   transition: 1s;
   &:hover {
-    font-size: 22px;
-    font-style: inherit;
+    color: #fff;
   }
 }
 
@@ -300,27 +299,6 @@ span.text-line{
   font-size: 19px;
   margin-bottom: 50px;
 }
-
-.room-item:hover {
-  border-left: 20px solid #E8E8E8;
-  -webkit-transition: 1.5s;
-}
-.guest-no, .bed-number {
-  text-transform: capitalize;
-  margin-left: 35px;
-  font-size: 17px;
-}
-.price{
-  margin-left: 35px;
-  font-size: 17px;
-  margin-bottom: 50px;
-}
-
-.room-type {
-  margin-left: 15px;
-  font-size: 22px;
-}
-
 /* Button/link styles */
 
 .btn-custom {
@@ -437,6 +415,16 @@ span.text-line{
   content: '';
 }
 
+.home-form:hover::before, .home-form:hover::after {
+  background-image: linear-gradient(-180deg,transparent 0%,#16a085 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
 .home-form img {
   width: 353px;
   height: 500px;
@@ -444,9 +432,6 @@ span.text-line{
   left: 0;
   top: 0;
   position: absolute;
-  &:hover {
-    background-color: #C6A861;
-  }
 }
 .home-form h1 {
   left: 50%;
@@ -471,6 +456,7 @@ span.text-line{
   left: 50%;
   width: 80%;
   bottom: 0;
+  width: 80%;
   position: absolute;
   z-index: 1;
   transform: translateX(-50%);
@@ -584,3 +570,20 @@ td, th {
 #search-form input[type="submit"] {
   width: 70px;
 }
+
+#search-form-menu input {
+  width: 200px;
+  padding: 4px 15px;
+  border-radius: 3px;
+
+}
+#search-form-menu input[type="submit"] {
+  width: 70px;
+  background-color: #16a085;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li:hover > a, .dropdown-menu > li:hover > a {
+  color: #16a085 !important;
+}
+

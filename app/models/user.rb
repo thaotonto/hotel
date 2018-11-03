@@ -66,6 +66,10 @@ class User < ApplicationRecord
     end
   end
 
+  def self.search(search)
+    where("name LIKE ? OR email LIKE ?", "%#{search}%", "%#{search}%")
+  end
+
   def handle type
     if type == 1
       block_check Settings.unblock, Settings.block
@@ -94,8 +98,6 @@ class User < ApplicationRecord
     following.include? other_user
   end
 
-  private
-
   def mod_check string1, string2
     if mod?
       string1
@@ -120,9 +122,9 @@ class User < ApplicationRecord
     end
   end
 
-  def self.search(search)
-    where("name LIKE ? OR email LIKE ?", "%#{search}%", "%#{search}%")
-  end
+  private
+
+
   def password_complexity
     return if password.blank? || password =~ PASSWORD_VALIDATOR
 

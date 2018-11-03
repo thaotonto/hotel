@@ -5,11 +5,17 @@
 <%= provide :title, t("room.title") %>
 <%= link_to t("room.add_room"), new_room_path, class: "btn btn-custom3" %>
 <div class="content">
-  <ul id="rooms" class="rooms">
-    <%= render @rooms %>
-  </ul>
+  <table style="width:100%">
+    <tr>
+      <th><h3><%= t "activerecord.attributes.room.room_type" %></h3></th>
+      <th><h3><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> <%= t("activerecord.attributes.room.bed_numbers") %></h3></th>
+      <th><h3><span class="glyphicon glyphicon-user"></span> <%= t("activerecord.attributes.room.guest_no") %></h3></th>
+    </tr>
+    <tbody id="rooms" class="rooms">
+      <%= render @rooms %>
+    </tbody>
+  </table>
 </div>
 <div id="paginator1">
   <%= paginate @rooms, remote: true %>
 </div>
-

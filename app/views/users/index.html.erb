@@ -9,7 +9,9 @@
     <th><h3><%= t "users.name" %></h3></th>
     <th><h3><%= t "users.email" %></h3></th>
   </tr>
-  <%= render @users %>
+  <tbody id="users" class="users">
+    <%= render @users %>
+  </tbody>
 </table>
 <div id="paginator">
   <%= paginate @users, remote: true %>

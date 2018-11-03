@@ -4,7 +4,10 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li style="margin-right:70px; margin-top:10px;">
-        
+          <%= form_tag(root_path, :method => "get", id: "search-form-menu") do %>
+            <%= text_field_tag :search, params[:search], placeholder: t("search")%>
+            <%= submit_tag t("search") %>
+          <% end %>
         </li>
         <li>
           <%= link_to root_path do %>
@@ -32,6 +35,11 @@
             <%= link_to t("greeting", name: current_user.name), "#",
               {"class": "dropdown-toggle", "data-toggle": "dropdown"} %>
             <ul class="dropdown-menu">
+              <li><%= link_to current_user do %>
+              <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span>プロフィール
+                  <% end %>
+              </li>
+
               <li><%= link_to edit_user_registration_path do %>
               <span class="glyphicon glyphicon-cog" style="margin-right:7px;" aria-hidden="true"></span><%= t("users.settings") %>
                   <% end %>
@@ -48,12 +56,12 @@
           <li>
             <%= link_to new_user_session_path  do %>
               <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span><%= t("login") %>
-            <% end %>  
+            <% end %>
           </li>
           <li>
             <%= link_to new_user_registration_path do %>
               <span class="glyphicon glyphicon-plus-sign" style="margin-right:7px;" aria-hidden="true"></span><%= t("signup") %>
-            <% end %>  
+            <% end %>
           </li>
         <% end %>
       </ul>
