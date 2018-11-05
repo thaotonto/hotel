@@ -1,0 +1,85 @@
+<div>
+    <div id="comment_js_1r" class="UFIRow _48pi _4204 UFIComment _4oep" role="article" aria-label="Bình luận" data-ft="{&quot;tn&quot;:&quot;R1&quot;}">
+      <div class="_3b-9">
+        <div>
+          <div direction="left" class="clearfix">
+            <div class="_ohe lfloat">
+              <%= link_to user_path(comment.user.id), class: "UFICommentAuthorWithPresence img _8o _8s UFIImageBlockImage" do %>
+                <% if comment.user.picture? %>
+                  <%= image_tag comment.user.picture.thumb.url, alt: comment.user.name, class: "img UFIActorImage _54ru img" %>
+                <% else %>
+                  <%= image_tag("default-avatar", alt: comment.user.name, alt: comment.user.name, class: "img UFIActorImage _54ru img", width: 50, height: 50) %>
+                <% end %>
+              <% end %>
+            </div>
+            <div class="">
+              <div class="UFIImageBlockContent _42ef">
+                <div class="">
+                  <div class="UFICommentContentBlock">
+                    <div class="UFICommentContent">
+                      <div class="_26f8">
+                        <div class="_10la">
+                          <span class=" UFICommentActorAndBody">
+                            <div class="UFICommentActorAndBodySpacing">
+                              <span>
+                                <%= link_to comment.user.name, user_path(comment.user.id), class: "UFICommentActorName" %>
+                              </span>
+                              <span>
+                                <span>
+                                  <span data-ft="{&quot;tn&quot;:&quot;K&quot;}">
+                                    <span class="UFICommentBody">
+                                      <%= simple_format comment.content, {}, wrapper_tag: "span" %>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                      <span></span>
+                      <div></div>
+                    </div>
+                    <div class="fsm fwn fcg UFICommentActions">
+                      <!-- <a class="UFIReplyLink _460i" href="#" role="button">返信</a> -->
+                        <% if can? :edit, comment %>
+                        <%= link_to "編集", edit_review_comment_path(review_id: comment.review.id, id: comment.id), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: "UFIReplyLink _460i"} %>
+                        <% end %>
+                        <% if can? :destroy, comment %>
+                          <a class="UFIReplyLink _460i" href="#" onclick="onDelete(<%= comment.id %>, <%= comment.review.id %>)">削除</a>
+                          <%= link_to "削除", review_comment_path(review_id: comment.review.id, id: comment.id), id: "comment-#{comment.id}-from-#{comment.review.id}", method: :delete,
+                            :remote => true, data: {confirm: t("delete_confirm")} , class: "UFIReplyLink _460i hide" %>
+                        <% end %>
+
+                      <span aria-hidden="true" role="presentation"> · </span>
+                      <span>
+                        <a class="uiLinkSubtle" href="/february.kid.19.96/posts/1719999934775353?comment_id=1720011861440827&amp;comment_tracking=%7B%22tn%22%3A%22R1%22%7D" data-ft="{&quot;tn&quot;:&quot;N&quot;}" data-testid="ufi_comment_timestamp">
+                          <abbr class="UFISutroCommentTimestamp livetimestamp" data-minimize="true" data-shorten="true">
+                            <span class="timestampContent"><%= time_ago_in_words(comment.created_at) %></span>
+                          </abbr>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function onDelete(id, review_id) {
+    event.preventDefault();
+    var limit = $(`#paginate-${review_id}`).data("limit");
+    if (limit == undefined) limit = 3;
+    var path = $(`#comment-${id}-from-${review_id}`).attr('href');
+    if (path.lastIndexOf("limit") != -1)
+      path = path.substr(0, path.lastIndexOf("?limit"));
+    path += `?limit=${limit}`
+    $(`#comment-${id}-from-${review_id}`).attr('href', path);
+    document.getElementById(`comment-${id}-from-${review_id}`).click();
+  }
+</script>

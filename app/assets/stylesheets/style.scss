@@ -136,8 +136,7 @@ span.current {
   text-decoration: none;
   transition: 1s;
   &:hover {
-    font-size: 22px;
-    font-style: inherit;
+    color: #fff;
   }
 }
 
@@ -308,9 +307,6 @@ span.current {
   left: 0;
   top: 0;
   position: absolute;
-  &:hover {
-    background-color: #C6A861;
-  }
 }
 .home-form h1 {
   left: 50%;
@@ -424,7 +420,7 @@ span.text-line{
 .img-show {
   display: flex;
   margin-top: 30px;
-  margin-bottom:60px;
+  margin-bottom: 30px;
 }
 .img-show img {
   padding: 5px;
@@ -448,4 +444,30 @@ td, th {
 }
 #search-form input[type="submit"] {
   width: 70px;
+}
+
+.home-form:hover::before, .home-form:hover::after {
+  background-image: linear-gradient(-180deg,transparent 0%,#16a085 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+#search-form-menu input {
+  width: 200px;
+  padding: 4px 15px;
+  border-radius: 3px;
+
+}
+#search-form-menu input[type="submit"] {
+  width: 70px;
+  background-color: #16a085;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li:hover > a, .dropdown-menu > li:hover > a {
+  color: #16a085 !important;
 }

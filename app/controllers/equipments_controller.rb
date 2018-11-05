@@ -41,9 +41,13 @@ class EquipmentsController < ApplicationController
   end
 
   def destroy
-    @equipment.destroy
-    flash[:success] = t "flash.delete_success"
-    redirect_to equipments_path
+    if @equipment.destroy
+      flash[:success] = t "flash.delete_success"
+      redirect_to equipments_path
+    else
+      flash[:danger] = t "flash.delete_fail"
+      redirect_to equipments_path
+    end
   end
 
   private

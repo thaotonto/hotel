@@ -5,9 +5,14 @@
 <%= provide :title, t("equipment.title") %>
 <%= link_to t("equipment.add_equipment"), new_equipment_path, class: "btn btn-custom3" %>
 <div class="content">
-  <ul id="equipments" class="equipments">
-    <%= render partial:"equipment", collection: @equipments %>
-  </ul>
+  <table style="width:100%">
+    <tr>
+      <th><h3><%= t "activerecord.attributes.equipment.name"%></h3></th>
+    </tr>
+    <tbody id="equipments" class="equipments">
+      <%= render partial:"equipment", collection: @equipments %>
+    </tbody>
+  </table>
 </div>
 <div id="paginator1">
   <%= paginate @equipments, remote: true %>

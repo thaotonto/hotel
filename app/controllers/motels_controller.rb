@@ -41,9 +41,13 @@ class MotelsController < ApplicationController
   end
 
   def destroy
-    @motel.destroy
-    flash[:success] = t "flash.delete_success"
-    redirect_to root_path
+    if @motel.destroy
+      flash[:success] = t "flash.delete_success"
+      redirect_to root_path
+    else
+      flash[:danger] = t "flash.delete_fail"
+      redirect_to root_path
+    end
   end
 
   private
