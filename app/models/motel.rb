@@ -1,9 +1,9 @@
 class Motel < ApplicationRecord
-  has_many :hotel_rooms, inverse_of: :motel
+  has_many :hotel_rooms, inverse_of: :motel, dependent: :destroy
   has_many :rooms, through: :hotel_rooms
-  has_many :hotel_equips, inverse_of: :motel
+  has_many :hotel_equips, inverse_of: :motel, dependent: :destroy
   has_many :equipments, through: :hotel_equips
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
   accepts_nested_attributes_for :hotel_equips, reject_if: :all_blank, allow_destroy: true
   accepts_nested_attributes_for :hotel_rooms, reject_if: :all_blank, allow_destroy: true
 

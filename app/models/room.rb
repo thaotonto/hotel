@@ -8,6 +8,11 @@ class Room < ApplicationRecord
   validates :guest_no, presence: true
   before_save :beatify
 
+  before_destroy do
+    errors.add(:base, 'Cannot delete') if motels.any?
+    throw(:abort) if errors.present?
+  end
+
   private
 
   def beatify

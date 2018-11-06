@@ -1,82 +1,90 @@
-<div class="Review-comment">
-  <div class="Review-comment-left">
-    <div>
-      <div class="Review-comment-leftHeader">
-        <div class="Review-comment-leftScore">
-          <% review.rate.to_i.times do  %>
-           <span class="glyphicon glyphicon-star blue_star"></span>
-          <% end %>
-          <% review.blank_stars.times do %>
-            <span class="glyphicon glyphicon-star-empty blue_star"></span>
-          <% end %>
+<li>
+  <div class="review">
+    <div class="review-topbar">
+      <div class="media-block media-block--12 biz-listing-medium">
+        <div class="media-avatar">
+          <div class="photo-box pb-60s">
+            <%= link_to motel_path(review.motel) do %>
+              <% if review.motel.images? %>
+                <%= image_tag review.motel.images[0].url, height: 60, width: 60 %>
+              <% else %>
+                <%= image_tag "default-hotel", height: 60, width: 60 %>
+              <% end %>
+            <% end %>
+          </div>
         </div>
-      </div>
-      <div class="Review-comment-reviewer" data-info-type="reviewer-name">
-        <strong><%= link_to review.user.name, user_path(review.user) %></strong>
-      </div>
-      <div class="Review-comment-frequentTraveler">
-        <span class="Review-comment-frequentTraveler-text"><%= review.user.email %></span>
-      </div>
-      <div class="Review-comment-reviewDate">
-        <div>
-          <i class="glyphicon glyphicon-time ficon ficon-16 ficon-mmb-inbox review-gray"></i>
-          <span class="Review-statusBar-date "><%= time_ago_in_words(review.created_at) %></span>
-        </div>
-      </div>
-    </div>
-    <div class="memberBadgingNoText is-shown-at-tablet">
-      <span class="glyphicon glyphicon-pencil"></span>
-      <span class="badgetext review-gray"><%= review.comments.count %></span>
-      <span class="glyphicon glyphicon-thumbs-up"></span>
-      <span id="like-count-<%= review.id %>" class="badgetext review-gray"><%= review.likes.count %></span>
-    </div>
-    <div id="like-form-<%= review.id %>">
-      <%= render "shared/like_form", review: review %>
-    </div>
-      <% if user_signed_in? %>
-        <% if can? :edit, review %>
-          <%= link_to edit_motel_review_path(motel_id: @motel.id, id: review.id), class: "manage-box" do %>
-            <span class="glyphicon glyphicon-edit"></span><%= t("change") %>
-          <% end %>
-        <% end %>
-        <% if can? :destroy, review %>
-          <%= link_to motel_review_path(motel_id: @motel.id, id: review.id), method: :delete,
-            data: {confirm: t("delete_confirm")}, class: "manage-box" do %>
-            <span class="glyphicon glyphicon-remove"></span><%= t("delete") %>
-          <% end %>
-        <% end %>
-      <% end %>
-  </div><div class="Review-comment-right">
-    <div class="Review-comment-bubble blue">
-      <div class="Review-comment-body" data-selenium="">
-        <div class="Review-comment-bodyTitle"><%= review.title %></div>
-        <div class="Review-comment-bodyText" data-type="comment"><%= review.content %></div>
-      </div>
-      <div class="Review-statusBar">
-        <div class="Review-statusBar-right">
-          <button class="Review-statusBar-translateButton" onclick="toggleComment(<%= review.id %>)">コメント</button>
+        <div class="media-story">
+          <div class="media-title clearfix">
+            <%= link_to motel_path(review.motel) do %>
+              <span><%= review.motel.name %></span>
+            <% end %>
+          </div>
+          <address>
+            <%= review.motel.address %>
+          </address>
         </div>
       </div>
     </div>
-    <% if review.images.count != 0 %>
-      <% if review.images.count < 5 %>
+
+    <div class="review-content">
+      <div class="review-content">
+        <div class="biz-rating biz-rating-large clearfix">
+          <div>
+            <div class="i-stars rating-large">
+              <% review.rate.to_i.times do  %>
+                <span class="glyphicon glyphicon-star blue_star"></span>
+              <% end %>
+              <% review.blank_stars.times do %>
+                <span class="glyphicon glyphicon-star-empty blue_star"></span>
+              <% end %>
+            </div>
+          </div>
+          <span class="rating-qualifier">
+            <%= review.created_at.strftime("%Y/%m/%d") %>
+          </span>
+        </div>
+        <p style="font-size: 12px"><%= review.content %></p>
         <div class="img-show">
-          <% review.images.each do |img| %>
-              <%= image_tag img.url, height:'100', width: '100' %>
+          <% if review.images.count < 5 %>
+            <% review.images.each do |img| %>
+                <%= image_tag img.url, height:'100', width: '100' %>
+            <% end %>
+          <% else %>
+            <% 5.to_i.times do |i| %>
+                <%= image_tag review.images[i].url, height:'100', width: '100' %>
+            <% end %>
           <% end %>
         </div>
-      <% else %>
-        <div class="img-show">
-        <% 5.to_i.times do |i| %>
-            <%= image_tag review.images[i].url, height:'100', width: '100' %>
-        <% end %>
+      </div>
+      <div class="review-footer clearfix">
+        <div class="rateReview voting-feedback">
+          <ul class="voting-buttons" style="list-style: none; padding: 0">
+            <li class="vote-item inline-block">
+              <a class="ybtn ybtn--small funny js-analytics-click" data-analytics-label="ufc" href="javascript:;" rel="funny" onclick="toggleComment(<%= review.id %>)">
+                <span class="glyphicon glyphicon-pencil icon icon--18-funny-outline icon--size-18 icon--currentColor button-content u-space-r-half" style="width: 18px; height: 18px;"></span>
+                 <span class="vote-type">コメント</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      <% end %>
-    <% end %>
-    <div id="container-review-comments-<%= review.id %>" style="display: none">
-      <div class="uiUfi UFIContainer _3-a6 _4eno _1blz _69ad _65_9 _5pc9 _5vsj _5v9k">
-      <% if user_signed_in? %>
-        <div id="user-<%= current_user.id %>-review-<%= review.id %>" class="UFIRow _4oep UFIAddComment UFIAddCommentWithPhotoAttacher _4204" data-ft="{&quot;tn&quot;:&quot;[&quot;}">
+        <div class="review-footer-actions pull-right clearfix">
+          <% if can? :edit, review %>
+          <%= link_to edit_motel_review_path(motel_id: review.motel.id, id: review.id), class: "chiclet-link show-tooltip js-analytics-click send-to-friend" do %>
+            <span aria-hidden="true" style="width: 18px; height: 18px;" class=" glyphicon glyphicon-edit icon icon--18-share icon--size-18 icon--currentColor"></span><%= t("change") %>
+          <% end %>
+          <% end %>
+          <% if can? :destroy, review %>
+          <%= link_to motel_review_path(motel_id: review.motel.id, id: review.id), method: :delete,
+          data: {confirm: t("delete_confirm")}, class: "chiclet-link show-tooltip js-analytics-click send-compliment" do %>
+            <span aria-hidden="true" style="width: 18px; height: 18px;" class="glyphicon glyphicon-remove icon icon--18-compliment icon--size-18 icon--currentColor"></span><%= t("delete") %></span>
+          <% end %>
+          <% end %>
+        </div>
+      </div>
+      <div id="container-review-comments-<%= review.id %>" style="display: none">
+        <div class="uiUfi UFIContainer _3-a6 _4eno _1blz _69ad _65_9 _5pc9 _5vsj _5v9k">
+          <% if user_signed_in? %>
+          <div id="user-<%= current_user.id %>-review-<%= review.id %>" class="UFIRow _4oep UFIAddComment UFIAddCommentWithPhotoAttacher _4204" data-ft="{&quot;tn&quot;:&quot;[&quot;}">
           <div class="UFIMentionsInputWrap UFIStickersEnabledInput UFIGifEnabledInput clearfix" direction="left">
             <div class="_ohe lfloat">
               <div class="UFIReplyActorPhotoWrapper img _8o _8r UFIImageBlockImage" role="presentation">
@@ -140,6 +148,7 @@
      </div>
     </div>
   </div>
+</li>
 
 <script type="text/javascript">
   function toggleComment(id) {

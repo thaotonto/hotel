@@ -14,14 +14,16 @@
     <section class="stats">
       <%= render "shared/stats" %>
     </section>
-
   </aside>
   <div class="col-md-8">
     <%= render "follow_form" if user_signed_in? %>
     <% if @user.reviews.any? %>
       <h3><%= "レビュー" %> (<%= @user.reviews.count %>)</h3>
-        <!-- TODO: show review -->
+      <ul class="ylist ylist-bordered reviews" data-component-bound="true" style="list-style: none;" >
+        <%= render partial: "users/review", collection: @user.reviews %>
+      </ul>
     <% end %>
+  <div id="modal-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ></div>
   </div>
 </div>
 
