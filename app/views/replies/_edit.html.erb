@@ -1,37 +1,37 @@
 <div class="modal-dialog modal-dialog-centered" role="document">
   <div class="modal-content">
     <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLongTitle">コメント編集</h5>
+      <h5 class="modal-title" id="exampleModalLongTitle">返信編集</h5>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     <div class="modal-body">
-      <%= form_for @comment, url: review_comment_path(review_id: @review.id, id:@comment), remote: true do |f| %>
+      <%= form_for @reply, url: comment_reply_path(comment_id: @comment.id, id:@reply), remote: true do |f| %>
         <%= render "shared/error_messages", object: f.object %>
         <div class="field">
-          <%= f.label "コメント", class: "col-form-label" %>
+          <%= f.label "返信", class: "col-form-label" %>
           <%= f.text_area :content, size: '50x10', class: "form-control" %>
-          <%= f.hidden_field :review_id, value: @review.id %>
+          <%= f.hidden_field :comment_id, value: @comment.id %>
           <%= f.hidden_field :user_id, value: current_user.id %>
         </div>
       <% end %>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-danger" data-dismiss="modal">キャンセル</button>
-      <button type="button" class="btn btn-primary" onclick="submitForm(<%= @comment.id %>, <%= @review.id %>)">保存</button>
+      <button type="button" class="btn btn-primary" onclick="submitForm(<%= @reply.id %>, <%= @comment.id %>)">保存</button>
     </div>
   </div>
 </div>
 
 <script type='text/javascript'>
- function submitForm(id, review_id){
-    var limit = $(`#paginate-${review_id}`).data("limit");
-    var form = document.querySelector(`#edit_comment_${id}`);
-    var input = $("<input>")
-               .attr("type", "hidden")
-               .attr("name", "limit").val(limit);
-    $(`#edit_comment_${id}`).append(input);
+ function submitForm(id, comment_id){
+    // var limit = $(`#paginate-reply-${comment_id}`).data("limit");
+    var form = document.querySelector(`#edit_replie_${id}`);
+    // var input = $("<input>")
+               // .attr("type", "hidden")
+               // .attr("name", "limit").val(limit);
+    // $(`#edit_replie_${id}`).append(input);
     Rails.fire(form, "submit");
     $('#modal-window').modal('toggle');
  }

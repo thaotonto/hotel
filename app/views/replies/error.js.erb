@@ -1,0 +1,7 @@
+<% if @reply %>
+  <% if @reply.errors.any? %>
+    alert("エラーが発生しました。: <%= j @reply.errors.full_messages.join('; ') %>")
+  <% end %>
+<% else %>
+  alert("エラーが発生しました。 すみやかに解決できるよう作業しております。");
+<% end %>
