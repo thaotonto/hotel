@@ -435,8 +435,9 @@ span.text-line{
 }
 .home-form h1 {
   left: 50%;
-  font-size: 27px;
-  bottom: 60px;
+  width: 100%;
+  font-size: 38px;
+  bottom: 80px;
   position: absolute;
   z-index: 1;
   transform: translateX(-50%);
@@ -444,8 +445,8 @@ span.text-line{
 }
 .home-form h2 {
   left: 50%;
-  font-size: 18px;
-  bottom: 10px;
+  font-size: 28px;
+  bottom: 24px;
   position: absolute;
   z-index: 1;
   transform: translateX(-50%);
@@ -461,7 +462,7 @@ span.text-line{
   z-index: 1;
   transform: translateX(-50%);
   font-style: italic;
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'Delius', cursive;
 }
 

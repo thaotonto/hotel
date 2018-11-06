@@ -115,6 +115,8 @@ ja:
         images: "画像"
       comment:
         content: "内容"
+      replie:
+        content: "内容"
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"

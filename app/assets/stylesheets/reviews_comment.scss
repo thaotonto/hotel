@@ -237,8 +237,9 @@ a.uiLinkSubtle {
 }
 
 abbr {
-    border-bottom: none;
+    border-bottom: none !important;
     text-decoration: none;
+    cursor: pointer !important;
 }
 
 ._5vsj .UFIAddComment._4204 {
@@ -403,4 +404,36 @@ body ._1osb {
 
 .UFICommentTip {
     padding-top: 1px;
+}
+
+._3-a6._5vsj .UFIReplyList {
+    padding-bottom: 0;
+    padding-left: 54px;
+}
+
+._5vsj .UFIReplyList {
+    background-color: transparent;
+    margin-top: -10px;
+    padding: 8px 12px 6px 44px;
+}
+.UFIReplyList {
+    background-color: #e9ebee;
+    padding: 0 8px 8px 45px;
+}
+
+.UFIRow.UFIReplySocialSentenceRow {
+    padding: 4px 6px 2px 6px;
+}
+
+.UFIReplySocialSentenceRow {
+    line-height: 20px;
+}
+
+._5vsj.UFIContainer .UFIReplyList .UFIRow, ._5vsj.UFIContainer .UFIReplyList .UFIRow:last-child, div._5vsj.UFIContainer .UFIReplyList .UFIComment .UFICommentContent {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.UFICommentLink, .UFIPagerLink {
+    display: block;
 }
