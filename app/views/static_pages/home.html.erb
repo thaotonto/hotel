@@ -1,4 +1,15 @@
 <%= render "slide" %>
+<%= form_tag(root_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search_name, params[:search_name], placeholder: t("search")%>
+  <%= text_field_tag :search_level, params[:search_level], placeholder: t("search")%>
+  <%= select_tag "Equipment", options_from_collection_for_select(Equipment.all, :id, :name) %>
+  <%= submit_tag t("search") %>
+<% end %>
+</br>
+</br>
+</br>
+</br>
+</br>
 <span class="text-line">
 最新の口コミ。 お⁠得⁠な⁠料⁠金⁠。
 </span>

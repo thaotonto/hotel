@@ -30,4 +30,7 @@ class Motel < ApplicationRecord
   def self.search(search)
     where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end
+  def self.filter(search_name, search_level) 
+    where("name LIKE ? AND level LIKE ?", "%#{search_name}%", "%#{search_level}%")
+  end
 end
