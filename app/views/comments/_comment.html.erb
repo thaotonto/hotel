@@ -41,7 +41,9 @@
                       <div></div>
                     </div>
                     <div class="fsm fwn fcg UFICommentActions">
+                      <% if user_signed_in? %>
                       <%= link_to "返信", comment_replies_path(comment_id: comment.id), {:remote => true, class: "UFIReplyLink _460i"} %>
+                      <% end %>
                       <% if can? :edit, comment %>
                       <%= link_to "編集", edit_review_comment_path(review_id: comment.review.id, id: comment.id), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: "UFIReplyLink _460i"} %>
                       <% end %>
