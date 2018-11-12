@@ -1,0 +1,45 @@
+$("#review-comments-<%= @review.id %>").html(
+  "<%= escape_javascript render @comments %>"
+);
+$("#paginate-<%= @review.id %>").data('max', "<%= @review.comments.count %>");
+var limit = $("#paginate-<%= @review.id %>").data("limit");
+var max = $("#paginate-<%= @review.id %>").data("max");
+if (limit >= max){
+  $("#paginate-<%= @review.id %>").hide();
+} else {
+  $("#paginate-<%= @review.id %>").show();
+}
+$(".AddReplyInput").on("keyup", function(event) {
+    console.log("pressed");
+    if (event.keyCode == 13 && event.shiftKey)
+    {
+      event.preventDefault();
+    } else if(event.which == 13) {
+      event.preventDefault();
+      var id = $(this).attr('id');
+      var array = id.split("-");
+      var user = array[1];
+      var comment = array[3];
+      var reply = document.getElementById(`${id}-add-reply`);
+      var content = reply.textContent;
+      // var limit = $(`#paginate-comment-${comment}`).data("limit");
+      if (content.trim() !="") {
+        $.ajax({
+          type: "POST",
+          url: `/comments/${comment}/replies`,
+          dataType: 'script',
+          data: {
+            user_id: user,
+            comment_id: comment,
+            content: content.trim()
+          },
+          success: function(res){
+          },
+          error: function(res) {
+          }
+        });
+      }
+      $(`#${id}-add-reply`).text("");
+      $(`#${id}-add-reply`).blur();
+    }
+});

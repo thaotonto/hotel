@@ -21,6 +21,11 @@
 <% else %>
     <div class="block helpful redesigned hsx_helpful review-gray" >
       <span class="glyphicon glyphicon-thumbs-up emphasizeWithColor"></span>
-      <%= link_to "いいね", new_user_session_path, class: "thankButton hsx_thank_button" %>
+       <button class="thankButton hsx_thank_button" onclick="myFunction()">いいね</button>
+    <script>
+      function myFunction() {
+          alert("ログインが必要です！");
+      }
+    </script>
     </div>
 <% end %>

@@ -83,6 +83,7 @@ ja:
       hotel_equip: "アメニティ"
       hotel_room: "ルーム"
       review: "レビュー"
+      comment: "コメント"
     attributes:
       user:
         email: "メール"
@@ -112,6 +113,10 @@ ja:
         content: "内容"
         rate: "レート"
         images: "画像"
+      comment:
+        content: "内容"
+      replie:
+        content: "内容"
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
@@ -182,6 +187,7 @@ ja:
     no_record: "データを見つかりませんでした"
     blocked: "ユーザーはブロックされています"
     already_review: "すでにレビューを書きました"
+    delete_fail: "削除できない"
 
   room:
     title: "ルーム管理"

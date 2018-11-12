@@ -6,7 +6,7 @@
     <% else %>
       <%= image_tag "default-hotel" %>
     <% end %>
-    <h1><%= motel.name %> <%= motel.level %>✩  </h1>
-    <p><%= motel.address %></p>
+    <h1><%= motel.name %></h1></br> <h2><%= motel.level %>✩  </h2>
+    <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= motel.address %></p>
   </div>
 <% end %>

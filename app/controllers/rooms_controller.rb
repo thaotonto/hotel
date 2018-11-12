@@ -38,9 +38,13 @@ class RoomsController < ApplicationController
   end
 
   def destroy
-    @room.destroy
-    flash[:success] = t "flash.delete_success"
-    redirect_to rooms_path
+    if @room.destroy
+      flash[:success] = t "flash.delete_success"
+      redirect_to rooms_path
+    else
+      flash[:danger] = t "flash.delete_fail"
+      redirect_to rooms_path
+    end
   end
 
   private

@@ -1,8 +1,9 @@
 <%= render "slide" %>
-<%= form_tag(root_path, :method => "get", id: "search-form") do %>
-  <%= text_field_tag :search_name, params[:search_name], placeholder: t("search")%>
-  <%= text_field_tag :search_level, params[:search_level], placeholder: t("search")%>
-  <%= select_tag "Equipment", options_from_collection_for_select(Equipment.all, :id, :name) %>
+<%= form_tag(root_path, :method => "get", id: "search-form-menu") do %>
+  <%= text_field_tag :search_name, params[:search_name], placeholder: 'ホテル名検索'%>
+  <%= text_field_tag :search_level, params[:search_level], placeholder: 'レベル検索'%>
+  <%= select_tag :search_equipment, options_from_collection_for_select(Equipment.all, :id, :name), :include_blank => 'アメニティ名検索'%>
+  <%= select_tag :order_price, options_for_select(["Order Price Asc","Order Price Desc"]), :include_blank => 'ルームタイプ検索' %>
   <%= submit_tag t("search") %>
 <% end %>
 </br>

@@ -15,5 +15,11 @@ Rails.application.routes.draw do
     end
     post "/like", to: "reviews#like"
     resources :relationships, only: [:create, :destroy]
+    resources :reviews do
+      resources :comments
+    end
+    resources :comments do
+      resources :replies
+    end
   end
 end

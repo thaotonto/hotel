@@ -1,7 +1,6 @@
 class Review < ApplicationRecord
-  has_many :review_images
-  has_many :comments
-  has_many :likes
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
   belongs_to :user
   belongs_to :motel
 

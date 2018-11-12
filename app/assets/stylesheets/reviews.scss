@@ -241,3 +241,263 @@ html[dir=ltr] .Review-comment-frequentTraveler-text {
   color:#FF912C;
 }
 
+.ylist-bordered>li {
+    margin: 0;
+    padding: 18px 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 17px;
+}
+
+.media-block {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.reviews .biz-listing-medium {
+    margin-bottom: 12px;
+}
+
+.media-block--12>.media-avatar {
+    border-right: 12px solid transparent;
+    border-left: none;
+}
+
+.media-block>.media-avatar {
+    border-right: 6px solid transparent;
+    border-left: none;
+}
+
+.media-story {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.media-title a {
+    font-weight: bold;
+}
+
+address {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+address {
+    display: block;
+    font-style: normal;
+}
+
+.review-content {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.biz-rating-large {
+    margin: 6px 0;
+}
+
+.i-stars {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rating, .rating-large, .rating-very-large {
+    position: relative;
+    overflow: hidden;
+}
+
+.biz-rating-large .rating-large {
+    float: left;
+    margin: -1px 6px 0 0;
+}
+
+.rating-qualifier {
+    display: block;
+    float: left;
+    color: #666;
+    font-weight: normal;
+}
+
+.pull-right {
+    float: right;
+}
+
+.review-footer .voting-feedback ul {
+    margin-top: -1px;
+}
+
+.voting-feedback .vote-item {
+    margin-right: 6px;
+}
+
+.inline-block {
+    display: -moz-inline-stack;
+    display: inline-block;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    top: -.1em;
+    fill: #666;
+}
+
+
+.ybtn .icon.icon--size-18 {
+    margin: -9px 0;
+}
+
+.u-space-r-half {
+    margin-right: 3px!important;
+}
+.u-space-r-half {
+    margin-right: 3px !important;
+}
+.icon--currentColor, .icon--hover-currentColor:hover, .icon--hover-currentColor:focus {
+    fill: currentColor;
+    left: 3px;
+}
+
+.voting-feedback .vote-type {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+
+a.ybtn:hover, a.ybtn:visited {
+    color: #666;
+}
+
+.voting-buttons .ybtn {
+    white-space: nowrap;
+}
+.ybtn-small:not(.ybtn--social), .ybtn--small:not(.ybtn--social) {
+    padding: 5px 8px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+a.ybtn {
+    text-decoration: none !important;
+}
+.ybtn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid;
+    font-weight: bold;
+    text-align: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    line-height: 1.28571em;
+    border-color: #ccc;
+    color: #666;
+    background-color: #f7f7f7;
+    background: -webkit-linear-gradient(#fff, #f7f7f7);
+    background: linear-gradient(#fff, #f7f7f7);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    padding: 8px 19px 9px;
+    border-radius: 3px;
+}
+
+.review-footer .voting-feedback {
+    float: left;
+    margin-bottom: 0;
+}
+
+.voting-feedback {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #666;
+}
+
+.show-tooltip {
+    position: relative;
+}
+
+.chiclet-link {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #999;
+    background: transparent;
+    box-shadow: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.review-footer .review-footer-actions a+a {
+    margin-left: 2px;
+}
+
+.tooltip {
+    z-index: 1012;
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+    padding: 6px 9px;
+    z-index: 4;
+    vertical-align: middle;
+    white-space: normal;
+    font-size: 12px;
+    pointer-events: none;
+    font-weight: bold;
+    line-height: 18px;
+    background: #333;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 5px;
+    text-shadow: none;
+    text-align: left;
+    cursor: default;
+    -webkit-box-shadow: 0 1px rgba(255,255,255,0.1);
+    box-shadow: 0 1px rgba(255,255,255,0.1);
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.manage-box {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.5em;
+    background: transparent;
+    box-shadow: none;
+    white-space: nowrap;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.Review-comment-left a+a {
+    margin-left: 5px;
+}

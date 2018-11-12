@@ -1,0 +1,8 @@
+$("#comment-id-<%= @comment.id %>").html(
+  "<%= escape_javascript render @replies %>"
+);
+
+var signed_in = $(".AddCommentInput").length;
+if (signed_in != 0) {
+  $("#user-<% if user_signed_in? %><%= current_user.id %><% end %>-comment-<%= @comment.id %>").show();
+}
