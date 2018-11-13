@@ -30,16 +30,21 @@ class Motel < ApplicationRecord
   def self.search(search)
     where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end
-  def self.filter(search_name, search_level, search_equipment, order_price) 
-    if (order_price == "Order Price Asc")
-      Motel.joins(:hotel_equips).where("name LIKE ? AND level LIKE ? AND hotel_equips.equipment_id = ?", "%#{search_name}%", "%#{search_level}%", "#{search_equipment}").order("hotel_equips.price ASC")
-    elsif (order_price == "Order Price Desc")
-      Motel.joins(:hotel_equips).where("name LIKE ? AND level LIKE ? AND hotel_equips.equipment_id = ?", "%#{search_name}%", "%#{search_level}%", "#{search_equipment}").order("hotel_equips.price DESC")
-    else
-      Motel.joins(:hotel_equips).where("name LIKE ? AND motels.level LIKE ? AND hotel_equips.equipment_id = ?", "%#{search_name}%", "%#{search_level}%", "#{search_equipment}")
-    end
+
+  def blank_stars
+    5 - level.to_i
   end
-  def self.search_name_level(search_name, search_level)
-    where("name LIKE ? AND level LIKE ?", "%#{search_name}%", "%#{search_level}%")
+
+  def self.filter(search_name, search_address, search_level, search_equipment, search_room)
+      Motel.joins(:hotel_equips, :hotel_rooms).where("name LIKE ? AND address LIKE ? AND level LIKE ? AND hotel_equips.equipment_id = ? AND hotel_rooms.room_id = ?", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%", "#{search_equipment}", "#{search_room}")
+  end
+  def self.filter_equipment(search_name, search_address, search_level, search_equipment)
+    Motel.joins(:hotel_equips).where("name LIKE ? AND address LIKE ? AND level LIKE ? AND hotel_equips.equipment_id = ?", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%", "#{search_equipment}")
+  end
+  def self.filter_room(search_name, search_address, search_level, search_room)
+    Motel.joins(:hotel_rooms).where("name LIKE ? AND address LIKE ? AND level LIKE ? AND hotel_rooms.room_id = ?", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%", "#{search_room}" )
+  end
+  def self.search_user(search_name, search_address, search_level)
+    where("name LIKE ? AND address LIKE ? AND level LIKE ? ", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%")
   end
 end
