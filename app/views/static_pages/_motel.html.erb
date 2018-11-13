@@ -5,7 +5,15 @@
     <% else %>
       <%= image_tag "default-hotel" %>
     <% end %>
-    <h1><%= motel.name %> <%= motel.level %>✩  </h1>
+    <h1><%= motel.name %></h1></br>
+    <h2>
+      <% motel.level.to_i.times do  %>
+        <span class="glyphicon glyphicon-star "></span>
+      <% end %>
+      <% motel.blank_stars.to_i.times do  %>
+        <span class="glyphicon glyphicon-star-empty "></span>
+      <% end %>
+    </h2>
     <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= motel.address %></p>
   </div>
 <% end %>

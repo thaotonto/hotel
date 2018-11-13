@@ -283,7 +283,7 @@ span.current {
 .home-form {
   @include background-tile;
   margin: 20px 18px;
-  height: 500px;
+  height: 430px;
   width: 353px;
   position: relative;
   color: white;
@@ -302,7 +302,7 @@ span.current {
 
 .home-form img {
   width: 353px;
-  height: 500px;
+  height: 430px;
   overflow: hidden;
   left: 0;
   top: 0;
@@ -310,8 +310,9 @@ span.current {
 }
 .home-form h1 {
   left: 50%;
-  font-size: 27px;
-  bottom: 60px;
+  font-size: 38px;
+  width: 100%;
+  bottom: 80px;
   position: absolute;
   z-index: 1;
   transform: translateX(-50%);
@@ -319,8 +320,8 @@ span.current {
 }
 .home-form h2 {
   left: 50%;
-  font-size: 18px;
-  bottom: 10px;
+  font-size: 28px;
+  bottom: 24px;
   position: absolute;
   z-index: 1;
   transform: translateX(-50%);
@@ -335,7 +336,7 @@ span.current {
   z-index: 1;
   transform: translateX(-50%);
   font-style: italic;
-  font-size: 14px;
+  font-size: 17px;
   font-family: 'Delius', cursive;
 }
 
@@ -456,11 +457,16 @@ td, th {
   content: '';
 }
 
-#search-form-menu input {
-  width: 200px;
-  padding: 4px 15px;
-  border-radius: 3px;
+#search-form-menu {
+  float: right;
+  margin-top: 20px;
+}
 
+#search-form-menu input {
+  width: 250px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: solid 1px #828282;
 }
 #search-form-menu input[type="submit"] {
   width: 70px;
@@ -470,4 +476,12 @@ td, th {
 
 .navbar-inverse .navbar-nav > li:hover > a, .dropdown-menu > li:hover > a {
   color: #16a085 !important;
+}
+
+#search-form-menu select {
+  width: auto;
+  height: 34px;
+  background-color: #fff;
+  border: solid 1px #828282;
+  border-radius: 50px;
 }

@@ -24,7 +24,14 @@
        <button class="thankButton hsx_thank_button" onclick="myFunction()">いいね</button>
     <script>
       function myFunction() {
-          alert("ログインが必要です！");
+          var r = confirm("ログインが必要です！");
+          if (r == true) {
+              txt = "You pressed OK!";
+              var url= "http://0.0.0.0:3000/ja/users/sign_in";
+              window.location = url;
+          } else {
+
+          }
       }
     </script>
     </div>
