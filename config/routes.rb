@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       end
     end
     post "/like", to: "reviews#like"
+    get "/load_more", to: "motels#load_more"
     resources :relationships, only: [:create, :destroy]
     resources :reviews do
       resources :comments

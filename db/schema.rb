@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2018_10_23_141010) do
     t.text "description"
     t.string "address"
     t.string "phone"
+    t.string "zone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "images"

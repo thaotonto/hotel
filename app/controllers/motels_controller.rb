@@ -7,7 +7,7 @@ class MotelsController < ApplicationController
       @motels = Motel.search(params[:search]).page(params[:page])
                     .per Settings.per_page
     else
-      @motels = Motel.page(params[:page])
+      @motels = Motel.order_level.page(params[:page])
                   .per Settings.per_page
     end
   end
@@ -50,10 +50,14 @@ class MotelsController < ApplicationController
     end
   end
 
+  def load_more
+    @review = Review.find_by id: params[:review_id]
+    render 'motels/load_more'
+  end
   private
 
   def motel_params
-    params.require(:motel).permit :name, :description, :address, :phone, :level, {images: []},
+    params.require(:motel).permit :name, :description, :address, :phone, :level, :zone, {images: []},
       hotel_equips_attributes: [:id, :_destroy, :price, :equipment_id],
       hotel_rooms_attributes: [:id, :_destroy, :price, :room_id]
   end
