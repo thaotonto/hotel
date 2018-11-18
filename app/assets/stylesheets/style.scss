@@ -343,8 +343,9 @@ span.text-line{
   color: black;
   text-transform: capitalize;
   &:hover {
-    box-shadow: 3px 3px 5px 6px #AAAAAA;
+    box-shadow: 3px 3px 5px 0px #AAAAAA;
   }
+  box-shadow: 3px 3px 5px 1px #ccc;
 }
 
 .home-form .col-md-4 img {
@@ -498,8 +499,9 @@ td, th {
 }
 #search-form-menu input[type="submit"], #search-form-menu-x input[type="submit"] {
   width: 70px;
-  background-color: #16a085;
+  background-color: #4b60ff;
   color: #fff;
+  margin-left: -10px;
 }
 
 #search-form-menu select {
@@ -516,9 +518,10 @@ td, th {
 }
 
 #search-form-menu-x input {
-  width: 200px;
+  width: 590px;
   padding: 4px 15px;
-  border-radius: 3px;
+/*  border-radius: 3px;*/
+
 
 }
 
