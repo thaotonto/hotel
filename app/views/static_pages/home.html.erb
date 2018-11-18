@@ -15,7 +15,8 @@
     <%= select_tag :search_level, options_for_select(0..5), :include_blank => 'レベル検索'%>
     <%= select_tag :search_equipment, options_from_collection_for_select(Equipment.all, :id, :name), :include_blank => 'アメニティ名検索'%>
     <%= select_tag :search_room, options_from_collection_for_select(Room.all, :id, :room_type), :include_blank => 'ルムタイプ検索'%>
-    <%= submit_tag t("search") %>
+    <br>
+    <%= submit_tag t("search"), style:"margin-left:2px" %>
 <% end %>
 </div>
 </div>
