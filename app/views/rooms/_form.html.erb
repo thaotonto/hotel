@@ -1,0 +1,18 @@
+<%= form_for @room, url: yield(:url) do |f| %>
+    <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+    <%= f.label :room_type, class: "label" %>
+    <%= f.text_field :room_type, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+    <%= f.label :bed_numbers, class: "label" %>
+    <%= f.number_field :bed_numbers, min: 1, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+    <%= f.label :guest_no, class: "label" %>
+    <%= f.number_field :guest_no, min: 1, class: "form-control input-add-new" %>
+  </div>
+  <div class="text-center">
+    <%= f.submit yield(:button), class: "btn btn-custom2" %>
+  </div>
+<% end %>

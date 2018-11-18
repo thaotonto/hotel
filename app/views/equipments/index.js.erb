@@ -1,0 +1,2 @@
+$("#equipments").html("<%= j render partial:"equipment", collection: @equipments %>");
+$("#paginator1").html("<%= j paginate(@equipments, remote: true) %>");

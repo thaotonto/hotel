@@ -1,0 +1,54 @@
+<%= form_for @motel, url: yield(:url) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+  <%= f.label :name, class: "label" %>
+  <%= f.text_field :name, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+  <%= f.label :description, class: "label" %>
+  <%= f.text_field :description, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+  <%= f.label :zone, class: "label" %>
+  <%= f.text_field :zone, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+  <%= f.label :address, class: "label" %>
+  <%= f.text_field :address, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+  <%= f.label :phone, class: "label" %>
+  <%= f.phone_field :phone, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+  <%= f.label :level, class: "label" %>
+  <%= f.number_field :level, min: 0, max: 5, class: "form-control input-add-new" %>
+  </div>
+  <div class="field">
+  <%= f.label :images, class: "label" %>
+  <%= f.file_field :images, multiple: true, class: " input-add-new upload-image" %>
+  </div>
+  <div id="preview"></div>
+  <h3 style="margin-left:180px;"><%= t "equipment.item" %></h3>
+  <div id='equipments'>
+    <%= f.fields_for :hotel_equips do |hotel_equip| %>
+      <%= render 'hotel_equip_fields', :f => hotel_equip %>
+    <% end %>
+  </div>
+  <div class='links' style="margin-left:180px;">
+      <%= link_to_add_association t("equipment.add_equipment"), f, :hotel_equips %>
+  </div>
+
+  <h3 style="margin-left:180px;"><%= t "room.item" %></h3>
+  <div id='rooms'>
+    <%= f.fields_for :hotel_rooms do |hotel_room| %>
+      <%= render 'hotel_room_fields', :f => hotel_room %>
+    <% end %>
+    <div class='links' style="margin-left:180px;">
+      <%= link_to_add_association t("room.add_room"), f, :hotel_rooms %>
+    </div>
+  </div>
+  <div class="text-center">
+    <%= f.submit yield(:button), class: "btn btn-custom2" %>
+  </div>
+<% end %>

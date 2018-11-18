@@ -1,0 +1,83 @@
+<div>
+    <div class="UFIRow _48pi _4204 UFIComment _4oep" role="article" data-ft="{&quot;tn&quot;:&quot;R1&quot;}">
+      <div class="_3b-9">
+        <div>
+          <div direction="left" class="clearfix">
+            <div class="_ohe lfloat">
+              <%= link_to user_path(replie.user.id), class: "UFICommentAuthorWithPresence img _8o _8s UFIImageBlockImage" do %>
+                <% if replie.user.picture? %>
+                  <%= image_tag replie.user.picture.thumb.url, alt: replie.user.name, class: "img UFIActorImage _54ru img" %>
+                <% else %>
+                  <%= image_tag("default-avatar", alt: replie.user.name, alt: replie.user.name, class: "img UFIActorImage _54ru img", width: 50, height: 50) %>
+                <% end %>
+              <% end %>
+            </div>
+            <div class="">
+              <div class="UFIImageBlockContent _42ef">
+                <div class="">
+                  <div class="UFICommentContentBlock">
+                    <div class="UFICommentContent">
+                      <div class="_26f8">
+                        <div class="_10la">
+                          <span class=" UFICommentActorAndBody">
+                            <div class="UFICommentActorAndBodySpacing">
+                              <span>
+                                <%= link_to replie.user.name, user_path(replie.user.id), class: "UFICommentActorName" %>
+                              </span>
+                              <span>
+                                <span>
+                                  <span data-ft="{&quot;tn&quot;:&quot;K&quot;}">
+                                    <span class="UFICommentBody">
+                                      <span><%= replie.content.gsub("\n", "<br />").html_safe %></span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                      <span></span>
+                      <div></div>
+                    </div>
+                    <div class="fsm fwn fcg UFICommentActions">
+                      <% if can? :edit, replie %>
+                      <%= link_to "編集", edit_comment_reply_path(comment_id: replie.comment.id, id: replie.id), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: "UFIReplyLink _460i"} %>
+                      <% end %>
+                      <% if can? :destroy, replie %>
+                        <!-- <a class="UFIReplyLink _460i" href="#" onclick="onDeleteReply(<%= replie.id %>, <%= replie.comment.id %>)">削除</a> -->
+                        <%= link_to "削除", comment_reply_path(comment_id: replie.comment.id, id: replie.id), id: "reply-#{replie.id}-from-#{replie.comment.id}", method: :delete,
+                          :remote => true, data: {confirm: t("delete_confirm")} , class: "UFIReplyLink _460i" %>
+                      <% end %>
+                      <span aria-hidden="true" role="presentation"> · </span>
+                      <span>
+                        <a class="uiLinkSubtle" data-ft="{&quot;tn&quot;:&quot;N&quot;}" data-testid="ufi_comment_timestamp">
+                          <abbr class="UFISutroCommentTimestamp livetimestamp" data-minimize="true" data-shorten="true">
+                            <span class="timestampContent"><%= time_ago_in_words(replie.created_at) %></span>
+                          </abbr>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  function onDeleteReply(id, comment_id) {
+    event.preventDefault();
+    var limit = $(`#paginate-replies-${comment_id}`).data("limit");
+    if (limit == undefined) limit = 3;
+    var path = $(`#reply-${id}-from-${comment_id}`).attr('href');
+    if (path.lastIndexOf("limit") != -1)
+      path = path.substr(0, path.lastIndexOf("?limit"));
+    path += `?limit=${limit}`
+    $(`#comment-${id}-from-${comment_id}`).attr('href', path);
+    document.getElementById(`comment-${id}-from-${comment_id}`).click();
+  }
+</script>

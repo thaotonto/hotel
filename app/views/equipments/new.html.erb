@@ -1,0 +1,9 @@
+<% provide :title, t("equipment.add_equipment") %>
+<% provide :button, t("add") %>
+<% provide :url, equipments_path %>
+<h1><%= t "equipment.add_equipment" %></h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <%= render "form" %>
+  </div>
+</div>

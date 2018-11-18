@@ -1,0 +1,63 @@
+<div class="col-md-12 title">
+  <div class="name"><%= @motel.name %></div>
+  <span><%= @motel.level %> ✩</span>
+</div>
+
+<div class="address">
+  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= @motel.address %>
+</div>
+
+<div class="phone">
+  <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <%= @motel.phone %>
+</div>
+
+<div style="margin-top: 100px">
+  <%= form_for @review, url: yield(:url) do |f| %>
+    <%= render "shared/error_messages", object: f.object %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :motel_id, value: @motel.id %>
+    <div class="field">
+      <%= f.label :title, class: "label" %>
+      <%= f.text_field :title, class: "form-control input-add-new" %>
+    </div>
+    <div class="field">
+      <%= f.label :rate, class: "label" %>
+      <%= f.hidden_field :rate %>
+    </div>
+<section class='rating-widget'>
+
+  <!-- Rating Stars Box -->
+  <div class='rating-stars'>
+    <ul id='stars'>
+      <li class='star' title='Poor' data-value='1'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Fair' data-value='2'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Good' data-value='3'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Excellent' data-value='4'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='WOW!!!' data-value='5'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+    </ul>
+  </div>
+</section>
+    <div class="field">
+      <%= f.label :content, class: "label" %>
+      <%= f.text_area :content, size: '50x10', class: "form-control input-add-new" %>
+    </div>
+    <div class="field">
+    <%= f.label :images, class: "label" %>
+    <%= f.file_field :images, multiple: true, class: " input-add-new upload-image" %>
+    </div>
+    <div id="preview"></div>
+    <div class="text-center">
+      <%= f.submit yield(:button), class: "btn btn-custom2" %>
+    </div>
+  <% end %>
+</div>

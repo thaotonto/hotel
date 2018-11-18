@@ -1,0 +1,157 @@
+<div>
+    <div class="UFIRow _48pi _4204 UFIComment _4oep" role="article" aria-label="Bình luận" data-ft="{&quot;tn&quot;:&quot;R1&quot;}">
+      <div class="_3b-9">
+        <div>
+          <div direction="left" class="clearfix">
+            <div class="_ohe lfloat">
+              <%= link_to user_path(comment.user.id), class: "UFICommentAuthorWithPresence img _8o _8s UFIImageBlockImage" do %>
+                <% if comment.user.picture? %>
+                  <%= image_tag comment.user.picture.thumb.url, alt: comment.user.name, class: "img UFIActorImage _54ru img" %>
+                <% else %>
+                  <%= image_tag("default-avatar", alt: comment.user.name, alt: comment.user.name, class: "img UFIActorImage _54ru img", width: 50, height: 50) %>
+                <% end %>
+              <% end %>
+            </div>
+            <div class="">
+              <div class="UFIImageBlockContent _42ef">
+                <div class="">
+                  <div class="UFICommentContentBlock">
+                    <div class="UFICommentContent">
+                      <div class="_26f8">
+                        <div class="_10la">
+                          <span class=" UFICommentActorAndBody">
+                            <div class="UFICommentActorAndBodySpacing">
+                              <span>
+                                <%= link_to comment.user.name, user_path(comment.user.id), class: "UFICommentActorName" %>
+                              </span>
+                              <span>
+                                <span>
+                                  <span data-ft="{&quot;tn&quot;:&quot;K&quot;}">
+                                    <span class="UFICommentBody">
+                                      <span><%= comment.content.gsub("\n", "<br />").html_safe %></span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                      <span></span>
+                      <div></div>
+                    </div>
+                    <div class="fsm fwn fcg UFICommentActions">
+                      <% if user_signed_in? %>
+                      <%= link_to "返信", comment_replies_path(comment_id: comment.id), {:remote => true, class: "UFIReplyLink _460i"} %>
+                      <% else %>
+                        <a href="#" onclick="alertSignin()" class="UFIReplyLink _460i">返信</a>
+                      <% end %>
+                      <% if can? :edit, comment %>
+                      <%= link_to "編集", edit_review_comment_path(review_id: comment.review.id, id: comment.id), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: "UFIReplyLink _460i"} %>
+                      <% end %>
+                      <% if can? :destroy, comment %>
+                        <a class="UFIReplyLink _460i" href="#" onclick="onDelete(<%= comment.id %>, <%= comment.review.id %>)">削除</a>
+                        <%= link_to "削除", review_comment_path(review_id: comment.review.id, id: comment.id), id: "comment-#{comment.id}-from-#{comment.review.id}", method: :delete,
+                          :remote => true, data: {confirm: t("delete_confirm")} , class: "UFIReplyLink _460i hide" %>
+                      <% end %>
+
+                      <span aria-hidden="true" role="presentation"> · </span>
+                      <span>
+                        <a class="uiLinkSubtle" data-ft="{&quot;tn&quot;:&quot;N&quot;}" data-testid="ufi_comment_timestamp">
+                          <abbr class="UFISutroCommentTimestamp livetimestamp" data-minimize="true" data-shorten="true">
+                            <span class="timestampContent"><%= time_ago_in_words(comment.created_at) %></span>
+                          </abbr>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class=" UFIReplyList">
+  <div id="comment-id-<%= comment.id %>" >
+    <% if comment.feedbacks.count > 0 %>
+      <div class="UFIRow UFIReplySocialSentenceRow _4204 _2o9m">
+        <%= link_to comment_replies_path(comment_id: comment.id), {:remote => true, class: "UFIReplyLink"} do %>
+          <div direction="left" class="clearfix">
+            <div class="">
+              <div class="UFIImageBlockContent _42ef _8u">
+                <span class="">
+                  <span class="UFIReplySocialSentenceLinkText UFIReplySocialSentenceVerified">返信<%= comment.feedbacks.count %>件</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <% if user_signed_in? %>
+  <div id="user-<%= current_user.id %>-comment-<%= comment.id %>" class="AddReplyInput UFIRow _4oep UFIAddComment UFIAddCommentWithPhotoAttacher _4204" style="display: none" data-ft="{&quot;tn&quot;:&quot;[&quot;}">
+    <div class="UFIMentionsInputWrap UFIStickersEnabledInput UFIGifEnabledInput clearfix" direction="left">
+      <div class="_ohe lfloat">
+        <div class="UFIReplyActorPhotoWrapper img _8o _8r UFIImageBlockImage" role="presentation">
+          <% if current_user.picture? %>
+            <%= image_tag current_user.picture.thumb.url, alt: current_user.name, class: "img UFIActorImage _54ru img" %>
+          <% else %>
+            <%= image_tag("default-avatar", alt: current_user.name, alt: current_user.name, class: "img UFIActorImage _54ru img") %>
+          <% end %>
+        </div>
+      </div>
+      <div class="">
+        <div class="UFIImageBlockContent _42ef _8u">
+          <div class="UFICommentContainer">
+            <div class="_fmi _613v UFIInputContainer">
+              <div class="_2xwx _289c" role="presentation">
+                <input class="_1osa mentionsHidden" name="add_comment_text" tabindex="-1">
+                <div class="UFIAddCommentInput _1osb _2xww _5yk1" role="presentation">
+                  <div class="_5yk2" tabindex="-1">
+                    <div class="_5rp7">
+                      <div class="_5rpb">
+                        <div id="user-<%= current_user.id %>-comment-<%= comment.id %>-add-reply" aria-autocomplete="list"  placeholder="返信する..." aria-multiline="true" class="notranslate _5rpu" contenteditable="true" role="textbox" spellcheck="true" style="outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  function onDelete(id, review_id) {
+    event.preventDefault();
+    var limit = $(`#paginate-${review_id}`).data("limit");
+    if (limit == undefined) limit = 3;
+    var path = $(`#comment-${id}-from-${review_id}`).attr('href');
+    if (path.lastIndexOf("limit") != -1)
+      path = path.substr(0, path.lastIndexOf("?limit"));
+    path += `?limit=${limit}`
+    $(`#comment-${id}-from-${review_id}`).attr('href', path);
+    document.getElementById(`comment-${id}-from-${review_id}`).click();
+  }
+
+  function alertSignin() {
+    event.preventDefault();
+    var r = confirm("ログインが必要です！");
+    if (r == true) {
+        txt = "You pressed OK!";
+        var url= "http://0.0.0.0:3000/ja/users/sign_in";
+        window.location = url;
+    } else {
+
+    }
+  }
+</script>

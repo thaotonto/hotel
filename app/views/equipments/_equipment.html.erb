@@ -1,0 +1,8 @@
+<tr style="border-bottom:solid 1px #E8E8E8;">
+  <td><%= equipment.name %></td>
+  <td style="float:right;">
+    <%= link_to t("change"), edit_equipment_path(equipment), class:"btn btn-success" %>
+    <%= link_to t("delete"), equipment_path(equipment), method: :delete,
+        data: {confirm: t("delete_confirm")}, class:"btn btn-danger" %>
+  </td>
+</tr>

@@ -1,0 +1,10 @@
+<%= form_for @equipment, url: yield(:url) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+  <%= f.label :name, class: "label" %>
+  <%= f.text_field :name, class: "form-control input-add-new" %>
+  </div>
+  <div class="text-center">
+    <%= f.submit yield(:button), class: "btn btn-custom2" %>
+  </div>
+<% end %>

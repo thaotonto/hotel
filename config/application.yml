@@ -1,0 +1,3 @@
+GMAIL_USERNAME: "esample1996@gmail.com"
+GMAIL_PASSWORD: "emailsamplepass"
+HOST: "0.0.0.0:3000"

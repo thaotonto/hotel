@@ -1,0 +1,73 @@
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="login-form">
+  <% provide :title, t("users.edit") %>
+  <h2><%= t "users.edit" %></h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= devise_error_messages! %>
+    <div class="col-md-4  text-center">
+      <div class="field">
+        <span class="picture">
+          <% if resource.picture? %>
+            <div id="target">
+              <%= image_tag resource.picture.url, height: '300', width: '300' %>
+            </div>
+          <% else %>
+            <div id="target">
+              <%= image_tag "default-avatar" %>
+            </div>
+          <% end %>
+          <br />
+          <div class="middle">
+            <label class="btn btn-custom4">
+              <%= f.label :picture, t("users.choose_file"), {class: "btn btn-custom4"} %>
+              <span style="display:none;">
+                <%= f.file_field :picture, accept: "image/jpeg,image/gif,image/png,image/jpg" %>
+              </span>
+            </label>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "box" %>
+      </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div><%= t "users.edit_confirm" %>: <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :password %>
+        <i>(<%= t "users.blank_pass" %>)</i><br />
+        <%= f.password_field :password, autocomplete: "new-password", class: "box" %>
+        <% if @minimum_password_length %>
+          <br />
+          <em>(<%= t("users.min_pass", min: @minimum_password_length) %>)</em>
+        <% end %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "box" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :current_password, t("users.current") %>
+        <i>(<%= t "users.password_confirm" %>)</i><br />
+        <%= f.password_field :current_password, autocomplete: "current-password", class: "box" %>
+      </div>
+    </div>
+
+
+    <div class="actions text-center">
+      <%= f.submit t("users.update"), class: "btn btn-custom2" %>
+    </div>
+  <% end %>
+</div>
+</div>
+</div>

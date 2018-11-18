@@ -1,0 +1,94 @@
+en:
+  hello: "Hello"
+  page_title: "god's hotel"
+  signup: "Sign Up"
+  login: "Login"
+  greeting: "Welcome %{name}"
+  manage: "Manage"
+  add: "Add"
+  edit: "Edit"
+  delete_confirm: "Are you sure?"
+  delete: "Delete"
+  duplicate: "Duplicated %{collection}"
+
+  users:
+    settings: "Setting"
+    remember: "Remember me"
+  greeting: "Welcome %{name}"
+
+  users:
+    settings: "Setting"
+    remember: "Remember me"
+    pass_confirm: "Password confirmation"
+    min_pass: "%{min} characters minimum"
+    confirmations: "Didn't receive confirmation instructions?"
+    edit: "Edit user"
+    update: "Update"
+    password_confirm: "we need your current password to confirm your changes"
+    blank_pass: "leave blank if you don't want to change it"
+    current: "Current password"
+    edit_confirm: "Currently waiting confirmation for"
+    changed:
+      password: "We're contacting you to notify you that your password has been changed."
+      email: "We're contacting you to notify you that your email is being changed to %{email}"
+    avatar: "Avatar"
+    choose_file: "Choose file"
+
+  forgot_password:
+    title: "Forgot password?"
+    reset_pass: "Forgot password?"
+    submit: "Submit"
+    content: "Someone has requested a link to change your password. You can do this through the link below."
+    info: "If you didn't request this, please ignore this email."
+    detail: "Your password won't change until you access the link above and create a new one."
+    change: "Change my password"
+    confirmation: "Confirmation"
+    new_pass: "New password"
+    change_pass: "Change your password"
+
+  activate_mail:
+    greeting: "Hi %{email}"
+    content: "Click on the link below to activate your account."
+    activate: "Confirm my account"
+    title: "Resend confirmation instructions"
+
+  activerecord:
+    attributes:
+      room:
+        room_type: "Room type"
+        bed_number: "Number of bed"
+        guest_no: "Max capacity (people)"
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              invalid: "must contain 3 of the following 4: a lowercase letter, an uppercase letter, a digit, a non-word character or symbol"
+
+
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: " errors"
+
+  flash:
+    denied: "Access denied"
+    update_success: "Updated"
+    delete_success: "Deleted"
+
+  room:
+    title: "Manage Room"
+    add_room: "Add room"
+    edit_room: "Edit room"
+    item: "Room"
+
+  hotel:
+    title: "Manage Hotel"
+    add_hotel: "Add hotel"
+    edit_hotel: "Edit hotel"
+
+  equipment:
+    title: "Manage Equipment"
+    add_equipment: "Add equipment"
+    edit_equipment: "Edit equipment"
+    item: "Equiment"

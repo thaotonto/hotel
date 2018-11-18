@@ -1,0 +1,67 @@
+class EquipmentsController < ApplicationController
+  load_and_authorize_resource
+  before_action :find_equipment, only: [:edit, :update, :destroy]
+
+  def index
+    if params[:search]
+      @equipments = Equipment.search(params[:search]).page(params[:page])
+                    .per Settings.per_page
+    else
+      @equipments = Equipment.page(params[:page])
+                           .per Settings.per_page
+    end
+  end
+
+  def new
+    @equipment = Equipment.new
+  end
+
+  def create
+    @equipment = Equipment.new equipment_params
+
+    if @equipment.save
+      redirect_to equipments_path
+    else
+      render :new
+    end
+  end
+
+  def show
+  end
+
+  def edit; end
+
+  def update
+    if @equipment.update_attributes equipment_params
+      flash[:success] = t "flash.update_success"
+      redirect_to equipments_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @equipment.destroy
+      flash[:success] = t "flash.delete_success"
+      redirect_to equipments_path
+    else
+      flash[:danger] = t "flash.delete_fail"
+      redirect_to equipments_path
+    end
+  end
+
+  private
+
+  def find_equipment
+    @equipment = Equipment.find_by id: params[:id]
+
+    return if @equipment
+    flash[:danger] = t "flash.no_record"
+    redirect_to root_url
+  end
+
+  def equipment_params
+    params.require(:equipment).permit :name
+  end
+
+end

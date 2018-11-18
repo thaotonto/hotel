@@ -1,0 +1,374 @@
+ja:
+  hello: "こんにちは！"
+  page_title: "神様ホテル"
+  home: "ホーム"
+  login: "ログイン"
+  logout: "ログアウト"
+  signup: "サインアップ"
+  greeting: "こんにちは %{name} さん!"
+  english: "英語"
+  japanese: "日本語"
+  manage: "管理"
+  add: "追加"
+  edit: "保存"
+  delete_confirm: "本当に削除しても良いですか？"
+  delete: "削除"
+  price: "値段（円）"
+  duplicate: "重複%{collection}"
+  change: "編集"
+  search: "検索"
+
+  helpers:
+    page_entries_info:
+      more_pages:
+        display_entries: "<b>%{total}</b>中の%{entry_name}を表示しています <b>%{first} - %{last}</b>"
+      one_page:
+        display_entries:
+          one: "<b>%{count}</b>レコード表示中です %{entry_name}"
+          other: "<b>%{count}</b>レコード表示中です %{entry_name}"
+          zero: "レコードが見つかりませんでした %{entry_name}"
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最後 &raquo;"
+      next: "次 &rsaquo;"
+      previous: "&lsaquo; 前"
+      truncate: "&hellip;"
+
+  users:
+    settings: "セッティング"
+    remember: "サインしたままにする"
+    name: "ニックネーム"
+    email: "メール"
+    password: "パスワード"
+    pass_confirm: "パスワードの確認"
+    min_pass: "%{min}~20文字"
+    confirmations: "まだ確認メールが届いていない場合はこちらへ"
+    edit: "ユーザー情報の編集"
+    update: "保存"
+    password_confirm: "変更を確認するには現在のパスワードが必要です"
+    blank_pass: "変更したくない場合は記入しないでください"
+    current: "現在のパスワード"
+    edit_confirm: "まだ確認していない"
+    changed:
+      password: "パスワードが変更されたことをお知らせするためにご連絡いたします。"
+      email: "メールアドレスが変更されたことをお知らせするためにご連絡いたします。新たしいメールアドレス：%{email}"
+    avatar: "アバター"
+    choose_file: "アップロード"
+    mod: "マネージャにアップグレード"
+    member: "メンバーにダウングレード"
+    block: "ブロック"
+    unblock: "ブロック解除"
+    title: "ユーザー管理"
+    follow: "フォロー"
+    unfollow: "アンフォロー"
+    following: "フォロー中"
+    follower: "フォロワー"
+
+  forgot_password:
+    title: "パスワードを忘れた場合"
+    reset_pass: "パスワード再設定"
+    submit: "パスワードを再設定"
+    content: "誰かがあなたのパスワードを変更するためのリンクをリクエストしました。下記のリンクをクリックしてパスワードの再設定をしてください："
+    info: "リクエストしていない場合は、このメールを無視してください。"
+    detail: "上記のリンクにアクセスして新しいパスワードを作成するまで、パスワードは変更されません。"
+    change: "パスワードを再設定"
+    confirmation: "新しいパスワードの確認"
+    new_pass: "新しいパスワード"
+    change_pass: "パスワード再設定"
+
+  activerecord:
+    models:
+      user: "ユーザー"
+      hotel_equip: "アメニティ"
+      hotel_room: "ルーム"
+      review: "レビュー"
+      comment: "コメント"
+    attributes:
+      user:
+        email: "メール"
+        password: "パスワード"
+        password_confirmation: "パスワードの確認"
+        reset_password_token: "パスワードトークン"
+        current_password: "現在のパスワード"
+        confirmation_token: "確認トークン"
+        picture: "画像"
+      room:
+        room_type: "ルームタイプ"
+        bed_numbers: "ベッド数"
+        guest_no: "最大人数"
+      motel:
+        name: "ホテル名"
+        address: "アドレス"
+        description: "説明"
+        phone: "電話番号"
+        images: "画像"
+        level: "レベル"
+        zone: "地域"
+      equipment:
+        name: "アメニティ名"
+      hotel_equips:
+        price: "値段（円）"
+      review:
+        title: "題名"
+        content: "内容"
+        rate: "レート"
+        images: "画像"
+      comment:
+        content: "内容"
+      replie:
+        content: "内容"
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"
+      models:
+        user:
+          attributes:
+            password:
+              invalid: "最低３種類の次の文字を含む：大文字、小文字、番号、非英数字の記号"
+            password_confirmation:
+              confirmation: "は一致しません"
+
+  activate_mail:
+    greeting: "こんにちは %{email} さん"
+    content: "神様ホテルへのサインアップありがとうございます！下記のリンクをクリックしてメールアドレスの認証をしてください："
+    activate: "アクティブなアカウント"
+    title: "登録確認メール再送信"
+
+  errors:
+    messages:
+      carrierwave_processing_error: 処理できませんでした
+      carrierwave_integrity_error: は許可されていないファイルタイプです
+      carrierwave_download_error: はダウンロードできません
+      extension_whitelist_error: "%{extension}ファイルのアップロードは許可されていません。アップロードできるファイルタイプ: %{allowed_types}"
+      extension_blacklist_error: "%{extension}ファイルのアップロードは許可されていません。アップロードできないファイルタイプ: %{prohibited_types}"
+      content_type_whitelist_error: "%{content_type}ファイルのアップロードは許可されていません"
+      content_type_blacklist_error: "%{content_type}ファイルのアップロードは許可されていません"
+      rmagick_processing_error: "rmagickがファイルを処理できませんでした。画像を確認してください。エラーメッセージ: %{e}"
+      mini_magick_processing_error: "MiniMagickがファイルを処理できませんでした。画像を確認してください。エラーメッセージ: %{e}"
+      min_size_error: "を%{min_size}以上のサイズにしてください"
+      max_size_error: "を%{max_size}以下のサイズにしてください"
+      accepted: を受諾してください
+      blank: を入力してください
+      present: は入力しないでください
+      confirmation: と%{attribute}の入力が一致しません
+      empty: を入力してください
+      equal_to: は%{count}にしてください
+      even: は偶数にしてください
+      exclusion: は予約されています
+      greater_than: は%{count}より大きい値にしてください
+      greater_than_or_equal_to: は%{count}以上の値にしてください
+      inclusion: は一覧にありません
+      invalid: は不正な値です
+      less_than: は%{count}より小さい値にしてください
+      less_than_or_equal_to: は%{count}以下の値にしてください
+      model_invalid: "バリデーションに失敗しました: %{errors}"
+      not_a_number: は数値で入力してください
+      not_an_integer: は整数で入力してください
+      odd: は奇数にしてください
+      required: を入力してください
+      taken: はすでに存在します
+      too_long: は%{count}文字以内で入力してください
+      too_short: は%{count}文字以上で入力してください
+      wrong_length: は%{count}文字で入力してください
+      other_than: は%{count}以外の値にしてください
+
+  shared:
+    error_messages:
+      message: ""
+      error: "件のエラーが発生した"
+
+  flash:
+    denied: "アクセスが拒否されました"
+    update_success: "アップデート成功"
+    delete_success: "削除成功"
+    no_record: "データを見つかりませんでした"
+    blocked: "ユーザーはブロックされています"
+    already_review: "すでにレビューを書きました"
+    delete_fail: "削除できない"
+
+  room:
+    title: "ルーム管理"
+    add_room: "ルーム追加"
+    edit_room: "ルーム編集"
+    item: "ルーム"
+
+  hotel:
+    title: "ホテル管理"
+    add_hotel: "ホテル追加"
+    edit_hotel: "ホテル編集"
+
+  equipment:
+    title: "アメニティ管理"
+    add_equipment: "アメニティ追加"
+    edit_equipment: "アメニティ編集"
+    item: "アメニティ"
+
+  review:
+    title: "レビュー"
+    add_review: "レビュー追加"
+    edit_review: "レビュー編集"
+
+  date:
+    abbr_day_names:
+    - 日
+    - 月
+    - 火
+    - 水
+    - 木
+    - 金
+    - 土
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 日曜日
+    - 月曜日
+    - 火曜日
+    - 水曜日
+    - 木曜日
+    - 金曜日
+    - 土曜日
+    formats:
+      default: "%Y/%m/%d"
+      long: "%Y年%m月%d日(%a)"
+      short: "%m/%d"
+    month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 約1時間
+        other: 約%{count}時間
+      about_x_months:
+        one: 約1ヶ月
+        other: 約%{count}ヶ月
+      about_x_years:
+        one: 約1年
+        other: 約%{count}年
+      almost_x_years:
+        one: 1年弱
+        other: "%{count}年弱"
+      half_a_minute: 30秒前後
+      less_than_x_minutes:
+        one: 1分以内
+        other: "%{count}分未満"
+      less_than_x_seconds:
+        one: 1秒以内
+        other: "%{count}秒未満"
+      over_x_years:
+        one: 1年以上
+        other: "%{count}年以上"
+      x_days:
+        one: 1日
+        other: "%{count}日"
+      x_minutes:
+        one: 1分
+        other: "%{count}分"
+      x_months:
+        one: 1ヶ月
+        other: "%{count}ヶ月"
+      x_years:
+        one: 1年
+        other: "%{count}年"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
+    prompts:
+      day: 日
+      hour: 時
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%n%u"
+        precision: 0
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: 円
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 十億
+          million: 百万
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n%u"
+        units:
+          byte: バイト
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+          pb: PB
+          eb: EB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: 、
+      two_words_connector: 、
+      words_connector: 、
+  time:
+    am: 午前
+    formats:
+      default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+      long: "%Y/%m/%d %H:%M"
+      short: "%m/%d %H:%M"
+    pm: 午後
