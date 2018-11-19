@@ -16,6 +16,7 @@ class ReviewsController < ApplicationController
     @review = Review.new review_params
 
     if @review.save
+      @review.motel.update_attributes level: @review.motel.avarege_point
       redirect_to motel_path(@motel)
     else
       render :new

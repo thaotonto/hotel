@@ -20,7 +20,6 @@ image_data = Rails.root.join("app/assets/images/hotel.jpg").open
     address: Faker::Address.full_address,
     description: Faker::Lorem.paragraph(50),
     phone: Faker::Number.number(11).to_i,
-    level: Faker::Number.within(0..5),
     zone: Faker::Address.state,
     images: [image_data]
     HotelEquip.create motel_id: motel.id, equipment_id: 1, price: 10
