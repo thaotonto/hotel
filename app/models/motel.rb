@@ -6,7 +6,7 @@ class Motel < ApplicationRecord
   has_many :reviews, dependent: :destroy
   accepts_nested_attributes_for :hotel_equips, reject_if: :all_blank, allow_destroy: true
   accepts_nested_attributes_for :hotel_rooms, reject_if: :all_blank, allow_destroy: true
-
+  attr_reader :point
   mount_uploaders :images, ImagesUploader
   serialize :images, JSON
   validates :name, presence: true
@@ -22,9 +22,9 @@ class Motel < ApplicationRecord
   scope :order_level, ->{order level: :desc}
 
   def avarege_point
-    point = reviews.average(:rate)
+    @point = reviews.average(:rate)
     if point != nil
-       point.round
+       point.round(1)
     else
        0
     end
@@ -49,7 +49,12 @@ class Motel < ApplicationRecord
   end
 
   def star
-    avarege_point
+    @point = reviews.average(:rate)
+    if point != nil
+       point.round
+    else
+       0
+    end
   end
 
  def self.search(search)
