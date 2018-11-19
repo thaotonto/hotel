@@ -21,6 +21,15 @@ class Motel < ApplicationRecord
 
   scope :order_level, ->{order level: :desc}
 
+  def avarege_point
+    point = reviews.average(:rate)
+    if point != nil
+       point.round
+    else
+       0
+    end
+  end
+
   def validate_unique_equipment
     validate_uniqueness_of_in_memory(
       hotel_equips, [:motel_id, :equipment_id])
@@ -36,15 +45,15 @@ class Motel < ApplicationRecord
   end
 
   def blank_stars
-    5 - level.to_i
+    5 - star
+  end
+
+  def star
+    avarege_point
   end
 
  def self.search(search)
     where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
-  end
-
-  def blank_stars
-    5 - level.to_i
   end
 
   def self.filter(search_name, search_address, search_level, search_equipment, search_room)
