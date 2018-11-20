@@ -495,7 +495,7 @@ td, th {
   border-radius: 5px;
   border: solid 1px #828282;
 }
-#search-form-menu input[type="submit"], #search-form-menu-x input[type="submit"] {
+#search-form-menu input[type="submit"], #search-form-menu-x input[type="submit"]{
   width: 70px;
   background-color: #16a085;
   color: #fff;
@@ -515,10 +515,25 @@ td, th {
 }
 
 #search-form-menu-x input {
-  width: 200px;
+  width: 230px;
   padding: 4px 15px;
-  border-radius: 3px;
+  float: right;
+}
 
+button {
+  width: 70px;
+  background-color: #16a085;
+  border-radius: 4px;
+  margin-left: 3px;
+  color: #fff;
+  padding: 4px 15px;
+}
+
+.easy-autocomplete {
+  float: left;
+}
+.easy-autocomplete-container {
+  top: 31px;
 }
 
 .pagination {

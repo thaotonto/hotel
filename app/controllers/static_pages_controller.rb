@@ -1,9 +1,9 @@
 class StaticPagesController < ApplicationController
   def home
-    if params[:search]
-      @motels = Motel.order_level.search_zone(params[:search]).page(params[:page])
+    if params[:q]
+      @motels = Motel.order_level.search(params[:q]).page(params[:page])
                     .per Settings.per_page
-   elsif params[:search_equipment].blank? && params[:search_room].blank?
+    elsif params[:search_equipment].blank? && params[:search_room].blank?
       @motels = Motel.order_level.search_user(params[:search_name], params[:search_address], params[:search_level]).page(params[:page])
                     .per Settings.per_page
    elsif params[:search_room].blank?
@@ -21,4 +21,5 @@ class StaticPagesController < ApplicationController
                   .per(Settings.per_page)
     end
   end
+  
 end
