@@ -8,7 +8,7 @@
                 <% if comment.user.picture? %>
                   <%= image_tag comment.user.picture.thumb.url, alt: comment.user.name, class: "img UFIActorImage _54ru img" %>
                 <% else %>
-                  <%= image_tag("default-avatar", alt: comment.user.name, alt: comment.user.name, class: "img UFIActorImage _54ru img", width: 50, height: 50) %>
+                  <%= image_tag("default-avatar", alt: comment.user.name, class: "img UFIActorImage _54ru img", width: 50, height: 50) %>
                 <% end %>
               <% end %>
             </div>
@@ -101,7 +101,7 @@
           <% if current_user.picture? %>
             <%= image_tag current_user.picture.thumb.url, alt: current_user.name, class: "img UFIActorImage _54ru img" %>
           <% else %>
-            <%= image_tag("default-avatar", alt: current_user.name, alt: current_user.name, class: "img UFIActorImage _54ru img") %>
+            <%= image_tag("default-avatar", alt: current_user.name, class: "img UFIActorImage _54ru img") %>
           <% end %>
         </div>
       </div>

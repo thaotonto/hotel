@@ -1,0 +1,174 @@
+<%= @revs.each do |review| %>
+  <div class="Review-comment">
+    <div class="Review-comment-left">
+      <div>
+        <div class="Review-comment-leftHeader">
+          <div class="Review-comment-leftScore">
+            <% review.rate.to_i.times do %>
+    <span class="glyphicon glyphicon-star blue_star"></span>
+  <% end %>
+  <% review.blank_stars.times do %>
+    <span class="glyphicon glyphicon-star-empty blue_star"></span>
+  <% end %>
+  </div>
+  </div>
+  <div class="Review-comment-reviewer" data-info-type="reviewer-name">
+    <strong><%= link_to review.user.name, user_path(review.user) %></strong>
+  </div>
+  <div class="Review-comment-reviewDate">
+    <div>
+      <i class="glyphicon glyphicon-time ficon ficon-16 ficon-mmb-inbox review-gray"></i>
+      <span class="Review-statusBar-date "><%= time_ago_in_words(review.created_at) %></span>
+    </div>
+  </div>
+  </div>
+  <div class="memberBadgingNoText is-shown-at-tablet">
+    <span class="glyphicon glyphicon-pencil"></span>
+    <span class="badgetext review-gray"><%= review.comments.count %></span>
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+    <span id="like-count-<%= review.id %>" class="badgetext review-gray"><%= review.likes.count %></span>
+  </div>
+  <div id="like-form-<%= review.id %>">
+    <%= render "shared/like_form", review: review %>
+  </div>
+  <% if user_signed_in? %>
+    <% if can? :edit, review %>
+      <%= link_to edit_motel_review_path(motel_id: @mot.id, id: review.id), class: "manage-box" do %>
+        <span class="glyphicon glyphicon-edit"></span><%= t("change") %>
+      <% end %>
+    <% end %>
+    <% if can? :destroy, review %>
+      <%= link_to motel_review_path(motel_id: @mot.id, id: review.id), method: :delete,
+                  data: {confirm: t("delete_confirm")}, class: "manage-box" do %>
+        <span class="glyphicon glyphicon-remove"></span><%= t("delete") %>
+      <% end %>
+    <% end %>
+  <% end %>
+  </div>
+  <div class="Review-comment-right">
+    <div class="Review-comment-bubble blue">
+      <div class="Review-comment-body" data-selenium="">
+        <div class="Review-comment-bodyTitle"><%= review.title %></div>
+        <div id="Review-comment-bodyText-<%= review.id %>" class="Review-comment-bodyText" data-type="comment">
+          <%= truncate(review.content, :length => 250) {link_to "もっと見る", load_more_path(review_id: review.id), remote: true} %>
+        </div>
+      </div>
+      <div class="Review-statusBar">
+        <div class="Review-statusBar-right">
+          <button class="Review-statusBar-translateButton" onclick="toggleComment(<%= review.id %>)">コメント(<%= review.comments.count %>
+            )
+          </button>
+        </div>
+      </div>
+    </div>
+    <% if review.images.count != 0 %>
+      <% if review.images.count < 5 %>
+        <div class="img-show">
+          <% review.images.each do |img| %>
+            <%= image_tag img.url, height: '100', width: '100' %>
+          <% end %>
+        </div>
+      <% else %>
+        <div class="img-show">
+          <% 5.to_i.times do |i| %>
+            <%= image_tag review.images[i].url, height: '100', width: '100' %>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+    <div id="container-review-comments-<%= review.id %>" style="display: none">
+      <div class="uiUfi UFIContainer _3-a6 _4eno _1blz _69ad _65_9 _5pc9 _5vsj _5v9k">
+        <% if user_signed_in? %>
+          <div id="user-<%= current_user.id %>-review-<%= review.id %>" class="AddCommentInput UFIRow _4oep UFIAddComment UFIAddCommentWithPhotoAttacher _4204" data-ft="{&quot;tn&quot;:&quot;[&quot;}">
+            <div class="UFIMentionsInputWrap UFIStickersEnabledInput UFIGifEnabledInput clearfix" direction="left">
+              <div class="_ohe lfloat">
+                <div class="UFIReplyActorPhotoWrapper img _8o _8r UFIImageBlockImage" role="presentation">
+                  <% if current_user.picture? %>
+                    <%= image_tag current_user.picture.thumb.url, alt: current_user.name, class: "img UFIActorImage _54ru img" %>
+                  <% else %>
+                    <%= image_tag("default-avatar", alt: current_user.name, class: "img UFIActorImage _54ru img") %>
+                  <% end %>
+                </div>
+              </div>
+              <div class="">
+                <div class="UFIImageBlockContent _42ef _8u">
+                  <div class="UFICommentContainer">
+                    <div class="_fmi _613v UFIInputContainer">
+                      <div class="_2xwx _289c" role="presentation">
+                        <input class="_1osa mentionsHidden" name="add_comment_text" tabindex="-1">
+                        <div class="UFIAddCommentInput _1osb _2xww _5yk1" role="presentation">
+                          <div class="_5yk2" tabindex="-1">
+                            <div class="_5rp7">
+                              <div class="_5rpb">
+                                <div id="user-<%= current_user.id %>-review-<%= review.id %>-add-comment" aria-autocomplete="list" aria-controls="js_47" placeholder="コメントする..." aria-multiline="true" class="notranslate _5rpu" contenteditable="true" data-testid="ufi_comment_composer" role="textbox" spellcheck="true" style="outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+        <div id="review-comments-<%= review.id %>" class="_3b-9 _j6a">
+          <%= render review.comments.order_comment.limit(3) %>
+        </div>
+
+        <div class="UFIRow UFIPagerRow _4oep UFILastCommentComponent _2o9m">
+          <div direction="right" class="clearfix">
+            <% if review.comments.count > 3 %>
+              <div id="paginate-<%= review.id %>" data-limit=3 data-max=<%= review.comments.count %>>
+                <a class="UFIPagerLink" role="button" onclick="loadMore(<%= review.id %>)">他のコメントを見る</a>
+              </div>
+            <% else %>
+              <div style="display: none" id="paginate-<%= review.id %>" data-limit=3 data-max=<%= review.comments.count %>>
+                <a class="UFIPagerLink" role="button" onclick="loadMore(<%= review.id %>)">他のコメントを見る</a>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <% if !user_signed_in? %>
+          <div class="UFIRow UFIPagerRow _4oep UFILastCommentComponent _2o9m">
+            <div direction="right" class="clearfix" style="font-size: 12px; color: #90949c">
+              コメントを書きたい？
+              <%= link_to "ログイン", new_user_session_path %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+    function toggleComment(id) {
+        var x = document.getElementById(`container-review-comments-${id}`);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function loadMore(id) {
+        var limit = $(`#paginate-${id}`).data("limit");
+        limit += 3;
+        $(`#paginate-${id}`).data('limit', limit);
+        $.ajax({
+            type: "GET",
+            url: `/reviews/${id}/comments`,
+            data: {
+                limit: limit
+            },
+            success: function (res) {
+            },
+            error: function (res) {
+            }
+        });
+    }
+</script>

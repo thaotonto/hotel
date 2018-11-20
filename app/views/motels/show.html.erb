@@ -8,7 +8,7 @@
   <% if user_signed_in? && (current_user.admin? || current_user.mod?) %>
     <%= link_to t("change"), edit_motel_path(@motel) %>
     <%= link_to t("delete"), motel_path(@motel), method: :delete,
-    data: {confirm: t("delete_confirm")} %>
+                data: {confirm: t("delete_confirm")} %>
   <% end %>
 </div>
 
@@ -22,14 +22,18 @@
 
 <div id="MAIN" class="delineation">
   <% if @motel.hotel_rooms.count > 0 %>
-    <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW"  style="width:66%; float:left">
+    <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="width:66%; float:left">
       <div class="Header__header--3OgS9 Header__divider--waZKL">ルーム</div>
-        <div style="margin-top: 10px">
+      <div style="margin-top: 10px">
         <table style="width:100%">
           <tr>
             <th><h4><%= t "activerecord.attributes.room.room_type" %></h4></th>
-            <th><h4><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> <%= t("activerecord.attributes.room.bed_numbers") %></h4></th>
-            <th><h4><span class="glyphicon glyphicon-user"></span> <%= t("activerecord.attributes.room.guest_no") %></h4></th>
+            <th><h4>
+              <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> <%= t("activerecord.attributes.room.bed_numbers") %>
+            </h4></th>
+            <th>
+              <h4><span class="glyphicon glyphicon-user"></span> <%= t("activerecord.attributes.room.guest_no") %></h4>
+            </th>
             <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">Price</span></h4></th>
           </tr>
           <% @motel.hotel_rooms.each do |hotel_rooms| %>
@@ -46,12 +50,14 @@
   <% end %>
 
   <% if @motel.hotel_equips.count > 0 %>
-  <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="width:33%; float:right;" >
-    <div class="Header__header--3OgS9 Header__divider--waZKL">アメニティ</div>
+    <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="width:33%; float:right;">
+      <div class="Header__header--3OgS9 Header__divider--waZKL">アメニティ</div>
       <div style="margin-top: 10px">
         <table style="width:100%">
           <tr>
-            <th><h4><span class="glyphicon glyphicon-object-align-bottom"></span><%= t "activerecord.attributes.equipment.name"%></h4></th>
+            <th><h4>
+              <span class="glyphicon glyphicon-object-align-bottom"></span><%= t "activerecord.attributes.equipment.name" %>
+            </h4></th>
             <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">Price</span></h4></th>
           </tr>
           <% @motel.hotel_equips.each do |hotel_equips| %>
@@ -69,16 +75,35 @@
     <div class="description"><%= @motel.description %></div>
   </div>
 
-  <div id="modal-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ></div>
+  <div id="modal-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
   <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="clear:both;">
     <div class="Header__header--3OgS9 Header__divider--waZKL">レビュー</div>
-    <div style="margin-top: 10px">
-        <%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id)%>
-        <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
+
+    <%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id) %>
+
+    <%= form_tag searchs_index_url, class: "search_reviews", remote: true, :method => 'get' do %>
+      <%= text_field_tag :keyword, params[:keyword], :placeholder => "レビューのキーワード。。。" %>
+      <%= select_tag "review_type", options_for_select(["すべて", "ポジティブ", "ネガティブ", "ニュートラル"]) %>
+      <%= hidden_field_tag "hotel_id", @motel.id %>
+      <%= button_tag "フィルター" %>
+    <% end %>
+
+    <div style="margin-top: 10px" class="review_search_content">
+
+      <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
     </div>
   </div>
-
 </div>
 
+<script type="text/javascript">
+
+      $("#search_reviews").keyup(function() {
+          $.ajax({
+              url: 'search/index',
+              data: {index: $(this).serialize()}
+          });
+      });
+
+</script>
 
