@@ -82,28 +82,48 @@
 
     <%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id) %>
 
-    <%= form_tag searchs_index_url, class: "search_reviews", remote: true, :method => 'get' do %>
-      <%= text_field_tag :keyword, params[:keyword], :placeholder => "レビューのキーワード。。。" %>
-      <%= select_tag "review_type", options_for_select(["すべて", "ポジティブ", "ネガティブ", "ニュートラル"]) %>
-      <%= hidden_field_tag "hotel_id", @motel.id %>
-      <%= button_tag "フィルター" %>
-    <% end %>
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <b>キーワード検索</b>
+      </div>
+      <div class="col-md-2">
+        <b>ソート</b>
+      </div>
+      <div class="col-md-2">
+        <b>順番</b>
+      </div>
 
-    <div style="margin-top: 10px" class="review_search_content">
-
-      <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
+      <%= form_tag searchs_index_url, class: "search_reviews", remote: true, :method => 'get' do %>
+        <div class="col-md-6">
+          <%= text_field_tag :keyword, params[:keyword], :placeholder => "レビューのキーワード。。。" %>
+        </div>
+        <div class="col-md-2">
+          <%= select_tag "sort_type", options_for_select(["評価点", "ライク数", "投稿日"]) %>
+        </div>
+        <div class="col-md-2">
+          <%= select_tag "sort_order", options_for_select(["昇順", "降順"]) %>
+          <%= hidden_field_tag "hotel_id", @motel.id %>
+        </div>
+        <div class="col-md-2">
+          <%= button_tag "フィルター" %>
+        </div>
+      <% end %>
     </div>
+
+  </div>
+  <div style="margin-top: 10px" class="review_search_content">
+    <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
   </div>
 </div>
 
 <script type="text/javascript">
 
-      $("#search_reviews").keyup(function() {
-          $.ajax({
-              url: 'search/index',
-              data: {index: $(this).serialize()}
-          });
-      });
+    $("#search_reviews").keyup(function () {
+        $.ajax({
+            url: 'search/index',
+            data: {index: $(this).serialize()}
+        });
+    });
 
 </script>
 
