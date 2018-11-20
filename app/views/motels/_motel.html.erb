@@ -10,10 +10,10 @@
     <div class = "home-form-top col-md-8">
       <h1><%= motel.name %></h1>
       <h2>
-        <% motel.level.to_i.times do  %>
+        <% motel.star.times do  %>
           <span class="glyphicon glyphicon-star "></span>
         <% end %>
-        <% motel.blank_stars.to_i.times do  %>
+        <% motel.blank_stars.times do  %>
           <span class="glyphicon glyphicon-star-empty "></span>
         <% end %>
       </h2>

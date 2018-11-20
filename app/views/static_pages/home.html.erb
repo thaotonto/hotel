@@ -4,11 +4,101 @@
 </span>
 
 
-<div id="motels" class="row" style="margin-top:30px;">
-  <div class="col-md-10">
+<div class="row" style="margin-top:30px;">
+  <div class="col-md-10" id="motels">
     <%= render partial: "static_pages/motel", collection: @motels %>
   </div>
-  <div class = "col-md-2" data-spy="affix" data-offset-top="600">
+  <div class ="col-md-2 home-form" style = "height: auto; margin: 23px 0px; padding: 8px !important;">
+    <h4> トップの５レビュー</h4>
+    <p data-toggle="collapse" data-target="#hn" class="zone-p"><span class="glyphicon glyphicon-hand-right"></span> ハノイ市</p>
+    <div id="hn" class="collapse">
+      <% @motels.joins(:reviews).where("zone LIKE ?","ハノイ").group("motels.id").order("AVG(reviews.rate) DESC").limit(5).each do |p| %>
+        <div style ="clear:both;">
+          <%= link_to motel_path(p) do  %>
+            <div class="zone-left" >
+              <% if p.images? %>
+                <%= image_tag p.images[0].url %>
+              <% else %>
+                <%= image_tag "default-hotel" %>
+              <% end %>
+            </div>
+            <div class="zone-right" >
+            <%= p.name %></br>
+            <% p.star.to_i.times do  %>
+              <span class="glyphicon glyphicon-star "></span>
+            <% end %>
+            <% p.blank_stars.to_i.times do  %>
+              <span class="glyphicon glyphicon-star-empty "></span>
+            <% end %></br>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      <% if @motels.joins(:reviews).where("zone LIKE ?","ハノイ").blank? %>
+              <p>レビューしたホテルが無い</p>
+      <% end %>
+    </div>
+  
+    <p data-toggle="collapse" data-target="#hcm" class="zone-p"><span class="glyphicon glyphicon-hand-right"></span> ホーチミン市</p>
+    <div id="hcm" class="collapse">
+      <% @motels.joins(:reviews).where("zone LIKE ?","ホーチミン").group("motels.id").order("AVG(reviews.rate) DESC").limit(5).each do |p| %>
+        <div style ="clear:both;">
+          <%= link_to motel_path(p) do  %>
+            <div class="zone-left" >
+              <% if p.images? %>
+                <%= image_tag p.images[0].url %>
+              <% else %>
+                <%= image_tag "default-hotel" %>
+              <% end %>
+            </div>
+            <div class="zone-right" >
+            <%= p.name %></br>
+            <% p.star.to_i.times do  %>
+              <span class="glyphicon glyphicon-star "></span>
+            <% end %>
+            <% p.blank_stars.to_i.times do  %>
+              <span class="glyphicon glyphicon-star-empty "></span>
+            <% end %></br>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      <% if @motels.joins(:reviews).where("zone LIKE ?","ホーチミン").blank? %>
+          <p style="color: red;">レビューしたホテルが無い</p>
+      <% end %>
+    </div>
+
+    <p data-toggle="collapse" data-target="#dn" class="zone-p"><span class="glyphicon glyphicon-hand-right"></span> ダナン市 </p>
+    <div id="dn" class="collapse">
+      <% @motels.joins(:reviews).where("zone LIKE ?","ダナン").group("motels.id").order("AVG(reviews.rate) DESC").limit(5).each do |p| %>
+        <div style ="clear:both;">
+          <%= link_to motel_path(p) do  %>
+            <div class="zone-left" >
+              <% if p.images? %>
+                <%= image_tag p.images[0].url %>
+              <% else %>
+                <%= image_tag "default-hotel" %>
+              <% end %>
+            </div>
+            <div class="zone-right" >
+            <%= p.name %></br>
+            <% p.star.to_i.times do  %>
+              <span class="glyphicon glyphicon-star "></span>
+            <% end %>
+            <% p.blank_stars.to_i.times do  %>
+              <span class="glyphicon glyphicon-star-empty "></span>
+            <% end %></br>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      <% if @motels.joins(:reviews).where("zone LIKE ?","ダナン").blank? %>
+              <p style="color: red;">レビューしたホテルが無い</p>
+      <% end %>
+    </div>
+    
+  </div>
+  <div class = "col-md-2" >
     <%= form_tag(root_path, :method => "get", id: "search-form-menu") do %>
       <%= text_field_tag :search_name, params[:search_name], placeholder: 'ホテル名検索'%>
       <%= text_field_tag :search_address, params[:search_address], placeholder: 'ホテルアドレス検索'%>
@@ -17,14 +107,10 @@
       <%= select_tag :search_room, options_from_collection_for_select(Room.all, :id, :room_type), :include_blank => 'ルムタイプ検索'%>
       <%= submit_tag t("search") %>
     <% end %>
-  
-  <% @motels.group(:zone).each do |p| %>
-    <%= p.zone %><%= p.count(:zone) %></br>
-    <%= p.name %></br>
-  <% end %>
   </div>
-    
+
   <div id="paginator1">
     <%= paginate @motels, remote: true %>
   </div>
+  
 </div>
