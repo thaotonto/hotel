@@ -25,11 +25,11 @@
 <%unless current_user.nil?%>
 <%if current_user.motels.exists?@motel.id %>
   <div class="col-md-4 btn-my-list">
-    <%= link_to t("undo my list"), motel_delete_my_list_path(@motel) , cLass: "btn btn-info", method: :post %>
+    <%= link_to t("undo_my_list"), motel_delete_my_list_path(@motel) , cLass: "btn btn-primary", method: :post %>
   </div>
 <%else%>
   <div class="col-md-4 btn-my-list">
-    <%= link_to t("Add to my list"), motel_add_my_list_path(@motel) , cLass: "btn btn-info", method: :post %>
+    <%= link_to t("add_my_list"), motel_add_my_list_path(@motel) , cLass: "btn btn-primary", method: :post %>
   </div>
 <%end%>
 <%end%>
