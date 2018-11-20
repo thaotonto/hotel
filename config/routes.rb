@@ -25,6 +25,7 @@ Rails.application.routes.draw do
     resources :comments do
       resources :replies
     end
+    get "/my_list_hotel", to: "users#list_hotel"
     get 'searchs/index'
 
   end

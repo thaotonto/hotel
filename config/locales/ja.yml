@@ -5,6 +5,8 @@ ja:
   login: "ログイン"
   logout: "ログアウト"
   signup: "サインアップ"
+  my_list_hotel: 感心したホテルのリスト
+  list_hotel: ホテルのリスト
   greeting: "こんにちは %{name} さん!"
   english: "英語"
   japanese: "日本語"
@@ -17,6 +19,8 @@ ja:
   duplicate: "重複%{collection}"
   change: "編集"
   search: "検索"
+  add_my_list: 興味ある
+  undo_my_list: 興味なし
 
   helpers:
     page_entries_info:
