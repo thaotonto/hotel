@@ -41,12 +41,12 @@ img6 = Rails.root.join("app/assets/images/a6.jpg").open
 img7 = Rails.root.join("app/assets/images/a7.jpg").open
 img8 = Rails.root.join("app/assets/images/a8.jpg").open
 
-Motel.create! name: "Lotte Hotel Hanoi", address: "54 Lieu Giai, Ba Dinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, level: Faker::Number.within(0..5), zone: "Ha Noi", images: [img1, img2, img3]
-Motel.create! name: "Hanoi Daewoo Hotel", address: "360 Kim Ma, Ba Dinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, level: Faker::Number.within(0..5), zone: "Ha Noi", images: [img4]
-Motel.create! name: "JW Marriott Hotel Hanoi", address: "8 Do Duc Duc, Me Tri, Nam Tu Liem, Trung Hoa Nhan Chinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, level: Faker::Number.within(0..5), zone: "Ha Noi", images: [img5]
-Motel.create! name: "Grand Plaza Hanoi Hotel", address: "117 Tran Duy Hung, Cau Giay, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, level: Faker::Number.within(0..5), zone: "Ha Noi", images: [img6]
-Motel.create! name: "Silverland Charner", address: "87-89-91 Ho Tung Mau, Quan 1, Ho Chi Minh, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, level: Faker::Number.within(0..5), zone: "Ha Noi", images: [img7]
-Motel.create! name: "FLC Luxury Hotel Samson", address: "Quang Cu Commune, Sam Son Hamlet, Thanh Hoa, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, level: Faker::Number.within(0..5), zone: "Ha Noi", images: [img8]
+Motel.create! name: "Lotte Hotel Hanoi", address: "54 Lieu Giai, Ba Dinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img1, img2, img3]
+Motel.create! name: "Hanoi Daewoo Hotel", address: "360 Kim Ma, Ba Dinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img4]
+Motel.create! name: "JW Marriott Hotel Hanoi", address: "8 Do Duc Duc, Me Tri, Nam Tu Liem, Trung Hoa Nhan Chinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img5]
+Motel.create! name: "Grand Plaza Hanoi Hotel", address: "117 Tran Duy Hung, Cau Giay, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img6]
+Motel.create! name: "Silverland Charner", address: "87-89-91 Ho Tung Mau, Quan 1, Ho Chi Minh, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ホーチミン", images: [img7]
+Motel.create! name: "FLC Luxury Hotel Samson", address: "Quang Cu Commune, Sam Son Hamlet, Thanh Hoa, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "タンホア", images: [img8]
 
 HotelEquip.create motel_id: 1, equipment_id: 1, price: 10
 HotelEquip.create motel_id: 1, equipment_id: 2, price: 10
