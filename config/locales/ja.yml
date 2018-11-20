@@ -104,6 +104,7 @@ ja:
         phone: "電話番号"
         images: "画像"
         level: "レベル"
+        zone: "地域"
       equipment:
         name: "アメニティ名"
       hotel_equips:

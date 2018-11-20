@@ -10,6 +10,7 @@ class Motel < ApplicationRecord
   mount_uploaders :images, ImagesUploader
   serialize :images, JSON
   validates :name, presence: true
+  validates :zone, presence: true
   validates :address, presence: true,
     uniqueness: {case_sensitive: false}
   validates :phone, presence: true, :numericality => true,
@@ -17,6 +18,8 @@ class Motel < ApplicationRecord
   validates :level, presence: true
   validate :validate_unique_equipment
   validate :validate_unique_room
+
+  scope :order_level, ->{order level: :desc}
 
   def validate_unique_equipment
     validate_uniqueness_of_in_memory(
@@ -29,6 +32,10 @@ class Motel < ApplicationRecord
   end
   def self.search(search)
     where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+  end
+
+  def self.search_zone(search)
+    where("zone LIKE ?", "%#{search}%")
   end
 
   def blank_stars

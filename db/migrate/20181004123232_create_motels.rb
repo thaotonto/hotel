@@ -6,6 +6,7 @@ class CreateMotels < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :address
       t.string :phone
+      t.string :zone
 
       t.timestamps
     end

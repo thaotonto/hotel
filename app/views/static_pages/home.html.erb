@@ -5,22 +5,26 @@
 
 
 <div id="motels" class="row" style="margin-top:30px;">
-<div class="col-md-10">
-  <%= render partial: "static_pages/motel", collection: @motels %>
+  <div class="col-md-10">
+    <%= render partial: "static_pages/motel", collection: @motels %>
   </div>
   <div class = "col-md-2" data-spy="affix" data-offset-top="600">
     <%= form_tag(root_path, :method => "get", id: "search-form-menu") do %>
-    <%= text_field_tag :search_name, params[:search_name], placeholder: 'ホテル名検索'%>
-    <%= text_field_tag :search_address, params[:search_address], placeholder: 'ホテルアドレス検索'%>
-    <%= text_field_tag :search_level, params[:search_level], placeholder: 'レベル検索'%>
-    <%= select_tag :search_equipment, options_from_collection_for_select(Equipment.all, :id, :name), :include_blank => 'アメニティ名検索'%>
-    <%= select_tag :search_room, options_from_collection_for_select(Room.all, :id, :room_type), :include_blank => 'ルムタイプ検索'%>
-    <%= submit_tag t("search") %>
-<% end %>
-</div>
-
-
-<div id="paginator1">
-  <%= paginate @motels, remote: true %>
-</div>
+      <%= text_field_tag :search_name, params[:search_name], placeholder: 'ホテル名検索'%>
+      <%= text_field_tag :search_address, params[:search_address], placeholder: 'ホテルアドレス検索'%>
+      <%= select_tag :search_level, options_for_select(0..5), :include_blank => 'レベル検索'%>
+      <%= select_tag :search_equipment, options_from_collection_for_select(Equipment.all, :id, :name), :include_blank => 'アメニティ名検索'%>
+      <%= select_tag :search_room, options_from_collection_for_select(Room.all, :id, :room_type), :include_blank => 'ルムタイプ検索'%>
+      <%= submit_tag t("search") %>
+    <% end %>
+  
+  <% @motels.group(:zone).each do |p| %>
+    <%= p.zone %><%= p.count(:zone) %></br>
+    <%= p.name %></br>
+  <% end %>
+  </div>
+    
+  <div id="paginator1">
+    <%= paginate @motels, remote: true %>
+  </div>
 </div>
