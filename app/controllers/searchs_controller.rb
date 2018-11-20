@@ -2,7 +2,14 @@ class SearchsController < ApplicationController
   def index
     @mot = Motel.find(params[:hotel_id])
     flag_1 = false
-    @reviews_1 = Review.search(params[:keyword])
+    @reviews_all = Review.search(params[:keyword])
+
+    @reviews_1 = []
+    @reviews_all.each do |r|
+      if r.motel_id == @mot.id
+        @reviews_1.push(r)
+      end
+    end
 
     if params[:review_type] == "ポジティブ"
       type = 1
@@ -13,9 +20,6 @@ class SearchsController < ApplicationController
     else
       type = nil
     end
-
-    puts "type"
-    puts type
 
 
     @reviews = Motel.find(params[:hotel_id]).reviews
@@ -64,6 +68,8 @@ class SearchsController < ApplicationController
           if review.rate.to_i < 4 && review.rate.to_i > 3
             @results.push(review)
           end
+        else
+          @results.push(review)
         end
       end
     else      # don't have search keyword
