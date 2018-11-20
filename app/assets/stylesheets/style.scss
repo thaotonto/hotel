@@ -535,10 +535,6 @@ td, th {
   position: fixed !important;
 }
 
-zone-left img {
-  width: 47px;
-  height: 47px;
-}
 .home-form p.zone-p {
   width: 100%;
   clear: both;
@@ -557,4 +553,9 @@ zone-left img {
   width: 66%;
   float: right;
   margin: 7px 0;
+}
+
+.home-form .zone-left img {
+  width: 47px;
+  height: 47px;
 }
