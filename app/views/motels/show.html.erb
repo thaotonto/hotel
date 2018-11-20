@@ -79,10 +79,11 @@
 
   <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="clear:both;">
     <div class="Header__header--3OgS9 Header__divider--waZKL">レビュー</div>
-
     <%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id) %>
+   
 
-    <div class="col-md-12">
+  </div>
+   <div class="col-md-12" style="margin-top:20px;">
       <div class="col-md-6">
         <b>キーワード検索</b>
       </div>
@@ -98,19 +99,17 @@
           <%= text_field_tag :keyword, params[:keyword], :placeholder => "レビューのキーワード。。。" %>
         </div>
         <div class="col-md-2">
-          <%= select_tag "sort_type", options_for_select(["評価点", "ライク数", "投稿日"]) %>
+          <%= select_tag "sort_type",options_for_select(["評価点", "ライク数", "投稿日"])%>
         </div>
         <div class="col-md-2">
           <%= select_tag "sort_order", options_for_select(["昇順", "降順"]) %>
           <%= hidden_field_tag "hotel_id", @motel.id %>
         </div>
-        <div class="col-md-2">
-          <%= button_tag "フィルター" %>
+        <div style="margin-top: 10px;">
+          <%= button_tag "フィルター",class:"btn btn-success"%>
         </div>
       <% end %>
     </div>
-
-  </div>
   <div style="margin-top: 10px" class="review_search_content">
     <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
   </div>
