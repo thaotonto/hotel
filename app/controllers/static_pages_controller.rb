@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
                     .per Settings.per_page
     else
       @motels = Motel.order_level.page(params[:page])
-                  .per Settings.per_page
+                  .per(Settings.per_page)
     end
   end
 end

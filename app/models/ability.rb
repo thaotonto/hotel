@@ -15,9 +15,11 @@ class Ability
       can :destroy, [Review, Comment, Replie]
       can :manage, [User, Review, Comment, Replie, Like], user_id: user.id
       can [:show], [Review, Comment, Replie, User]
+      can [:load_more], [Motel]
     else
       can :manage, [User, Review, Comment, Replie, Like], user_id: user.id
       can [:show], [Motel, Review, Comment, Replie, User]
+      can [:load_more], [Motel]
     end
   end
 end
