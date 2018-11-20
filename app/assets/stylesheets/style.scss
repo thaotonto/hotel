@@ -485,8 +485,7 @@ td, th {
 }
 
 #search-form-menu {
-  float: right;
-  margin-top: 20px;
+  margin-left: -14px;
 }
 
 #search-form-menu input {
@@ -531,4 +530,32 @@ td, th {
   top: 38px;
   z-index: 1 !important;
   position: fixed !important;
+}
+
+.zone-left img {
+  width: 47px;
+  height: 47px;
+}
+
+.home-form p.zone-p {
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+  &:hover {
+    color : #16a085;
+    cursor: pointer;
+  }
+}
+
+
+.home-form .zone-left {
+  width: 33%;
+  float: left;
+  margin: 7px 0;
+}
+
+.home-form .zone-right {
+  width: 66%;
+  float: right;
+  margin: 7px 0;
 }

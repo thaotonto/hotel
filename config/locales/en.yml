@@ -10,6 +10,7 @@ en:
   delete_confirm: "Are you sure?"
   delete: "Delete"
   duplicate: "Duplicated %{collection}"
+  search: "Search"
 
   users:
     settings: "Setting"

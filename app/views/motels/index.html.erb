@@ -4,6 +4,7 @@
 <% end %>
 <%= provide :title, t("hotel.title") %>
 <%= link_to t("hotel.add_hotel"), new_motel_path, class: "btn btn-custom3" %>
+
 <div class="content row">
   <div id="motels" class="motels">
     <%= render @motels %>
