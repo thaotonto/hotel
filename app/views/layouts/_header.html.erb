@@ -3,9 +3,9 @@
     <%= link_to t("page_title"), root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-         <li style="margin-right:70px; margin-top:10px;">
+         <li style="margin-right:19px; margin-top:10px;">
           <%= form_tag(root_path, :method => "get", id: "search-form-menu-x") do %>
-            <%= text_field_tag :search, params[:search], placeholder: "どこへ行く？"%>
+            <%= text_field_tag :searchzone, params[:searchzone], placeholder: t("search_header")%>
             <%= submit_tag t("search") %>
           <% end %>
         </li>
@@ -36,8 +36,12 @@
               {"class": "dropdown-toggle", "data-toggle": "dropdown"} %>
             <ul class="dropdown-menu">
               <li><%= link_to current_user do %>
-              <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span>プロフィール
-                  <% end %>
+                <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span>プロフィール
+              <% end %>
+              </li>
+               <li><%= link_to my_list_hotel_path do %>
+                <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span><%=t("list_hotel")%>
+              <% end %>
               </li>
 
               <li><%= link_to edit_user_registration_path do %>

@@ -15,6 +15,7 @@ class Equipment < ApplicationRecord
   def beatify
     self.name = name.titleize
   end
+
   def self.search(search)
     where("name LIKE ?", "%#{search}%")
   end

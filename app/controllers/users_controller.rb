@@ -33,4 +33,8 @@ class UsersController < ApplicationController
       end
     end
   end
+
+  def list_hotel
+    @user = current_user
+  end
 end

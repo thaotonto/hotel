@@ -13,4 +13,13 @@ class Review < ApplicationRecord
   def blank_stars
     5 - rate.to_i
   end
+
+  def self.search(search)
+    if search
+      where('title LIKE ? OR content LIKE ?', "%#{search}%", "%#{search}%").order('id DESC')
+    else
+      order('id DESC')
+    end
+  end
+
 end

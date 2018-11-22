@@ -239,7 +239,11 @@ span.text-line{
   margin-bottom: 50px;
 }
 /* Button/link styles */
-
+.btn-my-list{
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 15px;
+}
 .btn-custom {
   color: darken(#f1c40f, 5%);
   background-color: #fff;
@@ -343,8 +347,9 @@ span.text-line{
   color: black;
   text-transform: capitalize;
   &:hover {
-    box-shadow: 3px 3px 5px 6px #AAAAAA;
+    box-shadow: 3px 3px 5px 0px #AAAAAA;
   }
+  box-shadow: 3px 3px 5px 1px #ccc;
 }
 
 .home-form .col-md-4 img {
@@ -485,7 +490,7 @@ td, th {
 }
 
 #search-form-menu {
-  margin-left: -14px;
+  margin-top: 20px;
 }
 
 #search-form-menu input {
@@ -497,8 +502,9 @@ td, th {
 }
 #search-form-menu input[type="submit"], #search-form-menu-x input[type="submit"] {
   width: 70px;
-  background-color: #16a085;
+  background-color: #4b60ff;
   color: #fff;
+  margin-left: -10px;
 }
 
 #search-form-menu select {
@@ -515,9 +521,10 @@ td, th {
 }
 
 #search-form-menu-x input {
-  width: 200px;
+  width: 590px;
   padding: 4px 15px;
-  border-radius: 3px;
+/*  border-radius: 3px;*/
+
 
 }
 
@@ -532,11 +539,6 @@ td, th {
   position: fixed !important;
 }
 
-.zone-left img {
-  width: 47px;
-  height: 47px;
-}
-
 .home-form p.zone-p {
   width: 100%;
   clear: both;
@@ -546,16 +548,18 @@ td, th {
     cursor: pointer;
   }
 }
-
-
 .home-form .zone-left {
   width: 33%;
   float: left;
   margin: 7px 0;
 }
-
 .home-form .zone-right {
   width: 66%;
   float: right;
   margin: 7px 0;
+}
+
+.home-form .zone-left img {
+  width: 47px;
+  height: 47px;
 }
