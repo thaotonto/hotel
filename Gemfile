@@ -10,7 +10,7 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'rubocop', require: false
-
+gem 'geocoder'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
@@ -27,6 +27,7 @@ gem "kaminari"
 gem "cocoon"
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem "font-awesome-rails"
+gem 'gmaps4rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

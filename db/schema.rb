@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_19_034451) do
+ActiveRecord::Schema.define(version: 2018_11_25_175350) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -69,6 +69,8 @@ ActiveRecord::Schema.define(version: 2018_11_19_034451) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "images"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["address"], name: "index_motels_on_address", unique: true
   end
 

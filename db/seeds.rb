@@ -41,12 +41,12 @@ img6 = Rails.root.join("app/assets/images/a6.jpg").open
 img7 = Rails.root.join("app/assets/images/a7.jpg").open
 img8 = Rails.root.join("app/assets/images/a8.jpg").open
 
-Motel.create! name: "Lotte Hotel Hanoi", address: "54 Lieu Giai, Ba Dinh 1, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img1, img2, img3]
+Motel.create! name: "Lotte Hotel Hanoi", address: "54 Lieu Giai, Ba Dinh, Hanoi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img1, img2, img3]
 Motel.create! name: "Hanoi Daewoo Hotel", address: "360 Kim Ma, Ba Dinh, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img4]
-Motel.create! name: "JW Marriott Hotel Hanoi", address: "80 Do Duc Duc, Me Tri, Nam Tu Liem, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img5]
-Motel.create! name: "Grand Plaza Hanoi Hotel", address: "27 Tran Duy Hung, Cau Giay, Ha Noi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img6]
-Motel.create! name: "Silverland Charner", address: "87-89-92 Ho Tung Mau, Quan 1, Ho Chi Minh, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ホーチミン", images: [img7]
-Motel.create! name: "FLC Luxury Hotel Samson", address: "10 Quang Cu Commune, Sam Son Hamlet, Thanh Hoa, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "タンホア", images: [img8]
+Motel.create! name: "JW Marriott Hotel Hanoi", address: "8 Do Duc Duc, Hanoi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img5]
+Motel.create! name: "Grand Plaza Hanoi Hotel", address: "117 Tran Duy Hung, Cau Giay, Hanoi, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ハノイ", images: [img6]
+Motel.create! name: "Silverland Charner", address: "87-89-91 Ho Tung Mau, Ben Nghe, 1, Ho Chi Minh, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ホーチミン", images: [img7]
+Motel.create! name: "FLC Luxury Hotel Samson", address: "10 Quang Cu, Sam Son, Thanh Hoa, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "タンホア", images: [img8]
 
 Motel.create! name: "Katie Boutique House", address: "53 Lieu Giai, Ba Dinh, Ho Chi Minh, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ホーチミン", images: [img1, img2, img3]
 Motel.create! name: "Duc Vuong Hotel", address: "368 Kim Ma, Ba Dinh, Ho Chi Minh, Vietnam", description: Faker::Lorem.paragraph(50), phone: Faker::Number.number(10).to_i, zone: "ホーチミン", images: [img4]
@@ -105,6 +105,7 @@ end
 10.times do |n|
   review = Review.create({title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph(50),
    user_id: Faker::Number.unique.within(0..20), motel_id: Faker::Number.within(0..23), rate: Faker::Number.within(0..5)})
+  review.motel.update_attributes level: review.motel.avarege_point
 end
 
 10.times do |n|
