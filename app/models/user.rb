@@ -10,9 +10,12 @@ class User < ApplicationRecord
   has_many :active_relationships, class_name: Relationship.name,
     foreign_key: :follower_id, dependent: :destroy
   has_many :passive_relationships, class_name: Relationship.name,
-    foreign_key: :followed_id, dependent: :destroy
+    foreign_key: :followed_id, dependent: :destroy  
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
+  has_many :user_hotels, inverse_of: :users, dependent: :destroy 
+  has_many :motels, through: :user_hotels
+
   PASSWORD_VALIDATOR = /(      # Start of group
         (?:                        # Start of nonmatching group, 4 possible solutions
           (?=.*[a-z])              # Must contain one lowercase character
@@ -66,10 +69,6 @@ class User < ApplicationRecord
     end
   end
 
-  def self.search(search)
-    where("name LIKE ? OR email LIKE ?", "%#{search}%", "%#{search}%")
-  end
-
   def handle type
     if type == 1
       block_check Settings.unblock, Settings.block
@@ -98,32 +97,11 @@ class User < ApplicationRecord
     following.include? other_user
   end
 
-  def mod_check string1, string2
-    if mod?
-      string1
-    else
-      string2
-    end
-  end
-
-  def handle type
-    if type == 1
-      block_check Settings.unblock, Settings.block
-    elsif type == 2
-      block_check "users.unblock", "users.block"
-    elsif type == 3
-      block_check "btn btn-success", "btn btn-danger"
-    elsif type == 4
-      mod_check Settings.member, Settings.mod
-    elsif type == 5
-      mod_check "users.member", "users.mod"
-    else
-      mod_check "btn btn-danger", "btn btn-success"
-    end
+  def self.search(search)
+    where("name LIKE ? OR email LIKE ?", "%#{search}%", "%#{search}%")
   end
 
   private
-
 
   def password_complexity
     return if password.blank? || password =~ PASSWORD_VALIDATOR

@@ -36,8 +36,12 @@
               {"class": "dropdown-toggle", "data-toggle": "dropdown"} %>
             <ul class="dropdown-menu">
               <li><%= link_to current_user do %>
-              <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span>プロフィール
-                  <% end %>
+                <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span>プロフィール
+              <% end %>
+              </li>
+               <li><%= link_to my_list_hotel_path do %>
+                <span class="glyphicon glyphicon-user" style="margin-right:7px;" aria-hidden="true"></span><%=t("list_hotel")%>
+              <% end %>
               </li>
 
               <li><%= link_to edit_user_registration_path do %>

@@ -1,51 +1,49 @@
-<div class="Review-comment">
-  <div class="Review-comment-left">
+<%= @revs.each do |review| %>
+  <div class="Review-comment">
+    <div class="Review-comment-left">
+      <div>
+        <div class="Review-comment-leftHeader">
+          <div class="Review-comment-leftScore">
+            <% review.rate.to_i.times do %>
+    <span class="glyphicon glyphicon-star blue_star"></span>
+  <% end %>
+  <% review.blank_stars.times do %>
+    <span class="glyphicon glyphicon-star-empty blue_star"></span>
+  <% end %>
+  </div>
+  </div>
+  <div class="Review-comment-reviewer" data-info-type="reviewer-name">
+    <strong><%= link_to review.user.name, user_path(review.user) %></strong>
+  </div>
+  <div class="Review-comment-reviewDate">
     <div>
-      <div class="Review-comment-leftHeader">
-        <div class="Review-comment-leftScore">
-          <% review.rate.to_i.times do %>
-            <span class="glyphicon glyphicon-star blue_star"></span>
-          <% end %>
-          <% review.blank_stars.times do %>
-            <span class="glyphicon glyphicon-star-empty blue_star"></span>
-          <% end %>
-        </div>
-      </div>
-      <div class="Review-comment-reviewer" data-info-type="reviewer-name">
-        <strong><%= link_to review.user.name, user_path(review.user) %></strong>
-      </div>
-      <div class="Review-comment-reviewDate">
-        <div>
-          <i class="glyphicon glyphicon-time ficon ficon-16 ficon-mmb-inbox review-gray"></i>
-          <span class="Review-statusBar-date "><%= time_ago_in_words(review.created_at) %></span>
-        </div>
-      </div>
+      <i class="glyphicon glyphicon-time ficon ficon-16 ficon-mmb-inbox review-gray"></i>
+      <span class="Review-statusBar-date "><%= time_ago_in_words(review.created_at) %></span>
     </div>
-    <div class="memberBadgingNoText is-shown-at-tablet">
-      <span class="glyphicon glyphicon-pencil"></span>
-      <span class="badgetext review-gray"><%= review.comments.count %></span>
-      <span class="glyphicon glyphicon-thumbs-up"></span>
-      <span id="like-count-<%= review.id %>" class="badgetext review-gray"><%= review.likes.count %></span>
-    </div>
-    <div id="like-form-<%= review.id %>">
-      <%= render "shared/like_form", review: review %>
-    </div>
-    <% if user_signed_in? %>
-      <% if @motel == nil %>
-        <% @motel = motel %>
-      <% end %>
-      <% if can? :edit, review %>
-        <%= link_to edit_motel_review_path(motel_id: @motel.id, id: review.id), class: "manage-box" do %>
-          <span class="glyphicon glyphicon-edit"></span><%= t("change") %>
-        <% end %>
-      <% end %>
-      <% if can? :destroy, review %>
-        <%= link_to motel_review_path(motel_id: @motel.id, id: review.id), method: :delete,
-                    data: {confirm: t("delete_confirm")}, class: "manage-box" do %>
-          <span class="glyphicon glyphicon-remove"></span><%= t("delete") %>
-        <% end %>
+  </div>
+  </div>
+  <div class="memberBadgingNoText is-shown-at-tablet">
+    <span class="glyphicon glyphicon-pencil"></span>
+    <span class="badgetext review-gray"><%= review.comments.count %></span>
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+    <span id="like-count-<%= review.id %>" class="badgetext review-gray"><%= review.likes.count %></span>
+  </div>
+  <div id="like-form-<%= review.id %>">
+    <%= render "shared/like_form", review: review %>
+  </div>
+  <% if user_signed_in? %>
+    <% if can? :edit, review %>
+      <%= link_to edit_motel_review_path(motel_id: @mot.id, id: review.id), class: "manage-box" do %>
+        <span class="glyphicon glyphicon-edit"></span><%= t("change") %>
       <% end %>
     <% end %>
+    <% if can? :destroy, review %>
+      <%= link_to motel_review_path(motel_id: @mot.id, id: review.id), method: :delete,
+                  data: {confirm: t("delete_confirm")}, class: "manage-box" do %>
+        <span class="glyphicon glyphicon-remove"></span><%= t("delete") %>
+      <% end %>
+    <% end %>
+  <% end %>
   </div>
   <div class="Review-comment-right">
     <div class="Review-comment-bubble blue">
@@ -88,7 +86,7 @@
                   <% if current_user.picture? %>
                     <%= image_tag current_user.picture.thumb.url, alt: current_user.name, class: "img UFIActorImage _54ru img" %>
                   <% else %>
-                    <%= image_tag("default-avatar", alt: current_user.name, alt: current_user.name, class: "img UFIActorImage _54ru img") %>
+                    <%= image_tag("default-avatar", alt: current_user.name, class: "img UFIActorImage _54ru img") %>
                   <% end %>
                 </div>
               </div>
@@ -144,7 +142,8 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
+<% end %>
 
 <script type="text/javascript">
     function toggleComment(id) {
