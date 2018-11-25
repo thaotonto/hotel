@@ -25,6 +25,11 @@ class MotelsController < ApplicationController
   end
 
   def show
+    @hash = Gmaps4rails.build_markers(@motel) do |motel, marker|
+      marker.lat motel.latitude
+      marker.lng motel.longitude
+      marker.infowindow motel.name
+    end
   end
 
   def edit

@@ -13,6 +13,8 @@
 //= require jquery
 //= require bootstrap
 //= require cocoon
+//= require underscore
+//= require gmaps/google
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks

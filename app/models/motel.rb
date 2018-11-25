@@ -4,8 +4,10 @@ class Motel < ApplicationRecord
   has_many :hotel_equips, inverse_of: :motel, dependent: :destroy
   has_many :equipments, through: :hotel_equips
   has_many :reviews, dependent: :destroy
-  has_many :user_hotels, inverse_of: :motel, dependent: :destroy 
+  has_many :user_hotels, inverse_of: :motel, dependent: :destroy
   has_many :users, through: :user_hotels
+
+  geocoded_by :address
 
   accepts_nested_attributes_for :hotel_equips, reject_if: :all_blank, allow_destroy: true
   accepts_nested_attributes_for :hotel_rooms, reject_if: :all_blank, allow_destroy: true
@@ -21,6 +23,7 @@ class Motel < ApplicationRecord
   validates :level, presence: true
   validate :validate_unique_equipment
   validate :validate_unique_room
+  after_validation :geocode, :if => :address_changed?
 
   scope :order_level, ->{order level: :desc}
 

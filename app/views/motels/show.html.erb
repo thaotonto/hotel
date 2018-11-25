@@ -21,6 +21,10 @@
     <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <%= @motel.phone %>
   </div>
 
+<div style='width: 800px;'>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+
 </div>
 <% unless current_user.nil? %>
   <% if current_user.motels.exists? @motel.id %>
@@ -130,13 +134,18 @@
 </div>
 
 <script type="text/javascript">
-
     $("#search_reviews").keyup(function () {
         $.ajax({
             url: 'search/index',
             data: {index: $(this).serialize()}
         });
     });
+    handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers(<%=raw @hash.to_json %>);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+});
 
 </script>
 
