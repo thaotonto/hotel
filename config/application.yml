@@ -1,3 +1,4 @@
 GMAIL_USERNAME: "esample1996@gmail.com"
 GMAIL_PASSWORD: "emailsamplepass"
 HOST: "0.0.0.0:3000"
+GOOGLE_API: "AIzaSyB9zrN4FoPatH4HyoHf2SS8PND57t3Z8rk"
