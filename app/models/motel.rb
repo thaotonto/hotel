@@ -46,14 +46,6 @@ class Motel < ApplicationRecord
       hotel_rooms, [:motel_id, :room_id])
   end
 
-  # def self.search(search)
-  #   where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
-  # end
-
-  def self.search_zone(search)
-    where("zone LIKE ?", "%#{search}%")
-  end
-
   def blank_stars
     5 - star
   end
@@ -68,7 +60,7 @@ class Motel < ApplicationRecord
   end
 
  def self.search(search)
-    where("name LIKE ? OR address LIKE ? OR level LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+    where("name LIKE ? OR address LIKE ? OR zone LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end
 
   def self.filter(search_name, search_address, search_level, search_equipment, search_room)

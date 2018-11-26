@@ -1,10 +1,9 @@
 class MotelsController < ApplicationController
   load_and_authorize_resource
   before_action :find_motel, only: [:show, :edit, :update, :destroy]
-
   def index
     if params[:search]
-      @motels = Motel.search(params[:search]).page(params[:page])
+      @motels = Motel.order_level.search(params[:search]).page(params[:page])
                     .per Settings.per_page
     else
       @motels = Motel.order_level.page(params[:page])
@@ -58,6 +57,16 @@ class MotelsController < ApplicationController
   def load_more
     @review = Review.find_by id: params[:review_id]
     render 'motels/load_more'
+  end
+
+  def search 
+    @motels = Motel.ransack(name_cont: params[:q], address_cont: params[:q], zone_cont: params[:q], m: "or").result(distinct: true)
+    respond_to do |format|
+      format.html {}
+      format.json {
+        @motels = @motels.limit(5)
+      }
+    end
   end
 
   def add_my_list
