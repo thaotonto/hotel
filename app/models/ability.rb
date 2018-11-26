@@ -7,7 +7,6 @@ class Ability
       cannot :edit, [Review, Comment, Replie]
       can :destroy, [Review, Comment, Replie]
       can :edit, [Review, Comment, Replie], user_id: user.id
-
     elsif user.mod?
       can :manage, [Equipment, Room, Motel]
       cannot :edit, [Review, Comment, Replie]
@@ -22,5 +21,6 @@ class Ability
       can [:load_more], [Motel]
       can [:add_my_list, :delete_my_list], [Motel]
     end
+    can [:search], [Motel]
   end
 end
