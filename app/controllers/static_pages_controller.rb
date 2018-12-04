@@ -1,25 +1,18 @@
 class StaticPagesController < ApplicationController
   def home
-    if params[:q]
-      @motels = Motel.order_level.search(params[:q]).page(params[:page])
-                    .per Settings.per_page
-    elsif params[:search_equipment].blank? && params[:search_room].blank?
-      @motels = Motel.order_level.search_user(params[:search_name], params[:search_address], params[:search_level]).page(params[:page])
-                    .per Settings.per_page
-    elsif params[:search_room].blank?
-      @motels = Motel.order_level.filter_equipment(params[:search_name], params[:search_address], params[:search_level], params[:search_equipment]).page(params[:page])
-                    .per Settings.per_page
-    elsif params[:search_equipment].blank?
-      @motels = Motel.order_level.filter_room(params[:search_name], params[:search_address], params[:search_level], params[:search_room]).page(params[:page])
-                    .per Settings.per_page
+      @filterrific = initialize_filterrific(
+        Motel,
+        params[:filterrific],
+        persistence_id: true,
+        sanitize_params: true
+      ) or return
+      @motels = @filterrific.find.page(params[:page]).search(params[:q]).order_level
+        .per(Settings.per_page) 
 
-    elsif params[:search_equipment] || params[:search_room]
-      @motels = Motel.order_level.filter(params[:search_name], params[:search_address], params[:search_level], params[:search_equipment], params[:search_room]).page(params[:page])
-                    .per Settings.per_page
-    else
-      @motels = Motel.order_level.page(params[:page])
-                    .per(Settings.per_page)
-    end
+      respond_to do |format|
+        format.html
+        format.js
+      end
   end
   
 end

@@ -32,7 +32,6 @@ document.addEventListener("turbolinks:load", function() {
           Turbolinks.visit(url)
         }
       },
-      theme: "plate-dark"
     };
   
     $("#test").easyAutocomplete(options)

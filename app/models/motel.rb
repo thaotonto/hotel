@@ -63,16 +63,58 @@ class Motel < ApplicationRecord
     where("name LIKE ? OR address LIKE ? OR zone LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end
 
-  def self.filter(search_name, search_address, search_level, search_equipment, search_room)
-      Motel.joins(:hotel_equips, :hotel_rooms).where("name LIKE ? AND address LIKE ? AND level LIKE ? AND hotel_equips.equipment_id = ? AND hotel_rooms.room_id = ?", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%", "#{search_equipment}", "#{search_room}")
-  end
-  def self.filter_equipment(search_name, search_address, search_level, search_equipment)
-    Motel.joins(:hotel_equips).where("name LIKE ? AND address LIKE ? AND level LIKE ? AND hotel_equips.equipment_id = ?", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%", "#{search_equipment}")
-  end
-  def self.filter_room(search_name, search_address, search_level, search_room)
-    Motel.joins(:hotel_rooms).where("name LIKE ? AND address LIKE ? AND level LIKE ? AND hotel_rooms.room_id = ?", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%", "#{search_room}" )
-  end
-  def self.search_user(search_name, search_address, search_level)
-    where("name LIKE ? AND address LIKE ? AND level LIKE ? ", "%#{search_name}%", "%#{search_address}%", "%#{search_level}%")
-  end
+  filterrific(
+  default_filter_params: {},
+   available_filters: [
+     :with_all_room_id,
+     :with_all_equipment_id,
+     :with_room_price_gte,
+     :with_equipment_price_gte
+   ]
+ )
+
+  scope :with_all_equipment_id, lambda { |equipment_ids|
+    hotel_equips = HotelEquip.arel_table
+    motels = Motel.arel_table
+    equipment_ids.map(&:to_i).inject(self) { |rel, equipment_id|
+      rel.where(
+        HotelEquip \
+          .where(hotel_equips[:motel_id].eq(motels[:id])) \
+          .where(hotel_equips[:equipment_id].eq(equipment_id)) \
+          .exists
+      )
+    }
+  }
+
+  scope :with_all_room_id, lambda { |room_ids|
+    hotel_rooms = HotelRoom.arel_table
+    motels = Motel.arel_table
+    room_ids.map(&:to_i).inject(self) { |rel, room_id|
+      rel.where(
+        HotelRoom \
+          .where(hotel_rooms[:motel_id].eq(motels[:id])) \
+          .where(hotel_rooms[:room_id].eq(room_id)) \
+          .exists
+      )
+    }
+  }
+
+  scope :with_room_price_gte, lambda { |room_price|
+    where([
+      %(
+        EXISTS (
+         SELECT 1
+           FROM hotel_rooms
+          WHERE motels.id = hotel_rooms.motel_id
+            AND hotel_rooms.price >= ?)
+      ),
+      room_price
+    ])
+  }
+
+  scope :with_equipment_price_gte, lambda { |equipment_price|
+    where('hotel_equips.price >= ?', equipment_price).joins(:hotel_equips).distinct
+  }
+
+
 end

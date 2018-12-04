@@ -28,6 +28,7 @@ gem "cocoon"
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem "font-awesome-rails"
 gem 'gmaps4rails'
+gem 'filterrific', :git => 'https://github.com/jhund/filterrific.git', :ref => '292ecd953df4ec70f2f9a879105ef5aba5b77e95'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

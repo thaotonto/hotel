@@ -3,24 +3,41 @@
 最新の口コミ。 お⁠得⁠な⁠料⁠金⁠。
 </span>
 
-
 <div class="row" style="margin-top:30px;">
-  <div class = "col-md-12" >
-    <%= form_tag(root_path, :method => "get", id: "search-form-menu") do %>
-      <%= text_field_tag :search_name, params[:search_name], placeholder: 'ホテル名検索' %>
-      <%= text_field_tag :search_address, params[:search_address], placeholder: 'ホテルアドレス検索' %>
-      <%= select_tag :search_level, options_for_select(0..5), :include_blank => 'レベル検索' %>
-      <%= select_tag :search_equipment, options_from_collection_for_select(Equipment.all, :id, :name), :include_blank => 'アメニティ名検索' %>
-      <%= select_tag :search_room, options_from_collection_for_select(Room.all, :id, :room_type), :include_blank => 'ルムタイプ検索' %>
-      <!-- <br> -->
-      <%= submit_tag t("search"), style: "margin-left:2px" %>
-  <% end %>
-  </div>
   <div class="col-md-10" id="motels">
-    <%= render partial: "static_pages/motel", collection: @motels %>
+    <div id="filterrific_results">
+      <%= render partial: "static_pages/motel", collection: @motels %>
+    </div>
   </div>
 
   <div class ="col-md-2 home-form" style = "height: auto; margin: 23px 0px; padding: 8px !important;">
+  <%= form_for_filterrific @filterrific do |f| %>
+    <h4> Price</h4>
+
+    <p style="width:100%">Room : ¥<span id="room-gte">0</span></p>
+      <%= f.range_field :with_room_price_gte, in: 0..10000000, step: '5000', value: '0',  id: "myRange-room-gte"  %>    
+    <p style="width:100%">Equipment : ¥<span id="equipment-gte">0</span></p>
+      <%= f.range_field :with_equipment_price_gte, in: 0..10000000, step:'5000', value: '0',  id: "myRange-equipment-gte"  %>
+    <h4> Equipment</h4>
+    <div>
+      <% Equipment.all.each do |a| %>
+        <%= f.check_box(:with_all_equipment_id, {multiple: true}, a.id, false) %>
+        <%= a.name %></br>
+      <% end %>
+    </div>
+    <h4> Room</h4>
+    <div>
+      <% Room.all.each do |a| %>
+        <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
+        <%= a.room_type %></br>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to('Reset filters', reset_filterrific_url) %>
+    </div>
+
+  <% end %>
+  
     <h4> トップの５レビュー</h4>
     <p class="zone-p"><span class="glyphicon glyphicon-hand-right"></span> ハノイ市</p>
     <% @motels.joins(:reviews).where("zone LIKE ?","ハノイ").group("motels.id").order("AVG(reviews.rate) DESC").limit(5).each do |p| %>
