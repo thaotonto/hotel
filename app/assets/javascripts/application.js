@@ -14,6 +14,7 @@
 //= require bootstrap
 //= require cocoon
 //= require underscore
+//= require filterrific/filterrific-jquery
 //= require gmaps/google
 //= require rails-ujs
 //= require activestorage
