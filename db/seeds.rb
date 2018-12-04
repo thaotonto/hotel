@@ -105,7 +105,7 @@ end
 10.times do |n|
   review = Review.create({title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph(50),
    user_id: Faker::Number.unique.within(0..20), motel_id: Faker::Number.within(0..23), rate: Faker::Number.within(0..5)})
-  review.motel.update_attributes level: review.motel.avarege_point
+  review.motel.update_attributes level: review.motel.star
 end
 
 10.times do |n|

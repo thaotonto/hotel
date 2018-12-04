@@ -53,7 +53,7 @@
             <th>
               <h4><span class="glyphicon glyphicon-user"></span> <%= t("activerecord.attributes.room.guest_no") %></h4>
             </th>
-            <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">Price</span></h4></th>
+            <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">値段</span></h4></th>
           </tr>
           <% @motel.hotel_rooms.each do |hotel_rooms| %>
             <tr>
@@ -77,7 +77,7 @@
             <th><h4>
               <span class="glyphicon glyphicon-object-align-bottom"></span><%= t "activerecord.attributes.equipment.name" %>
             </h4></th>
-            <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">Price</span></h4></th>
+            <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">値段</span></h4></th>
           </tr>
           <% @motel.hotel_equips.each do |hotel_equips| %>
             <tr>
@@ -97,11 +97,9 @@
   <div id="modal-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
   <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="clear:both;">
-    <div class="Header__header--3OgS9 Header__divider--waZKL">レビュー</div>
+    <div class="Header__header--3OgS9 Header__divider--waZKL" style="border-bottom: 0px">レビュー</div>
     <%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id) %>
-  </div>
-
-  <div class="col-md-12" style="margin-top:20px;">
+    <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-6">
       <b>キーワード検索</b>
     </div>
@@ -123,14 +121,16 @@
         <%= select_tag "sort_order", options_for_select(["昇順", "降順"]) %>
         <%= hidden_field_tag "hotel_id", @motel.id %>
       </div>
-      <div style="margin-top: 10px;">
+      <div style="margin-top: 10px; border: 0">
         <%= button_tag "フィルター", class: "btn btn-success" %>
       </div>
     <% end %>
   </div>
-  <div style="margin-top: 10px" class="review_search_content">
+  <div style="margin-top: 100px;" class="review_search_content" >
     <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
   </div>
+  </div>
+
 </div>
 
 <script type="text/javascript">
