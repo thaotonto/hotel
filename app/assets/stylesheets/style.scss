@@ -251,6 +251,7 @@ span.text-line{
   padding: 8px 20px;
   border-radius: 5px;
   font-family: 'Ubuntu', sans-serif;
+  transition: 0.5s;
   &:hover {
     text-decoration: none;
     background-color: darken(#f1c40f, 5%);
@@ -268,6 +269,7 @@ span.text-line{
   border-radius: 5px;
   margin: 20px 0 30px 0;
   width: 250px;
+  transition: 0.5s;
   font-family: 'Ubuntu', sans-serif;
   &:hover {
     text-decoration: none;
@@ -286,6 +288,7 @@ span.text-line{
   border-radius: 5px;
   margin: 20px 0 30px 50px;
   width: 150px;
+  transition: 0.5s;
   font-family: 'Ubuntu', sans-serif;
   &:hover {
     text-decoration: none;
@@ -302,6 +305,7 @@ span.text-line{
   padding: 4px 8px;
   border-radius: 5px;
   width: 150px;
+  transition: 0.5s;
   font-family: 'Ubuntu', sans-serif;
   &:hover {
     color: #fff;
@@ -522,9 +526,18 @@ td, th {
 }
 
 #search-form-menu-x input {
-  width: 230px;
+  width: 177px;
   padding: 4px 15px;
   float: right;
+  transition: 0.5s;
+  &:focus {
+    width: 280px;
+    transition: 0.5s;
+  }
+}
+
+#search-form-menu-x .easy-autocomplete {
+  width: auto !important;
 }
 
 button {
@@ -575,3 +588,4 @@ button {
   width: 47px;
   height: 47px;
 }
+
