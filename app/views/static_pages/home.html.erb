@@ -11,32 +11,32 @@
   </div>
 
   <div class ="col-md-2 home-form" style = "height: auto; margin: 23px 0px; padding: 8px !important;">
-  <%= form_for_filterrific @filterrific do |f| %>
-    <h4>値段</h4>
+    <%= form_for_filterrific @filterrific do |f| %>
+      <h4>値段</h4>
 
-    <p style="width:100%">Room : ¥<span id="room-gte">0</span></p>
+      <p style="width:100%">Room : ¥<span id="room-gte">0</span></p>
       <%= f.range_field :with_room_price_gte, in: 0..10000000, step: '5000', value: '0',  id: "myRange-room-gte"  %>
-    <p style="width:100%">Equipment : ¥<span id="equipment-gte">0</span></p>
+      <p style="width:100%">Equipment : ¥<span id="equipment-gte">0</span></p>
       <%= f.range_field :with_equipment_price_gte, in: 0..10000000, step:'5000', value: '0',  id: "myRange-equipment-gte"  %>
-    <h4> アメニティ</h4>
-    <div>
-      <% Equipment.all.each do |a| %>
-        <%= f.check_box(:with_all_equipment_id, {multiple: true}, a.id, false) %>
-        <%= a.name %></br>
-      <% end %>
-    </div>
-    <h4>ルーム</h4>
-    <div>
-      <% Room.all.each do |a| %>
-        <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
-        <%= a.room_type %></br>
-      <% end %>
-    </div>
-    <div>
-      <%= link_to('フィルターをリセットする', reset_filterrific_url) %>
-    </div>
+      <h4> アメニティ</h4>
+      <div>
+        <% Equipment.all.each do |a| %>
+          <%= f.check_box(:with_all_equipment_id, {multiple: true}, a.id, false) %>
+          <%= a.name %></br>
+        <% end %>
+      </div>
+      <h4>ルーム</h4>
+      <div>
+        <% Room.all.each do |a| %>
+          <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
+          <%= a.room_type %></br>
+        <% end %>
+      </div>
+      <div>
+        <%= link_to('フィルターをリセットする', reset_filterrific_url) %>
+      </div>
 
-  <% end %>
+    <% end %>
 
     <h4> トップの５レビュー</h4>
     <p class="zone-p"><span class="glyphicon glyphicon-hand-right"></span> ハノイ市</p>
@@ -51,19 +51,20 @@
             <% end %>
           </div>
           <div class="zone-right" >
-          <%= p.name %></br>
-          <% p.star.to_i.times do  %>
-            <span class="glyphicon glyphicon-star "></span>
-          <% end %>
-          <% p.blank_stars.to_i.times do  %>
-            <span class="glyphicon glyphicon-star-empty "></span>
-          <% end %></br>
+            <%= p.name %></br>
+            <% p.star.to_i.times do  %>
+              <span class="glyphicon glyphicon-star "></span>
+            <% end %>
+            <% p.blank_stars.to_i.times do  %>
+              <span class="glyphicon glyphicon-star-empty "></span>
+            <% end %>
+            </br>
           </div>
         <% end %>
       </div>
     <% end %>
     <% if @motels.joins(:reviews).where("zone LIKE ?","ハノイ").blank? %>
-            <p>レビューしたホテルが無い</p>
+      <p>レビューしたホテルが無い</p>
     <% end %>
 
 
@@ -79,19 +80,20 @@
             <% end %>
           </div>
           <div class="zone-right" >
-          <%= p.name %></br>
-          <% p.star.to_i.times do  %>
-            <span class="glyphicon glyphicon-star "></span>
-          <% end %>
-          <% p.blank_stars.to_i.times do  %>
-            <span class="glyphicon glyphicon-star-empty "></span>
-          <% end %></br>
+            <%= p.name %></br>
+            <% p.star.to_i.times do  %>
+              <span class="glyphicon glyphicon-star "></span>
+            <% end %>
+            <% p.blank_stars.to_i.times do  %>
+              <span class="glyphicon glyphicon-star-empty "></span>
+            <% end %>
+            </br>
           </div>
         <% end %>
       </div>
     <% end %>
     <% if @motels.joins(:reviews).where("zone LIKE ?","ホーチミン").blank? %>
-        <p style="color: red;">レビューしたホテルが無い</p>
+      <p style="color: red;">レビューしたホテルが無い</p>
     <% end %>
 
     <p class="zone-p"><span class="glyphicon glyphicon-hand-right"></span> ダナン市 </p>
@@ -106,19 +108,20 @@
             <% end %>
           </div>
           <div class="zone-right" >
-          <%= p.name %></br>
-          <% p.star.to_i.times do  %>
-            <span class="glyphicon glyphicon-star "></span>
-          <% end %>
-          <% p.blank_stars.to_i.times do  %>
-            <span class="glyphicon glyphicon-star-empty "></span>
-          <% end %></br>
+            <%= p.name %></br>
+            <% p.star.to_i.times do  %>
+              <span class="glyphicon glyphicon-star "></span>
+            <% end %>
+            <% p.blank_stars.to_i.times do  %>
+              <span class="glyphicon glyphicon-star-empty "></span>
+            <% end %>
+            </br>
           </div>
         <% end %>
       </div>
     <% end %>
     <% if @motels.joins(:reviews).where("zone LIKE ?","ダナン").blank? %>
-            <p style="color: red;">レビューしたホテルが無い</p>
+      <p style="color: red;">レビューしたホテルが無い</p>
     <% end %>
 
   </div>

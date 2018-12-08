@@ -1,5 +1,5 @@
 admin = User.create({name: 'admin', email: 'admin@gmail.com', password: 'asd123!',
-  password_confirmation: "asd123!", })
+                     password_confirmation: "asd123!", })
 admin.admin!
 admin.skip_confirmation!
 admin.save
@@ -97,14 +97,14 @@ HotelRoom.create motel_id: 3, room_id: 3, price: 2450000
 
 20.times do |n|
   user = User.create!({name: Faker::FunnyName.name, email: Faker::Internet.email , password: 'asd123!',
-    password_confirmation: "asd123!", })
+                       password_confirmation: "asd123!", })
   user.skip_confirmation!
   user.save
 end
 
 10.times do |n|
   review = Review.create({title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph(50),
-   user_id: Faker::Number.unique.within(0..20), motel_id: Faker::Number.within(0..23), rate: Faker::Number.within(0..5)})
+                          user_id: Faker::Number.unique.within(0..20), motel_id: Faker::Number.within(0..23), rate: Faker::Number.within(0..5)})
   review.motel.update_attributes level: review.motel.star
 end
 

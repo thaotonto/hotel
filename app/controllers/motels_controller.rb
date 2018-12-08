@@ -7,7 +7,7 @@ class MotelsController < ApplicationController
                     .per Settings.per_page
     else
       @motels = Motel.order_level.page(params[:page])
-                  .per Settings.per_page
+                    .per Settings.per_page
     end
   end
 
@@ -69,7 +69,7 @@ class MotelsController < ApplicationController
     render 'motels/load_more'
   end
 
-  def search 
+  def search
     @motels = Motel.ransack(name_cont: params[:q], address_cont: params[:q], zone_cont: params[:q], m: "or").result(distinct: true)
     respond_to do |format|
       format.html {}
@@ -95,8 +95,8 @@ class MotelsController < ApplicationController
 
   def motel_params
     params.require(:motel).permit :name, :description, :address, :phone, :level, :zone, {images: []},
-      hotel_equips_attributes: [:id, :_destroy, :price, :equipment_id],
-      hotel_rooms_attributes: [:id, :_destroy, :price, :room_id]
+                                  hotel_equips_attributes: [:id, :_destroy, :price, :equipment_id],
+                                  hotel_rooms_attributes: [:id, :_destroy, :price, :room_id]
   end
 
   def find_motel
