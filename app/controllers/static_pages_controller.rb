@@ -14,5 +14,7 @@ class StaticPagesController < ApplicationController
         format.js
       end
   end
-  
+  def zone_top_motel
+    @motels = Motel.joins(:reviews).search_zone(params[:param]).order_level.distinct
+  end
 end
