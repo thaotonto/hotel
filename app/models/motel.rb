@@ -59,8 +59,12 @@ class Motel < ApplicationRecord
     end
   end
 
- def self.search(search)
+  def self.search(search)
     where("name LIKE ? OR address LIKE ? OR zone LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+  end
+
+  def self.search_zone(search)
+    where("zone LIKE ?", "%#{search}%")
   end
 
   filterrific(
@@ -99,21 +103,12 @@ class Motel < ApplicationRecord
     }
   }
 
-  scope :with_room_price_gte, lambda { |room_price|
-    where([
-      %(
-        EXISTS (
-         SELECT 1
-           FROM hotel_rooms
-          WHERE motels.id = hotel_rooms.motel_id
-            AND hotel_rooms.price >= ?)
-      ),
-      room_price
-    ])
+  scope :with_room_price_gte, lambda { |price|
+    where('hotel_rooms.price BETWEEN ? AND ?', price, price+200000).joins(:hotel_rooms).distinct
   }
 
-  scope :with_equipment_price_gte, lambda { |equipment_price|
-    where('hotel_equips.price >= ?', equipment_price).joins(:hotel_equips).distinct
+  scope :with_equipment_price_gte, lambda { |price|
+    where('hotel_equips.price BETWEEN ? AND ?', price, price+200000).joins(:hotel_equips).distinct
   }
 
 

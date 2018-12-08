@@ -53,14 +53,14 @@
             <th>
               <h4><span class="glyphicon glyphicon-user"></span> <%= t("activerecord.attributes.room.guest_no") %></h4>
             </th>
-            <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">Price</span></h4></th>
+            <th><h4>値段</h4></th>
           </tr>
           <% @motel.hotel_rooms.each do |hotel_rooms| %>
             <tr>
               <td><%= hotel_rooms.room.room_type %></td>
               <td><%= hotel_rooms.room.bed_numbers %></td>
               <td><%= hotel_rooms.room.guest_no %></td>
-              <td><%= hotel_rooms.price %></td>
+              <td><%=  number_to_currency(hotel_rooms.price, format: "%n %u") %></td>
             </tr>
           <% end %>
         </table>
@@ -75,14 +75,14 @@
         <table style="width:100%">
           <tr>
             <th><h4>
-              <span class="glyphicon glyphicon-object-align-bottom"></span><%= t "activerecord.attributes.equipment.name" %>
+              <span class="glyphicon glyphicon-object-align-bottom"></span> <%= t "activerecord.attributes.equipment.name" %>
             </h4></th>
-            <th><h4><span class="glyphicon glyphicon-yen" aria-hidden="true">Price</span></h4></th>
+            <th><h4>値段</h4></th>
           </tr>
           <% @motel.hotel_equips.each do |hotel_equips| %>
             <tr>
               <td><%= hotel_equips.equipment.name %></td>
-              <td><%= hotel_equips.price %></td>
+              <td><%=  number_to_currency(hotel_equips.price, format: "%n %u") %></td>
             </tr>
           <% end %>
         </table>
