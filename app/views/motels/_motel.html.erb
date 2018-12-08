@@ -16,6 +16,7 @@
         <% motel.blank_stars.times do  %>
           <span class="glyphicon glyphicon-star-empty "></span>
         <% end %>
+        (レビュー<%= motel.reviews.count %> 件）
       </h2>
       <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= motel.address %></p>
       <div class = "col-md-6">
