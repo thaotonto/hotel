@@ -30,6 +30,16 @@ class MotelsController < ApplicationController
       marker.lng motel.longitude
       marker.infowindow motel.name
     end
+
+    ke = KeyphraseExtraction.new()
+    all_reviews = @motel.reviews
+    reviews_text = []
+    all_reviews.each do |t|
+      reviews_text.push(t.content)
+    end
+    rv_keywords = ke.extract_keyphrase(reviews_text.join(""))
+    @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }.reverse[0..19]]
+
   end
 
   def edit
@@ -79,6 +89,8 @@ class MotelsController < ApplicationController
     UserHotel.where( user_id: current_user.id , motel_id: @motel.id).delete_all
     redirect_to motel_path(@motel)
   end
+
+
   private
 
   def motel_params
