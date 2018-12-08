@@ -79,7 +79,7 @@ span.next, span.prev, span.last, span.first {
 span.page {
   @include next-prev;
   padding: 5px 8px;
-  }
+}
 
 span.current {
   border: 1px solid #E8E8E8;
@@ -135,7 +135,7 @@ span.current {
   right: 70px;
 }
 
- // phan content
+// phan content
 .content a {
   color: #333;
   text-decoration: none;
@@ -587,4 +587,3 @@ button {
   width: 47px;
   height: 47px;
 }
-

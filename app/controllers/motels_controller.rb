@@ -7,7 +7,7 @@ class MotelsController < ApplicationController
                     .per Settings.per_page
     else
       @motels = Motel.order_level.page(params[:page])
-                  .per Settings.per_page
+                    .per Settings.per_page
     end
   end
 
@@ -30,6 +30,16 @@ class MotelsController < ApplicationController
       marker.lng motel.longitude
       marker.infowindow motel.name
     end
+
+    ke = KeyphraseExtraction.new()
+    all_reviews = @motel.reviews
+    reviews_text = []
+    all_reviews.each do |t|
+      reviews_text.push(t.content)
+    end
+    rv_keywords = ke.extract_keyphrase(reviews_text.join(""))
+    @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }.reverse[0..19]]
+
   end
 
   def edit
@@ -59,7 +69,7 @@ class MotelsController < ApplicationController
     render 'motels/load_more'
   end
 
-  def search 
+  def search
     @motels = Motel.ransack(name_cont: params[:q], address_cont: params[:q], zone_cont: params[:q], m: "or").result(distinct: true)
     respond_to do |format|
       format.html {}
@@ -79,12 +89,14 @@ class MotelsController < ApplicationController
     UserHotel.where( user_id: current_user.id , motel_id: @motel.id).delete_all
     redirect_to motel_path(@motel)
   end
+
+
   private
 
   def motel_params
     params.require(:motel).permit :name, :description, :address, :phone, :level, :zone, {images: []},
-      hotel_equips_attributes: [:id, :_destroy, :price, :equipment_id],
-      hotel_rooms_attributes: [:id, :_destroy, :price, :room_id]
+                                  hotel_equips_attributes: [:id, :_destroy, :price, :equipment_id],
+                                  hotel_rooms_attributes: [:id, :_destroy, :price, :room_id]
   end
 
   def find_motel

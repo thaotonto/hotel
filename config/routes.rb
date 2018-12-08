@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :reviews
       post "/add_my_list" , to: "motels#add_my_list"
       post "/delete_my_list" , to: "motels#delete_my_list"
-    end 
+    end
     resources :rooms
     resources :equipments
     resources :users, only: [:index, :show, :update] do
