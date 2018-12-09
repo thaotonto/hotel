@@ -17,6 +17,7 @@ class KeyphraseExtraction
     @keywords = @word_net.keys()[0..20]
     @keyphrases = {}
     j = 0
+    extracted = Set.new
     @word_list.each_with_index do |word, i|
       if i < j
         next
@@ -24,9 +25,10 @@ class KeyphraseExtraction
       word = @stemmer.stemmer(word)
       if @keywords.include? word
         tmp = []
+        tmp_key = []
         tmpsum = 0
         c = 0
-        for k in 0..10 do
+        for k in 0..5 do
           l = i + k
           if @word_list[l] == nil
             next
@@ -35,6 +37,7 @@ class KeyphraseExtraction
           w = @stemmer.stemmer(@word_list[l])
           tmp.push(@word_list[l])
           if @word_net.key?(w)
+            tmp_key.push(w)
             c += 1
             tmpsum += @word_net[w]
             @keyphrases[tmp.join("")] = tmpsum / c
@@ -45,7 +48,9 @@ class KeyphraseExtraction
       end
 
     end
+    # @keyphrases = @word_net
     @keyphrases = Hash[@keyphrases.sort_by {|k, v| -v}[0..40]]
+    
   end
 
   def extract_candidate_words(text)

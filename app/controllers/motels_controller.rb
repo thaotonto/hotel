@@ -41,7 +41,7 @@ class MotelsController < ApplicationController
                     .per 15
     reviews_text = @motel.reviews.pluck(:content)
     rv_keywords = ke.extract_keyphrase(reviews_text.join(""))
-    @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }.reverse[5..24]]
+    @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }[0..20]]
 
   end
 
