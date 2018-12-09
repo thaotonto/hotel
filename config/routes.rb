@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /ja|en/ do
     devise_for :users
     root "static_pages#home"
+    get "/zone_top_motel", to: "static_pages#zone_top_motel"
     resources :motels do
       resources :reviews
       post "/add_my_list" , to: "motels#add_my_list"
