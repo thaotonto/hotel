@@ -128,7 +128,7 @@
           </div>
           <div class="col-md-1 col-md-offset-1">
             <%= select_tag "sort_order", options_for_select(["昇順", "降順"]) %>
-            <%= hidden_field_tag "hotel_id", @motel.id %>
+            <%= hidden_field_tag "id", @motel.id %>
           </div>
           <div style="margin-top: 10px; border: 0">
             <%= button_tag "フィルター", class: "btn btn-success" %>
