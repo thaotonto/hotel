@@ -564,13 +564,16 @@ button {
   width: 100%;
   clear: both;
   margin-bottom: 10px;
+}
+
+.home-form p.zone-p a {
+  color: black;
+  text-decoration: none;
   &:hover {
     color : #16a085;
     cursor: pointer;
   }
 }
-
-
 .home-form .zone-left {
   width: 33%;
   float: left;
