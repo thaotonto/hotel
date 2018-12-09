@@ -149,9 +149,12 @@
       </div>
     </div>
     <div style="margin-top: 100px;" class="review_search_content">
-      <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
+      <%= render partial: "motels/review", collection: @reviews.order_after_like %>
     </div>
   </div>
+  <div id="paginator1">
+    <%= paginate @reviews, remote: true %>
+</div>
 </div>
 
 <script type="text/javascript">
@@ -168,5 +171,4 @@
         handler.fitMapToBounds();
         handler.getMap().setZoom(16);
     });
-
 </script>

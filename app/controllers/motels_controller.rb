@@ -4,10 +4,10 @@ class MotelsController < ApplicationController
   def index
     if params[:search]
       @motels = Motel.order_level.search(params[:search]).page(params[:page])
-                    .per Settings.per_page
+                    .per 5
     else
       @motels = Motel.order_level.page(params[:page])
-                    .per Settings.per_page
+                    .per 5
     end
   end
 
@@ -32,13 +32,16 @@ class MotelsController < ApplicationController
     end
 
     ke = KeyphraseExtraction.new()
-    all_reviews = @motel.reviews
+    # all_reviews = @motel.reviews
     reviews_text = []
-    all_reviews.each do |t|
-      reviews_text.push(t.content)
-    end
+    #all_reviews.each do |t|
+    #  reviews_text.push(t.content)
+    #end
+    @reviews = @motel.reviews.page(params[:page])
+                    .per 15
+    reviews_text = @motel.reviews.pluck(:content)
     rv_keywords = ke.extract_keyphrase(reviews_text.join(""))
-    @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }.reverse[0..19]]
+    @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }[0..20]]
 
   end
 

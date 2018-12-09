@@ -34,11 +34,11 @@ config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
 # Ignore uploaded test images.
-/public/uploads
+# /public/uploads
 
 tmp/*
 .idea/*
 log/*
 db/development.sqlite3
 db/test.sqlite3
-log/development.log
+log/development.

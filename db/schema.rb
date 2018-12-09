@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_25_175350) do
+ActiveRecord::Schema.define(version: 2018_12_08_155243) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -50,6 +50,11 @@ ActiveRecord::Schema.define(version: 2018_11_25_175350) do
     t.index ["room_id"], name: "index_hotel_rooms_on_room_id"
   end
 
+  create_table "images", force: :cascade do |t|
+    t.integer "motel_id"
+    t.string "image"
+  end
+
   create_table "likes", force: :cascade do |t|
     t.integer "review_id"
     t.integer "user_id"
@@ -68,10 +73,14 @@ ActiveRecord::Schema.define(version: 2018_11_25_175350) do
     t.string "zone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "images"
-    t.float "latitude"
-    t.float "longitude"
-    t.index ["address"], name: "index_motels_on_address", unique: true
+    t.float "latitude", default: 21.03576383
+    t.float "longitude", default: 105.85124142
+    t.index ["address"], name: "index_motels_on_address"
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.integer "review_id"
+    t.string "picture"
   end
 
   create_table "relationships", force: :cascade do |t|
@@ -102,7 +111,6 @@ ActiveRecord::Schema.define(version: 2018_11_25_175350) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "images"
     t.index ["motel_id"], name: "index_reviews_on_motel_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
