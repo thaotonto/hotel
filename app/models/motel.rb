@@ -64,6 +64,10 @@ class Motel < ApplicationRecord
     where("name LIKE ? OR address LIKE ? OR zone LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
   end
 
+  def self.search_zone(search)
+    where("zone LIKE ?", "%#{search}%")
+  end
+
   filterrific(
       default_filter_params: {},
       available_filters: [

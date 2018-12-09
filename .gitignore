@@ -37,7 +37,8 @@ config/environments/*.local.yml
 # /public/uploads
 
 tmp/*
-.idea
+.idea/*
 log/*
 db/development.sqlite3
 db/test.sqlite3
+log/development.
