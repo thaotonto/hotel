@@ -1,24 +1,29 @@
 <%= render "slider", slider: @motel.images %>
 <div class="col-md-8">
   <div class="col-md-12 title">
-    <div class="name"><%= @motel.name %></div>
-    <span><%= @motel.avarege_point %> ✩</span>
+    <div class="name">
+      <%= @motel.name %>
+    </div>
+    <span>
+      <%= @motel.avarege_point %> ✩</span>
   </div>
 
   <div class="address">
     <% if user_signed_in? && (current_user.admin? || current_user.mod?) %>
-      <%= link_to t("change"), edit_motel_path(@motel) %>
-      <%= link_to t("delete"), motel_path(@motel), method: :delete,
+    <%= link_to t("change"), edit_motel_path(@motel) %>
+    <%= link_to t("delete"), motel_path(@motel), method: :delete,
                   data: {confirm: t("delete_confirm")} %>
     <% end %>
   </div>
 
   <div class="address">
-    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= @motel.address %>
+    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+    <%= @motel.address %>
   </div>
 
   <div class="phone">
-    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <%= @motel.phone %>
+    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+    <%= @motel.phone %>
   </div>
 
   <div style='width: 800px;'>
@@ -27,15 +32,15 @@
 
 </div>
 <% unless current_user.nil? %>
-  <% if current_user.motels.exists? @motel.id %>
-    <div class="col-md-4 btn-my-list">
-      <%= link_to t("undo_my_list"), motel_delete_my_list_path(@motel), cLass: "btn btn-primary", method: :post %>
-    </div>
-  <% else %>
-    <div class="col-md-4 btn-my-list">
-      <%= link_to t("add_my_list"), motel_add_my_list_path(@motel), cLass: "btn btn-primary", method: :post %>
-    </div>
-  <% end %>
+<% if current_user.motels.exists? @motel.id %>
+<div class="col-md-4 btn-my-list">
+  <%= link_to t("undo_my_list"), motel_delete_my_list_path(@motel), cLass: "btn btn-primary", method: :post %>
+</div>
+<% else %>
+<div class="col-md-4 btn-my-list">
+  <%= link_to t("add_my_list"), motel_add_my_list_path(@motel), cLass: "btn btn-primary", method: :post %>
+</div>
+<% end %>
 <% end %>
 
 
@@ -66,6 +71,7 @@
         </table>
       </div>
     </div>
+  </div>
   <% end %>
 
   <% if @motel.hotel_equips.count > 0 %>
@@ -88,69 +94,81 @@
         </table>
       </div>
     </div>
+  </div>
   <% end %>
   <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="clear:both;">
     <div class="Header__header--3OgS9 Header__divider--waZKL">概要</div>
-    <div class="description"><%= @motel.description %></div>
+    <div class="description">
+      <%= @motel.description %>
+    </div>
   </div>
 
   <div id="modal-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
 
   <div class="Section__section--39L_Q" data-tab="TABS_OVERVIEW" id="OVERVIEW" style="clear:both;">
     <div class="Header__header--3OgS9 Header__divider--waZKL" style="border-bottom: 0px">レビュー</div>
-    <%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id) %>
-    <div class="col-md-12" style="margin-top:20px;">
-      <div class="col-md-6">
-        <b>キーワード検索</b>
+    <div class="review-kaku"><%= link_to "レビューを書く", new_motel_review_path(motel_id: @motel.id) %></div>
+    <div class="col-md-12 box-filter-review">
+      <div class="row">
+        <div class="col-md-6">
+          <b>キーワード検索</b>
+        </div>
+        <div class="col-md-2">
+          <b>ソート</b>
+        </div>
+        <div class="col-md-2">
+          <b>順番</b>
+        </div>
       </div>
-      <div class="col-md-2">
-        <b>ソート</b>
-      </div>
-      <div class="col-md-2">
-        <b>順番</b>
-      </div>
-
-      <%= form_tag searchs_index_url, class: "search_reviews", remote: true, :method => 'get' do %>
+      <div class="row form-search-review">
+        <%= form_tag searchs_index_url, class: "search_reviews", remote: true, :method => 'get' do %>
         <div class="col-md-6">
           <%= text_field_tag :keyword, params[:keyword], :placeholder => "レビューのキーワード。。。" %>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1 ">
           <%= select_tag "sort_type", options_for_select(["評価点", "ライク数", "投稿日"]) %>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1 col-md-offset-1">
           <%= select_tag "sort_order", options_for_select(["昇順", "降順"]) %>
           <%= hidden_field_tag "hotel_id", @motel.id %>
         </div>
         <div style="margin-top: 10px; border: 0">
           <%= button_tag "フィルター", class: "btn btn-success" %>
         </div>
-      <% end %>
+        <% end %>
+      </div>
       <br>
-      <b>レビューハイライト:</b>　
-      <% @top_keywords.each do |key, value| %>
-        <%= key + ", " %>
-      <% end %>
+      <div class="row">
+        <div class="col-md-12 list-key">
+          <h4>レビューハイライト:</h4>
+          <ul>
+          <% @top_keywords.each do |key, value| %>
+          <li><a href="#"><%= key %></a></li>
+          <% end %>
+        </ul>
+        </div>　
+      </div>
     </div>
-    <div style="margin-top: 100px;" class="review_search_content">
-      <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
+      <div style="margin-top: 100px;" class="review_search_content">
+        <%= render partial: "motels/review", collection: @motel.reviews.order_after_like %>
+      </div>
     </div>
+
   </div>
 
-</div>
-
-<script type="text/javascript">
+  <script type="text/javascript">
     $("#search_reviews").keyup(function () {
-        $.ajax({
-            url: 'search/index',
-            data: {index: $(this).serialize()}
-        });
+      $.ajax({
+        url: 'search/index',
+        data: { index: $(this).serialize() }
+      });
     });
     handler = Gmaps.build('Google');
-    handler.buildMap({provider: {}, internal: {id: 'map'}}, function () {
-        markers = handler.addMarkers(<%=raw @hash.to_json %>);
-        handler.bounds.extendWith(markers);
-        handler.fitMapToBounds();
-        handler.getMap().setZoom(16);
+    handler.buildMap({ provider: {}, internal: { id: 'map' } }, function () {
+      markers = handler.addMarkers(<%=raw @hash.to_json %>);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+    handler.getMap().setZoom(16);
     });
 
-</script>
+  </script>
