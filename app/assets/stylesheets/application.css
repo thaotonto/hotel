@@ -23,11 +23,16 @@
  }
 
  .form-search-review input[type="text"] {
-     width: 100%;
+     width: 50%;
      padding: 6px;
      border: 1px solid #ada2a2;
      background: #e6e6e6;
      border-radius: 2px;
+ }
+
+ .form-search-review input[type="text"]:focus{
+    width: 100%;
+    transition: 0.9s;
  }
 
  .form-search-review input[type="text"]::placeholder {
