@@ -42,3 +42,4 @@ log/*
 db/development.sqlite3
 db/test.sqlite3
 log/development.
+public/uploads/*
