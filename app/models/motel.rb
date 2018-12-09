@@ -1,4 +1,5 @@
 class Motel < ApplicationRecord
+  has_many :images, dependent: :destroy
   has_many :hotel_rooms, inverse_of: :motel, dependent: :destroy
   has_many :rooms, through: :hotel_rooms
   has_many :hotel_equips, inverse_of: :motel, dependent: :destroy
@@ -12,8 +13,8 @@ class Motel < ApplicationRecord
   accepts_nested_attributes_for :hotel_equips, reject_if: :all_blank, allow_destroy: true
   accepts_nested_attributes_for :hotel_rooms, reject_if: :all_blank, allow_destroy: true
   attr_reader :point
-  mount_uploaders :images, ImagesUploader
-  serialize :images, JSON
+  # mount_uploaders :images, ImagesUploader
+  # serialize :images, JSON
   validates :name, presence: true
   validates :zone, presence: true
   validates :address, presence: true,

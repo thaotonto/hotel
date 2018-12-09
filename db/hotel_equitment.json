@@ -1,0 +1,2377 @@
+[
+  {
+    "motel_id": 1,
+    "equitment_id": 1,
+    "price": 1700
+  },
+  {
+    "motel_id": 1,
+    "equitment_id": 2,
+    "price": 8000
+  },
+  {
+    "motel_id": 1,
+    "equitment_id": 3,
+    "price": 6100
+  },
+  {
+    "motel_id": 1,
+    "equitment_id": 4,
+    "price": 2100
+  },
+  {
+    "motel_id": 1,
+    "equitment_id": 5,
+    "price": 5400
+  },
+  {
+    "motel_id": 1,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 1,
+    "equitment_id": 7,
+    "price": 6900
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 1,
+    "price": 7900
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 2,
+    "price": 4100
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 3,
+    "price": 9700
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 4,
+    "price": 2500
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 5,
+    "price": 2100
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 2,
+    "equitment_id": 7,
+    "price": 4600
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 1,
+    "price": 2000
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 2,
+    "price": 6600
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 3,
+    "price": 5500
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 4,
+    "price": 6700
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 5,
+    "price": 7200
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 3,
+    "equitment_id": 7,
+    "price": 1900
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 1,
+    "price": 9400
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 3,
+    "price": 6300
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 5,
+    "price": 8800
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 9,
+    "price": 5400
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 4,
+    "equitment_id": 7,
+    "price": 8300
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 1,
+    "price": 4800
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 2,
+    "price": 1800
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 3,
+    "price": 8400
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 5,
+    "price": 8300
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 7,
+    "price": 5700
+  },
+  {
+    "motel_id": 5,
+    "equitment_id": 10,
+    "price": 2600
+  },
+  {
+    "motel_id": 6,
+    "equitment_id": 11,
+    "price": 8800
+  },
+  {
+    "motel_id": 6,
+    "equitment_id": 1,
+    "price": 1400
+  },
+  {
+    "motel_id": 6,
+    "equitment_id": 3,
+    "price": 9700
+  },
+  {
+    "motel_id": 6,
+    "equitment_id": 12,
+    "price": 6300
+  },
+  {
+    "motel_id": 6,
+    "equitment_id": 13,
+    "price": 7100
+  },
+  {
+    "motel_id": 6,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 1,
+    "price": 1200
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 11,
+    "price": 1100
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 3,
+    "price": 6100
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 12,
+    "price": 9700
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 14,
+    "price": 4300
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 7,
+    "equitment_id": 7,
+    "price": 1000
+  },
+  {
+    "motel_id": 8,
+    "equitment_id": 15,
+    "price": 6500
+  },
+  {
+    "motel_id": 8,
+    "equitment_id": 16,
+    "price": 2700
+  },
+  {
+    "motel_id": 8,
+    "equitment_id": 3,
+    "price": 2800
+  },
+  {
+    "motel_id": 8,
+    "equitment_id": 4,
+    "price": 4700
+  },
+  {
+    "motel_id": 8,
+    "equitment_id": 5,
+    "price": 4000
+  },
+  {
+    "motel_id": 8,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 9,
+    "equitment_id": 1,
+    "price": 5500
+  },
+  {
+    "motel_id": 9,
+    "equitment_id": 3,
+    "price": 4800
+  },
+  {
+    "motel_id": 9,
+    "equitment_id": 4,
+    "price": 3500
+  },
+  {
+    "motel_id": 9,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 9,
+    "equitment_id": 7,
+    "price": 3700
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 1,
+    "price": 4100
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 2,
+    "price": 5800
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 4,
+    "price": 2800
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 5,
+    "price": 6500
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 7,
+    "price": 6300
+  },
+  {
+    "motel_id": 10,
+    "equitment_id": 10,
+    "price": 8100
+  },
+  {
+    "motel_id": 11,
+    "equitment_id": 13,
+    "price": 4400
+  },
+  {
+    "motel_id": 11,
+    "equitment_id": 7,
+    "price": 7400
+  },
+  {
+    "motel_id": 11,
+    "equitment_id": 17,
+    "price": 1900
+  },
+  {
+    "motel_id": 12,
+    "equitment_id": 1,
+    "price": 5700
+  },
+  {
+    "motel_id": 12,
+    "equitment_id": 16,
+    "price": 6000
+  },
+  {
+    "motel_id": 12,
+    "equitment_id": 2,
+    "price": 7500
+  },
+  {
+    "motel_id": 12,
+    "equitment_id": 3,
+    "price": 6600
+  },
+  {
+    "motel_id": 12,
+    "equitment_id": 5,
+    "price": 5600
+  },
+  {
+    "motel_id": 12,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 13,
+    "equitment_id": 15,
+    "price": 3200
+  },
+  {
+    "motel_id": 13,
+    "equitment_id": 2,
+    "price": 8900
+  },
+  {
+    "motel_id": 13,
+    "equitment_id": 3,
+    "price": 5300
+  },
+  {
+    "motel_id": 13,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 13,
+    "equitment_id": 5,
+    "price": 3800
+  },
+  {
+    "motel_id": 13,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 14,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 14,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 14,
+    "equitment_id": 5,
+    "price": 4800
+  },
+  {
+    "motel_id": 15,
+    "equitment_id": 1,
+    "price": 6900
+  },
+  {
+    "motel_id": 15,
+    "equitment_id": 2,
+    "price": 5300
+  },
+  {
+    "motel_id": 15,
+    "equitment_id": 3,
+    "price": 2800
+  },
+  {
+    "motel_id": 15,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 15,
+    "equitment_id": 5,
+    "price": 9100
+  },
+  {
+    "motel_id": 15,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 11,
+    "price": 8500
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 18,
+    "price": 0
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 1,
+    "price": 8200
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 12,
+    "price": 4000
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 13,
+    "price": 4500
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 16,
+    "equitment_id": 7,
+    "price": 7400
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 1,
+    "price": 6900
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 2,
+    "price": 7900
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 3,
+    "price": 1300
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 5,
+    "price": 6400
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 17,
+    "equitment_id": 7,
+    "price": 4900
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 1,
+    "price": 2800
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 11,
+    "price": 4700
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 12,
+    "price": 3800
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 5,
+    "price": 3200
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 18,
+    "equitment_id": 7,
+    "price": 1000
+  },
+  {
+    "motel_id": 19,
+    "equitment_id": 19,
+    "price": 1500
+  },
+  {
+    "motel_id": 19,
+    "equitment_id": 2,
+    "price": 4100
+  },
+  {
+    "motel_id": 19,
+    "equitment_id": 3,
+    "price": 6900
+  },
+  {
+    "motel_id": 19,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 19,
+    "equitment_id": 5,
+    "price": 8100
+  },
+  {
+    "motel_id": 19,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 20,
+    "equitment_id": 7,
+    "price": 6600
+  },
+  {
+    "motel_id": 21,
+    "equitment_id": 1,
+    "price": 9700
+  },
+  {
+    "motel_id": 21,
+    "equitment_id": 2,
+    "price": 1800
+  },
+  {
+    "motel_id": 21,
+    "equitment_id": 3,
+    "price": 2000
+  },
+  {
+    "motel_id": 21,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 21,
+    "equitment_id": 5,
+    "price": 8900
+  },
+  {
+    "motel_id": 21,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 22,
+    "equitment_id": 16,
+    "price": 6800
+  },
+  {
+    "motel_id": 22,
+    "equitment_id": 2,
+    "price": 3600
+  },
+  {
+    "motel_id": 22,
+    "equitment_id": 3,
+    "price": 9100
+  },
+  {
+    "motel_id": 22,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 22,
+    "equitment_id": 5,
+    "price": 7700
+  },
+  {
+    "motel_id": 22,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 1,
+    "price": 2000
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 3,
+    "price": 3000
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 20,
+    "price": 4400
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 5,
+    "price": 8800
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 23,
+    "equitment_id": 7,
+    "price": 1800
+  },
+  {
+    "motel_id": 24,
+    "equitment_id": 1,
+    "price": 3500
+  },
+  {
+    "motel_id": 24,
+    "equitment_id": 2,
+    "price": 6800
+  },
+  {
+    "motel_id": 24,
+    "equitment_id": 3,
+    "price": 4800
+  },
+  {
+    "motel_id": 24,
+    "equitment_id": 5,
+    "price": 9000
+  },
+  {
+    "motel_id": 24,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 24,
+    "equitment_id": 10,
+    "price": 1900
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 21,
+    "price": 1900
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 1,
+    "price": 9400
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 11,
+    "price": 9300
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 3,
+    "price": 6800
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 12,
+    "price": 1000
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 25,
+    "equitment_id": 7,
+    "price": 5400
+  },
+  {
+    "motel_id": 26,
+    "equitment_id": 2,
+    "price": 6000
+  },
+  {
+    "motel_id": 26,
+    "equitment_id": 3,
+    "price": 9100
+  },
+  {
+    "motel_id": 26,
+    "equitment_id": 4,
+    "price": 1300
+  },
+  {
+    "motel_id": 26,
+    "equitment_id": 5,
+    "price": 4000
+  },
+  {
+    "motel_id": 26,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 26,
+    "equitment_id": 10,
+    "price": 7800
+  },
+  {
+    "motel_id": 27,
+    "equitment_id": 7,
+    "price": 3600
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 1,
+    "price": 4500
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 2,
+    "price": 4100
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 3,
+    "price": 2100
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 5,
+    "price": 9700
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 9,
+    "price": 2400
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 28,
+    "equitment_id": 7,
+    "price": 7300
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 1,
+    "price": 8100
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 2,
+    "price": 1400
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 3,
+    "price": 7900
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 5,
+    "price": 7900
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 29,
+    "equitment_id": 7,
+    "price": 3400
+  },
+  {
+    "motel_id": 30,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 30,
+    "equitment_id": 1,
+    "price": 8700
+  },
+  {
+    "motel_id": 30,
+    "equitment_id": 5,
+    "price": 2900
+  },
+  {
+    "motel_id": 30,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 31,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 31,
+    "equitment_id": 7,
+    "price": 8500
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 1,
+    "price": 5500
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 15,
+    "price": 3200
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 2,
+    "price": 6700
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 14,
+    "price": 4800
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 5,
+    "price": 8300
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 32,
+    "equitment_id": 7,
+    "price": 9800
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 11,
+    "price": 2300
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 3,
+    "price": 9700
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 12,
+    "price": 7200
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 5,
+    "price": 2400
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 33,
+    "equitment_id": 7,
+    "price": 8800
+  },
+  {
+    "motel_id": 34,
+    "equitment_id": 2,
+    "price": 1100
+  },
+  {
+    "motel_id": 34,
+    "equitment_id": 3,
+    "price": 8700
+  },
+  {
+    "motel_id": 34,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 34,
+    "equitment_id": 4,
+    "price": 1200
+  },
+  {
+    "motel_id": 34,
+    "equitment_id": 5,
+    "price": 2100
+  },
+  {
+    "motel_id": 34,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 11,
+    "price": 4300
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 1,
+    "price": 7200
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 3,
+    "price": 2800
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 12,
+    "price": 7100
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 35,
+    "equitment_id": 7,
+    "price": 5900
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 1,
+    "price": 5100
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 3,
+    "price": 2400
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 5,
+    "price": 8100
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 13,
+    "price": 5100
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 7,
+    "price": 5200
+  },
+  {
+    "motel_id": 36,
+    "equitment_id": 10,
+    "price": 5700
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 1,
+    "price": 6600
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 2,
+    "price": 2200
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 3,
+    "price": 1700
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 5,
+    "price": 1900
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 7,
+    "price": 7000
+  },
+  {
+    "motel_id": 37,
+    "equitment_id": 10,
+    "price": 8400
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 1,
+    "price": 6500
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 5,
+    "price": 5800
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 9,
+    "price": 4300
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 13,
+    "price": 4600
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 7,
+    "price": 7300
+  },
+  {
+    "motel_id": 38,
+    "equitment_id": 10,
+    "price": 3200
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 1,
+    "price": 2600
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 3,
+    "price": 1300
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 5,
+    "price": 6900
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 9,
+    "price": 6800
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 13,
+    "price": 5600
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 39,
+    "equitment_id": 7,
+    "price": 5900
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 1,
+    "price": 5600
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 11,
+    "price": 3100
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 3,
+    "price": 9200
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 12,
+    "price": 8200
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 9,
+    "price": 1800
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 40,
+    "equitment_id": 7,
+    "price": 7100
+  },
+  {
+    "motel_id": 41,
+    "equitment_id": 1,
+    "price": 6500
+  },
+  {
+    "motel_id": 41,
+    "equitment_id": 11,
+    "price": 6300
+  },
+  {
+    "motel_id": 41,
+    "equitment_id": 12,
+    "price": 7900
+  },
+  {
+    "motel_id": 41,
+    "equitment_id": 22,
+    "price": 3600
+  },
+  {
+    "motel_id": 41,
+    "equitment_id": 5,
+    "price": 6200
+  },
+  {
+    "motel_id": 41,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 42,
+    "equitment_id": 1,
+    "price": 9100
+  },
+  {
+    "motel_id": 42,
+    "equitment_id": 2,
+    "price": 8800
+  },
+  {
+    "motel_id": 42,
+    "equitment_id": 3,
+    "price": 1900
+  },
+  {
+    "motel_id": 42,
+    "equitment_id": 5,
+    "price": 9800
+  },
+  {
+    "motel_id": 42,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 42,
+    "equitment_id": 10,
+    "price": 1100
+  },
+  {
+    "motel_id": 43,
+    "equitment_id": 1,
+    "price": 2500
+  },
+  {
+    "motel_id": 43,
+    "equitment_id": 2,
+    "price": 7300
+  },
+  {
+    "motel_id": 43,
+    "equitment_id": 3,
+    "price": 1400
+  },
+  {
+    "motel_id": 43,
+    "equitment_id": 5,
+    "price": 6600
+  },
+  {
+    "motel_id": 43,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 43,
+    "equitment_id": 10,
+    "price": 5500
+  },
+  {
+    "motel_id": 44,
+    "equitment_id": 1,
+    "price": 2800
+  },
+  {
+    "motel_id": 44,
+    "equitment_id": 3,
+    "price": 1700
+  },
+  {
+    "motel_id": 44,
+    "equitment_id": 4,
+    "price": 5800
+  },
+  {
+    "motel_id": 44,
+    "equitment_id": 5,
+    "price": 1800
+  },
+  {
+    "motel_id": 44,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 44,
+    "equitment_id": 10,
+    "price": 9900
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 1,
+    "price": 1900
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 2,
+    "price": 1600
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 3,
+    "price": 9400
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 4,
+    "price": 1600
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 5,
+    "price": 8100
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 45,
+    "equitment_id": 7,
+    "price": 3600
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 1,
+    "price": 6300
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 16,
+    "price": 1300
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 2,
+    "price": 1300
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 3,
+    "price": 8300
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 5,
+    "price": 7000
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 46,
+    "equitment_id": 7,
+    "price": 9900
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 1,
+    "price": 4300
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 11,
+    "price": 3800
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 3,
+    "price": 5800
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 5,
+    "price": 8800
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 7,
+    "price": 1600
+  },
+  {
+    "motel_id": 47,
+    "equitment_id": 10,
+    "price": 7900
+  },
+  {
+    "motel_id": 48,
+    "equitment_id": 1,
+    "price": 9600
+  },
+  {
+    "motel_id": 48,
+    "equitment_id": 2,
+    "price": 8300
+  },
+  {
+    "motel_id": 48,
+    "equitment_id": 4,
+    "price": 3800
+  },
+  {
+    "motel_id": 48,
+    "equitment_id": 5,
+    "price": 5600
+  },
+  {
+    "motel_id": 48,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 48,
+    "equitment_id": 7,
+    "price": 1900
+  },
+  {
+    "motel_id": 49,
+    "equitment_id": 7,
+    "price": 5000
+  },
+  {
+    "motel_id": 50,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 50,
+    "equitment_id": 7,
+    "price": 6700
+  },
+  {
+    "motel_id": 51,
+    "equitment_id": 13,
+    "price": 2200
+  },
+  {
+    "motel_id": 51,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 51,
+    "equitment_id": 1,
+    "price": 8800
+  },
+  {
+    "motel_id": 51,
+    "equitment_id": 3,
+    "price": 8000
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 1,
+    "price": 1600
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 2,
+    "price": 4200
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 3,
+    "price": 3400
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 5,
+    "price": 1900
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 9,
+    "price": 1500
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 52,
+    "equitment_id": 7,
+    "price": 5900
+  },
+  {
+    "motel_id": 53,
+    "equitment_id": 1,
+    "price": 2800
+  },
+  {
+    "motel_id": 53,
+    "equitment_id": 2,
+    "price": 5700
+  },
+  {
+    "motel_id": 53,
+    "equitment_id": 3,
+    "price": 6800
+  },
+  {
+    "motel_id": 53,
+    "equitment_id": 5,
+    "price": 8500
+  },
+  {
+    "motel_id": 53,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 53,
+    "equitment_id": 10,
+    "price": 1300
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 1,
+    "price": 9700
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 11,
+    "price": 1400
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 3,
+    "price": 5700
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 9,
+    "price": 4900
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 54,
+    "equitment_id": 7,
+    "price": 3700
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 1,
+    "price": 8700
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 2,
+    "price": 7700
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 3,
+    "price": 2400
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 5,
+    "price": 3700
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 9,
+    "price": 1100
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 7,
+    "price": 9400
+  },
+  {
+    "motel_id": 55,
+    "equitment_id": 10,
+    "price": 2800
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 1,
+    "price": 3000
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 11,
+    "price": 4400
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 3,
+    "price": 3500
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 12,
+    "price": 3600
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 13,
+    "price": 3800
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 56,
+    "equitment_id": 7,
+    "price": 1600
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 1,
+    "price": 7200
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 3,
+    "price": 3200
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 5,
+    "price": 7500
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 9,
+    "price": 9800
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 7,
+    "price": 1100
+  },
+  {
+    "motel_id": 57,
+    "equitment_id": 10,
+    "price": 6900
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 1,
+    "price": 6800
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 11,
+    "price": 8900
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 3,
+    "price": 4600
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 5,
+    "price": 8400
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 58,
+    "equitment_id": 7,
+    "price": 7400
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 1,
+    "price": 3100
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 2,
+    "price": 9000
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 3,
+    "price": 6100
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 14,
+    "price": 9900
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 5,
+    "price": 9900
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 59,
+    "equitment_id": 7,
+    "price": 4400
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 1,
+    "price": 4700
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 2,
+    "price": 4000
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 3,
+    "price": 8100
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 5,
+    "price": 9800
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 13,
+    "price": 9000
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 7,
+    "price": 3200
+  },
+  {
+    "motel_id": 60,
+    "equitment_id": 10,
+    "price": 7500
+  },
+  {
+    "motel_id": 61,
+    "equitment_id": 2,
+    "price": 5100
+  },
+  {
+    "motel_id": 61,
+    "equitment_id": 3,
+    "price": 2700
+  },
+  {
+    "motel_id": 61,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 61,
+    "equitment_id": 14,
+    "price": 4400
+  },
+  {
+    "motel_id": 61,
+    "equitment_id": 5,
+    "price": 2200
+  },
+  {
+    "motel_id": 61,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 62,
+    "equitment_id": 2,
+    "price": 5500
+  },
+  {
+    "motel_id": 62,
+    "equitment_id": 3,
+    "price": 1000
+  },
+  {
+    "motel_id": 62,
+    "equitment_id": 4,
+    "price": 5700
+  },
+  {
+    "motel_id": 62,
+    "equitment_id": 5,
+    "price": 6800
+  },
+  {
+    "motel_id": 62,
+    "equitment_id": 9,
+    "price": 2000
+  },
+  {
+    "motel_id": 62,
+    "equitment_id": 7,
+    "price": 3400
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 1,
+    "price": 2500
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 18,
+    "price": 0
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 2,
+    "price": 6200
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 4,
+    "price": 9700
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 5,
+    "price": 2300
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 63,
+    "equitment_id": 7,
+    "price": 9200
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 1,
+    "price": 6300
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 16,
+    "price": 3600
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 2,
+    "price": 4200
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 3,
+    "price": 2000
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 5,
+    "price": 6500
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 64,
+    "equitment_id": 7,
+    "price": 7400
+  },
+  {
+    "motel_id": 65,
+    "equitment_id": 1,
+    "price": 2900
+  },
+  {
+    "motel_id": 65,
+    "equitment_id": 11,
+    "price": 6500
+  },
+  {
+    "motel_id": 65,
+    "equitment_id": 12,
+    "price": 5400
+  },
+  {
+    "motel_id": 65,
+    "equitment_id": 14,
+    "price": 1400
+  },
+  {
+    "motel_id": 65,
+    "equitment_id": 5,
+    "price": 9900
+  },
+  {
+    "motel_id": 65,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 1,
+    "price": 9100
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 3,
+    "price": 9500
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 5,
+    "price": 1000
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 9,
+    "price": 3200
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 13,
+    "price": 3700
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 66,
+    "equitment_id": 7,
+    "price": 1900
+  },
+  {
+    "motel_id": 67,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 67,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 1,
+    "price": 8300
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 3,
+    "price": 1700
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 5,
+    "price": 9600
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 9,
+    "price": 5700
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 68,
+    "equitment_id": 7,
+    "price": 8100
+  },
+  {
+    "motel_id": 69,
+    "equitment_id": 1,
+    "price": 4400
+  },
+  {
+    "motel_id": 69,
+    "equitment_id": 2,
+    "price": 5900
+  },
+  {
+    "motel_id": 69,
+    "equitment_id": 3,
+    "price": 9100
+  },
+  {
+    "motel_id": 69,
+    "equitment_id": 4,
+    "price": 9100
+  },
+  {
+    "motel_id": 69,
+    "equitment_id": 5,
+    "price": 2800
+  },
+  {
+    "motel_id": 69,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 70,
+    "equitment_id": 7,
+    "price": 2700
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 2,
+    "price": 9400
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 3,
+    "price": 1300
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 4,
+    "price": 3800
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 5,
+    "price": 6300
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 9,
+    "price": 1500
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 71,
+    "equitment_id": 7,
+    "price": 2700
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 2,
+    "price": 2700
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 3,
+    "price": 1600
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 5,
+    "price": 9300
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 9,
+    "price": 4900
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 72,
+    "equitment_id": 7,
+    "price": 6900
+  },
+  {
+    "motel_id": 73,
+    "equitment_id": 1,
+    "price": 5500
+  },
+  {
+    "motel_id": 73,
+    "equitment_id": 3,
+    "price": 9400
+  },
+  {
+    "motel_id": 73,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 73,
+    "equitment_id": 5,
+    "price": 8700
+  },
+  {
+    "motel_id": 73,
+    "equitment_id": 13,
+    "price": 3500
+  },
+  {
+    "motel_id": 73,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 74,
+    "equitment_id": 11,
+    "price": 7000
+  },
+  {
+    "motel_id": 74,
+    "equitment_id": 3,
+    "price": 8900
+  },
+  {
+    "motel_id": 74,
+    "equitment_id": 12,
+    "price": 5100
+  },
+  {
+    "motel_id": 74,
+    "equitment_id": 14,
+    "price": 5400
+  },
+  {
+    "motel_id": 74,
+    "equitment_id": 5,
+    "price": 2300
+  },
+  {
+    "motel_id": 74,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 75,
+    "equitment_id": 1,
+    "price": 4500
+  },
+  {
+    "motel_id": 75,
+    "equitment_id": 2,
+    "price": 2400
+  },
+  {
+    "motel_id": 75,
+    "equitment_id": 3,
+    "price": 6300
+  },
+  {
+    "motel_id": 75,
+    "equitment_id": 5,
+    "price": 2400
+  },
+  {
+    "motel_id": 75,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 75,
+    "equitment_id": 10,
+    "price": 7300
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 16,
+    "price": 4300
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 3,
+    "price": 8600
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 4,
+    "price": 1300
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 13,
+    "price": 9600
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 76,
+    "equitment_id": 7,
+    "price": 5500
+  },
+  {
+    "motel_id": 77,
+    "equitment_id": 1,
+    "price": 3900
+  },
+  {
+    "motel_id": 77,
+    "equitment_id": 2,
+    "price": 1700
+  },
+  {
+    "motel_id": 77,
+    "equitment_id": 3,
+    "price": 8600
+  },
+  {
+    "motel_id": 77,
+    "equitment_id": 5,
+    "price": 7000
+  },
+  {
+    "motel_id": 77,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 77,
+    "equitment_id": 10,
+    "price": 7400
+  },
+  {
+    "motel_id": 78,
+    "equitment_id": 15,
+    "price": 4700
+  },
+  {
+    "motel_id": 78,
+    "equitment_id": 2,
+    "price": 8700
+  },
+  {
+    "motel_id": 78,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 78,
+    "equitment_id": 23,
+    "price": 3800
+  },
+  {
+    "motel_id": 78,
+    "equitment_id": 5,
+    "price": 9300
+  },
+  {
+    "motel_id": 78,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 79,
+    "equitment_id": 1,
+    "price": 3200
+  },
+  {
+    "motel_id": 79,
+    "equitment_id": 2,
+    "price": 9800
+  },
+  {
+    "motel_id": 79,
+    "equitment_id": 3,
+    "price": 3700
+  },
+  {
+    "motel_id": 79,
+    "equitment_id": 5,
+    "price": 9300
+  },
+  {
+    "motel_id": 79,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 79,
+    "equitment_id": 10,
+    "price": 6400
+  },
+  {
+    "motel_id": 80,
+    "equitment_id": 6,
+    "price": 0
+  },
+  {
+    "motel_id": 80,
+    "equitment_id": 8,
+    "price": 0
+  },
+  {
+    "motel_id": 80,
+    "equitment_id": 5,
+    "price": 7900
+  },
+  {
+    "motel_id": 80,
+    "equitment_id": 23,
+    "price": 3100
+  }
+]

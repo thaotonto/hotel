@@ -25,14 +25,14 @@
           <%= a.name %></br>
         <% end %>
       </div>
-      <h4>ルーム</h4>
-      <div>
-        <% Room.all.each do |a| %>
-          <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
-          <%= a.room_type %></br>
-        <% end %>
-      </div>
-      <div>
+      <!--<h4>ルーム</h4>-->
+      <!--<div>-->
+      <!--  <% Room.all.each do |a| %>-->
+      <!--    <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>-->
+      <!--    <%= a.room_type %></br>-->
+      <!--  <% end %>-->
+      <!--</div>-->
+      <!--<div>-->
         <%= link_to('フィルターをリセットする', reset_filterrific_url) %>
       </div>
 
