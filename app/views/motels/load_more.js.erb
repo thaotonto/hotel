@@ -1,1 +1,1 @@
-$('#Review-comment-bodyText-<%= @review.id %>').html("<%=j @review.content %>")
+$('#Review-comment-bodyText-<%= @review.id %>').html("<%=j highlight(@review.content, params[:keyword]) %>")
