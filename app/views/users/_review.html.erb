@@ -5,8 +5,8 @@
         <div class="media-avatar">
           <div class="photo-box pb-60s">
             <%= link_to motel_path(review.motel) do %>
-              <% if review.motel.images? %>
-                <%= image_tag review.motel.images[0].url, height: 60, width: 60 %>
+              <% if review.motel.images.count %>
+                <%= image_tag review.motel.images.first.image.url, height: 60, width: 60 %>
               <% else %>
                 <%= image_tag "default-hotel", height: 60, width: 60 %>
               <% end %>
@@ -45,13 +45,13 @@
         </div>
         <p style="font-size: 12px"><%= review.content %></p>
         <div class="img-show">
-          <% if review.images.count < 5 %>
-            <% review.images.each do |img| %>
-                <%= image_tag img.url, height:'100', width: '100' %>
+          <% if review.pictures.count < 5 %>
+            <% review.pictures.each do |img| %>
+                <%= image_tag img.picture.url, height:'100', width: '100' %>
             <% end %>
           <% else %>
             <% 5.to_i.times do |i| %>
-                <%= image_tag review.images[i].url, height:'100', width: '100' %>
+                <%= image_tag review.pictures[i].picture.url, height:'100', width: '100' %>
             <% end %>
           <% end %>
         </div>

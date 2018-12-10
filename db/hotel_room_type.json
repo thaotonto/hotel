@@ -1,0 +1,2122 @@
+[
+  {
+    "motel_id": 1,
+    "room_id": 1,
+    "price": 220000
+  },
+  {
+    "motel_id": 1,
+    "room_id": 2,
+    "price": 410000
+  },
+  {
+    "motel_id": 1,
+    "room_id": 3,
+    "price": 740000
+  },
+  {
+    "motel_id": 2,
+    "room_id": 4,
+    "price": 430000
+  },
+  {
+    "motel_id": 2,
+    "room_id": 5,
+    "price": 140000
+  },
+  {
+    "motel_id": 2,
+    "room_id": 6,
+    "price": 260000
+  },
+  {
+    "motel_id": 2,
+    "room_id": 7,
+    "price": 700000
+  },
+  {
+    "motel_id": 3,
+    "room_id": 8,
+    "price": 450000
+  },
+  {
+    "motel_id": 3,
+    "room_id": 9,
+    "price": 190000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 10,
+    "price": 620000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 11,
+    "price": 790000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 3,
+    "price": 440000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 12,
+    "price": 670000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 13,
+    "price": 710000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 14,
+    "price": 830000
+  },
+  {
+    "motel_id": 4,
+    "room_id": 15,
+    "price": 600000
+  },
+  {
+    "motel_id": 5,
+    "room_id": 12,
+    "price": 250000
+  },
+  {
+    "motel_id": 5,
+    "room_id": 16,
+    "price": 460000
+  },
+  {
+    "motel_id": 5,
+    "room_id": 17,
+    "price": 410000
+  },
+  {
+    "motel_id": 5,
+    "room_id": 18,
+    "price": 770000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 19,
+    "price": 220000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 11,
+    "price": 230000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 3,
+    "price": 190000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 20,
+    "price": 870000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 13,
+    "price": 530000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 21,
+    "price": 580000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 22,
+    "price": 690000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 23,
+    "price": 930000
+  },
+  {
+    "motel_id": 6,
+    "room_id": 24,
+    "price": 170000
+  },
+  {
+    "motel_id": 7,
+    "room_id": 25,
+    "price": 320000
+  },
+  {
+    "motel_id": 7,
+    "room_id": 19,
+    "price": 630000
+  },
+  {
+    "motel_id": 7,
+    "room_id": 3,
+    "price": 870000
+  },
+  {
+    "motel_id": 7,
+    "room_id": 26,
+    "price": 180000
+  },
+  {
+    "motel_id": 7,
+    "room_id": 16,
+    "price": 370000
+  },
+  {
+    "motel_id": 8,
+    "room_id": 27,
+    "price": 910000
+  },
+  {
+    "motel_id": 8,
+    "room_id": 28,
+    "price": 640000
+  },
+  {
+    "motel_id": 8,
+    "room_id": 29,
+    "price": 200000
+  },
+  {
+    "motel_id": 8,
+    "room_id": 30,
+    "price": 210000
+  },
+  {
+    "motel_id": 8,
+    "room_id": 31,
+    "price": 910000
+  },
+  {
+    "motel_id": 8,
+    "room_id": 32,
+    "price": 640000
+  },
+  {
+    "motel_id": 9,
+    "room_id": 33,
+    "price": 210000
+  },
+  {
+    "motel_id": 10,
+    "room_id": 34,
+    "price": 380000
+  },
+  {
+    "motel_id": 10,
+    "room_id": 18,
+    "price": 180000
+  },
+  {
+    "motel_id": 10,
+    "room_id": 17,
+    "price": 290000
+  },
+  {
+    "motel_id": 11,
+    "room_id": 35,
+    "price": 590000
+  },
+  {
+    "motel_id": 11,
+    "room_id": 36,
+    "price": 250000
+  },
+  {
+    "motel_id": 11,
+    "room_id": 37,
+    "price": 710000
+  },
+  {
+    "motel_id": 11,
+    "room_id": 38,
+    "price": 920000
+  },
+  {
+    "motel_id": 11,
+    "room_id": 39,
+    "price": 420000
+  },
+  {
+    "motel_id": 12,
+    "room_id": 40,
+    "price": 190000
+  },
+  {
+    "motel_id": 12,
+    "room_id": 11,
+    "price": 130000
+  },
+  {
+    "motel_id": 12,
+    "room_id": 41,
+    "price": 480000
+  },
+  {
+    "motel_id": 12,
+    "room_id": 16,
+    "price": 620000
+  },
+  {
+    "motel_id": 12,
+    "room_id": 42,
+    "price": 780000
+  },
+  {
+    "motel_id": 13,
+    "room_id": 43,
+    "price": 160000
+  },
+  {
+    "motel_id": 13,
+    "room_id": 44,
+    "price": 880000
+  },
+  {
+    "motel_id": 14,
+    "room_id": 45,
+    "price": 740000
+  },
+  {
+    "motel_id": 14,
+    "room_id": 46,
+    "price": 290000
+  },
+  {
+    "motel_id": 14,
+    "room_id": 47,
+    "price": 670000
+  },
+  {
+    "motel_id": 15,
+    "room_id": 3,
+    "price": 990000
+  },
+  {
+    "motel_id": 15,
+    "room_id": 12,
+    "price": 510000
+  },
+  {
+    "motel_id": 15,
+    "room_id": 11,
+    "price": 350000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 48,
+    "price": 690000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 49,
+    "price": 730000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 50,
+    "price": 970000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 51,
+    "price": 950000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 52,
+    "price": 450000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 53,
+    "price": 650000
+  },
+  {
+    "motel_id": 16,
+    "room_id": 54,
+    "price": 130000
+  },
+  {
+    "motel_id": 17,
+    "room_id": 55,
+    "price": 200000
+  },
+  {
+    "motel_id": 17,
+    "room_id": 56,
+    "price": 460000
+  },
+  {
+    "motel_id": 17,
+    "room_id": 57,
+    "price": 800000
+  },
+  {
+    "motel_id": 17,
+    "room_id": 21,
+    "price": 470000
+  },
+  {
+    "motel_id": 17,
+    "room_id": 58,
+    "price": 280000
+  },
+  {
+    "motel_id": 18,
+    "room_id": 59,
+    "price": 480000
+  },
+  {
+    "motel_id": 18,
+    "room_id": 60,
+    "price": 630000
+  },
+  {
+    "motel_id": 18,
+    "room_id": 61,
+    "price": 760000
+  },
+  {
+    "motel_id": 18,
+    "room_id": 62,
+    "price": 700000
+  },
+  {
+    "motel_id": 18,
+    "room_id": 63,
+    "price": 940000
+  },
+  {
+    "motel_id": 18,
+    "room_id": 64,
+    "price": 690000
+  },
+  {
+    "motel_id": 19,
+    "room_id": 65,
+    "price": 870000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 66,
+    "price": 850000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 67,
+    "price": 590000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 68,
+    "price": 900000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 69,
+    "price": 790000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 70,
+    "price": 800000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 71,
+    "price": 560000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 72,
+    "price": 250000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 73,
+    "price": 610000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 74,
+    "price": 230000
+  },
+  {
+    "motel_id": 20,
+    "room_id": 75,
+    "price": 650000
+  },
+  {
+    "motel_id": 21,
+    "room_id": 3,
+    "price": 460000
+  },
+  {
+    "motel_id": 21,
+    "room_id": 76,
+    "price": 970000
+  },
+  {
+    "motel_id": 21,
+    "room_id": 16,
+    "price": 100000
+  },
+  {
+    "motel_id": 21,
+    "room_id": 77,
+    "price": 400000
+  },
+  {
+    "motel_id": 22,
+    "room_id": 3,
+    "price": 780000
+  },
+  {
+    "motel_id": 22,
+    "room_id": 78,
+    "price": 460000
+  },
+  {
+    "motel_id": 23,
+    "room_id": 79,
+    "price": 620000
+  },
+  {
+    "motel_id": 23,
+    "room_id": 80,
+    "price": 290000
+  },
+  {
+    "motel_id": 23,
+    "room_id": 81,
+    "price": 680000
+  },
+  {
+    "motel_id": 23,
+    "room_id": 82,
+    "price": 130000
+  },
+  {
+    "motel_id": 23,
+    "room_id": 83,
+    "price": 880000
+  },
+  {
+    "motel_id": 24,
+    "room_id": 77,
+    "price": 270000
+  },
+  {
+    "motel_id": 24,
+    "room_id": 3,
+    "price": 700000
+  },
+  {
+    "motel_id": 24,
+    "room_id": 31,
+    "price": 240000
+  },
+  {
+    "motel_id": 24,
+    "room_id": 23,
+    "price": 440000
+  },
+  {
+    "motel_id": 24,
+    "room_id": 84,
+    "price": 240000
+  },
+  {
+    "motel_id": 24,
+    "room_id": 63,
+    "price": 930000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 77,
+    "price": 500000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 85,
+    "price": 340000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 12,
+    "price": 470000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 21,
+    "price": 360000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 86,
+    "price": 830000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 87,
+    "price": 730000
+  },
+  {
+    "motel_id": 25,
+    "room_id": 88,
+    "price": 420000
+  },
+  {
+    "motel_id": 26,
+    "room_id": 89,
+    "price": 610000
+  },
+  {
+    "motel_id": 26,
+    "room_id": 90,
+    "price": 130000
+  },
+  {
+    "motel_id": 26,
+    "room_id": 91,
+    "price": 340000
+  },
+  {
+    "motel_id": 26,
+    "room_id": 92,
+    "price": 510000
+  },
+  {
+    "motel_id": 27,
+    "room_id": 93,
+    "price": 280000
+  },
+  {
+    "motel_id": 27,
+    "room_id": 94,
+    "price": 330000
+  },
+  {
+    "motel_id": 27,
+    "room_id": 12,
+    "price": 190000
+  },
+  {
+    "motel_id": 28,
+    "room_id": 77,
+    "price": 590000
+  },
+  {
+    "motel_id": 28,
+    "room_id": 95,
+    "price": 110000
+  },
+  {
+    "motel_id": 28,
+    "room_id": 18,
+    "price": 850000
+  },
+  {
+    "motel_id": 28,
+    "room_id": 3,
+    "price": 100000
+  },
+  {
+    "motel_id": 28,
+    "room_id": 16,
+    "price": 690000
+  },
+  {
+    "motel_id": 28,
+    "room_id": 96,
+    "price": 800000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 97,
+    "price": 470000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 98,
+    "price": 190000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 11,
+    "price": 360000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 99,
+    "price": 650000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 100,
+    "price": 960000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 101,
+    "price": 260000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 102,
+    "price": 580000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 103,
+    "price": 770000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 104,
+    "price": 340000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 105,
+    "price": 410000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 106,
+    "price": 150000
+  },
+  {
+    "motel_id": 29,
+    "room_id": 107,
+    "price": 620000
+  },
+  {
+    "motel_id": 30,
+    "room_id": 108,
+    "price": 320000
+  },
+  {
+    "motel_id": 30,
+    "room_id": 109,
+    "price": 930000
+  },
+  {
+    "motel_id": 30,
+    "room_id": 110,
+    "price": 280000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 111,
+    "price": 830000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 112,
+    "price": 470000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 113,
+    "price": 240000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 114,
+    "price": 390000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 115,
+    "price": 440000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 116,
+    "price": 190000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 117,
+    "price": 780000
+  },
+  {
+    "motel_id": 31,
+    "room_id": 118,
+    "price": 960000
+  },
+  {
+    "motel_id": 32,
+    "room_id": 119,
+    "price": 910000
+  },
+  {
+    "motel_id": 33,
+    "room_id": 120,
+    "price": 830000
+  },
+  {
+    "motel_id": 33,
+    "room_id": 11,
+    "price": 630000
+  },
+  {
+    "motel_id": 33,
+    "room_id": 13,
+    "price": 200000
+  },
+  {
+    "motel_id": 33,
+    "room_id": 121,
+    "price": 940000
+  },
+  {
+    "motel_id": 33,
+    "room_id": 84,
+    "price": 750000
+  },
+  {
+    "motel_id": 34,
+    "room_id": 122,
+    "price": 720000
+  },
+  {
+    "motel_id": 34,
+    "room_id": 123,
+    "price": 970000
+  },
+  {
+    "motel_id": 34,
+    "room_id": 11,
+    "price": 140000
+  },
+  {
+    "motel_id": 34,
+    "room_id": 3,
+    "price": 800000
+  },
+  {
+    "motel_id": 34,
+    "room_id": 13,
+    "price": 170000
+  },
+  {
+    "motel_id": 34,
+    "room_id": 124,
+    "price": 120000
+  },
+  {
+    "motel_id": 35,
+    "room_id": 125,
+    "price": 800000
+  },
+  {
+    "motel_id": 35,
+    "room_id": 126,
+    "price": 820000
+  },
+  {
+    "motel_id": 35,
+    "room_id": 127,
+    "price": 870000
+  },
+  {
+    "motel_id": 35,
+    "room_id": 128,
+    "price": 750000
+  },
+  {
+    "motel_id": 35,
+    "room_id": 129,
+    "price": 660000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 130,
+    "price": 820000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 131,
+    "price": 910000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 132,
+    "price": 610000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 133,
+    "price": 980000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 134,
+    "price": 740000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 135,
+    "price": 540000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 136,
+    "price": 560000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 137,
+    "price": 760000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 138,
+    "price": 280000
+  },
+  {
+    "motel_id": 36,
+    "room_id": 139,
+    "price": 700000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 120,
+    "price": 830000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 3,
+    "price": 110000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 140,
+    "price": 210000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 141,
+    "price": 680000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 142,
+    "price": 310000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 21,
+    "price": 540000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 143,
+    "price": 250000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 144,
+    "price": 410000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 23,
+    "price": 930000
+  },
+  {
+    "motel_id": 37,
+    "room_id": 84,
+    "price": 530000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 145,
+    "price": 110000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 146,
+    "price": 120000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 147,
+    "price": 220000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 148,
+    "price": 380000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 149,
+    "price": 720000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 150,
+    "price": 970000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 151,
+    "price": 690000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 152,
+    "price": 140000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 153,
+    "price": 700000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 154,
+    "price": 820000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 155,
+    "price": 830000
+  },
+  {
+    "motel_id": 38,
+    "room_id": 156,
+    "price": 170000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 157,
+    "price": 710000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 158,
+    "price": 760000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 159,
+    "price": 620000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 160,
+    "price": 900000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 161,
+    "price": 150000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 162,
+    "price": 640000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 163,
+    "price": 720000
+  },
+  {
+    "motel_id": 39,
+    "room_id": 164,
+    "price": 710000
+  },
+  {
+    "motel_id": 40,
+    "room_id": 165,
+    "price": 880000
+  },
+  {
+    "motel_id": 40,
+    "room_id": 166,
+    "price": 890000
+  },
+  {
+    "motel_id": 40,
+    "room_id": 167,
+    "price": 500000
+  },
+  {
+    "motel_id": 40,
+    "room_id": 168,
+    "price": 410000
+  },
+  {
+    "motel_id": 40,
+    "room_id": 169,
+    "price": 970000
+  },
+  {
+    "motel_id": 40,
+    "room_id": 170,
+    "price": 270000
+  },
+  {
+    "motel_id": 41,
+    "room_id": 171,
+    "price": 870000
+  },
+  {
+    "motel_id": 41,
+    "room_id": 172,
+    "price": 610000
+  },
+  {
+    "motel_id": 41,
+    "room_id": 82,
+    "price": 300000
+  },
+  {
+    "motel_id": 41,
+    "room_id": 173,
+    "price": 680000
+  },
+  {
+    "motel_id": 42,
+    "room_id": 88,
+    "price": 610000
+  },
+  {
+    "motel_id": 42,
+    "room_id": 16,
+    "price": 940000
+  },
+  {
+    "motel_id": 42,
+    "room_id": 17,
+    "price": 120000
+  },
+  {
+    "motel_id": 42,
+    "room_id": 18,
+    "price": 500000
+  },
+  {
+    "motel_id": 43,
+    "room_id": 43,
+    "price": 940000
+  },
+  {
+    "motel_id": 43,
+    "room_id": 82,
+    "price": 240000
+  },
+  {
+    "motel_id": 44,
+    "room_id": 34,
+    "price": 340000
+  },
+  {
+    "motel_id": 44,
+    "room_id": 41,
+    "price": 930000
+  },
+  {
+    "motel_id": 44,
+    "room_id": 3,
+    "price": 600000
+  },
+  {
+    "motel_id": 44,
+    "room_id": 94,
+    "price": 370000
+  },
+  {
+    "motel_id": 44,
+    "room_id": 174,
+    "price": 410000
+  },
+  {
+    "motel_id": 44,
+    "room_id": 175,
+    "price": 990000
+  },
+  {
+    "motel_id": 45,
+    "room_id": 3,
+    "price": 580000
+  },
+  {
+    "motel_id": 45,
+    "room_id": 176,
+    "price": 740000
+  },
+  {
+    "motel_id": 45,
+    "room_id": 80,
+    "price": 570000
+  },
+  {
+    "motel_id": 46,
+    "room_id": 177,
+    "price": 770000
+  },
+  {
+    "motel_id": 46,
+    "room_id": 95,
+    "price": 830000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 178,
+    "price": 630000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 179,
+    "price": 110000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 180,
+    "price": 510000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 181,
+    "price": 740000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 182,
+    "price": 780000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 183,
+    "price": 230000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 184,
+    "price": 870000
+  },
+  {
+    "motel_id": 47,
+    "room_id": 185,
+    "price": 290000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 186,
+    "price": 590000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 187,
+    "price": 410000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 188,
+    "price": 140000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 189,
+    "price": 870000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 190,
+    "price": 160000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 191,
+    "price": 310000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 192,
+    "price": 410000
+  },
+  {
+    "motel_id": 48,
+    "room_id": 193,
+    "price": 850000
+  },
+  {
+    "motel_id": 49,
+    "room_id": 3,
+    "price": 890000
+  },
+  {
+    "motel_id": 49,
+    "room_id": 194,
+    "price": 520000
+  },
+  {
+    "motel_id": 49,
+    "room_id": 79,
+    "price": 300000
+  },
+  {
+    "motel_id": 49,
+    "room_id": 195,
+    "price": 480000
+  },
+  {
+    "motel_id": 50,
+    "room_id": 196,
+    "price": 990000
+  },
+  {
+    "motel_id": 50,
+    "room_id": 197,
+    "price": 610000
+  },
+  {
+    "motel_id": 50,
+    "room_id": 198,
+    "price": 220000
+  },
+  {
+    "motel_id": 50,
+    "room_id": 199,
+    "price": 540000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 11,
+    "price": 570000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 200,
+    "price": 740000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 201,
+    "price": 480000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 202,
+    "price": 250000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 84,
+    "price": 260000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 47,
+    "price": 730000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 121,
+    "price": 330000
+  },
+  {
+    "motel_id": 51,
+    "room_id": 203,
+    "price": 360000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 204,
+    "price": 990000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 205,
+    "price": 780000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 206,
+    "price": 700000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 207,
+    "price": 510000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 208,
+    "price": 930000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 209,
+    "price": 530000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 210,
+    "price": 600000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 211,
+    "price": 150000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 212,
+    "price": 830000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 213,
+    "price": 820000
+  },
+  {
+    "motel_id": 52,
+    "room_id": 214,
+    "price": 740000
+  },
+  {
+    "motel_id": 53,
+    "room_id": 95,
+    "price": 510000
+  },
+  {
+    "motel_id": 53,
+    "room_id": 96,
+    "price": 560000
+  },
+  {
+    "motel_id": 53,
+    "room_id": 215,
+    "price": 900000
+  },
+  {
+    "motel_id": 53,
+    "room_id": 216,
+    "price": 560000
+  },
+  {
+    "motel_id": 53,
+    "room_id": 23,
+    "price": 470000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 217,
+    "price": 740000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 218,
+    "price": 850000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 219,
+    "price": 240000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 220,
+    "price": 920000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 221,
+    "price": 800000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 42,
+    "price": 810000
+  },
+  {
+    "motel_id": 54,
+    "room_id": 222,
+    "price": 470000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 223,
+    "price": 530000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 224,
+    "price": 390000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 225,
+    "price": 800000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 226,
+    "price": 150000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 227,
+    "price": 910000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 228,
+    "price": 260000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 229,
+    "price": 640000
+  },
+  {
+    "motel_id": 55,
+    "room_id": 230,
+    "price": 130000
+  },
+  {
+    "motel_id": 56,
+    "room_id": 119,
+    "price": 880000
+  },
+  {
+    "motel_id": 57,
+    "room_id": 11,
+    "price": 610000
+  },
+  {
+    "motel_id": 57,
+    "room_id": 23,
+    "price": 570000
+  },
+  {
+    "motel_id": 57,
+    "room_id": 231,
+    "price": 360000
+  },
+  {
+    "motel_id": 57,
+    "room_id": 232,
+    "price": 990000
+  },
+  {
+    "motel_id": 57,
+    "room_id": 88,
+    "price": 580000
+  },
+  {
+    "motel_id": 58,
+    "room_id": 11,
+    "price": 440000
+  },
+  {
+    "motel_id": 58,
+    "room_id": 3,
+    "price": 230000
+  },
+  {
+    "motel_id": 58,
+    "room_id": 233,
+    "price": 200000
+  },
+  {
+    "motel_id": 58,
+    "room_id": 16,
+    "price": 450000
+  },
+  {
+    "motel_id": 58,
+    "room_id": 23,
+    "price": 600000
+  },
+  {
+    "motel_id": 59,
+    "room_id": 12,
+    "price": 940000
+  },
+  {
+    "motel_id": 59,
+    "room_id": 80,
+    "price": 700000
+  },
+  {
+    "motel_id": 59,
+    "room_id": 234,
+    "price": 950000
+  },
+  {
+    "motel_id": 59,
+    "room_id": 235,
+    "price": 940000
+  },
+  {
+    "motel_id": 59,
+    "room_id": 42,
+    "price": 970000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 236,
+    "price": 450000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 237,
+    "price": 440000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 238,
+    "price": 150000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 239,
+    "price": 380000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 92,
+    "price": 180000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 240,
+    "price": 610000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 241,
+    "price": 150000
+  },
+  {
+    "motel_id": 60,
+    "room_id": 242,
+    "price": 910000
+  },
+  {
+    "motel_id": 61,
+    "room_id": 243,
+    "price": 650000
+  },
+  {
+    "motel_id": 61,
+    "room_id": 3,
+    "price": 210000
+  },
+  {
+    "motel_id": 61,
+    "room_id": 244,
+    "price": 480000
+  },
+  {
+    "motel_id": 61,
+    "room_id": 245,
+    "price": 430000
+  },
+  {
+    "motel_id": 61,
+    "room_id": 246,
+    "price": 890000
+  },
+  {
+    "motel_id": 61,
+    "room_id": 247,
+    "price": 840000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 248,
+    "price": 420000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 249,
+    "price": 980000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 187,
+    "price": 950000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 250,
+    "price": 100000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 251,
+    "price": 180000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 252,
+    "price": 360000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 253,
+    "price": 410000
+  },
+  {
+    "motel_id": 62,
+    "room_id": 254,
+    "price": 260000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 255,
+    "price": 430000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 11,
+    "price": 150000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 256,
+    "price": 820000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 257,
+    "price": 410000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 258,
+    "price": 110000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 23,
+    "price": 850000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 259,
+    "price": 320000
+  },
+  {
+    "motel_id": 63,
+    "room_id": 260,
+    "price": 770000
+  },
+  {
+    "motel_id": 64,
+    "room_id": 120,
+    "price": 390000
+  },
+  {
+    "motel_id": 64,
+    "room_id": 233,
+    "price": 290000
+  },
+  {
+    "motel_id": 64,
+    "room_id": 13,
+    "price": 600000
+  },
+  {
+    "motel_id": 64,
+    "room_id": 177,
+    "price": 760000
+  },
+  {
+    "motel_id": 64,
+    "room_id": 261,
+    "price": 400000
+  },
+  {
+    "motel_id": 64,
+    "room_id": 78,
+    "price": 170000
+  },
+  {
+    "motel_id": 65,
+    "room_id": 262,
+    "price": 550000
+  },
+  {
+    "motel_id": 65,
+    "room_id": 263,
+    "price": 470000
+  },
+  {
+    "motel_id": 66,
+    "room_id": 159,
+    "price": 560000
+  },
+  {
+    "motel_id": 66,
+    "room_id": 160,
+    "price": 240000
+  },
+  {
+    "motel_id": 66,
+    "room_id": 264,
+    "price": 260000
+  },
+  {
+    "motel_id": 66,
+    "room_id": 265,
+    "price": 510000
+  },
+  {
+    "motel_id": 66,
+    "room_id": 266,
+    "price": 480000
+  },
+  {
+    "motel_id": 67,
+    "room_id": 94,
+    "price": 430000
+  },
+  {
+    "motel_id": 67,
+    "room_id": 267,
+    "price": 580000
+  },
+  {
+    "motel_id": 67,
+    "room_id": 268,
+    "price": 300000
+  },
+  {
+    "motel_id": 68,
+    "room_id": 3,
+    "price": 700000
+  },
+  {
+    "motel_id": 68,
+    "room_id": 13,
+    "price": 140000
+  },
+  {
+    "motel_id": 68,
+    "room_id": 96,
+    "price": 530000
+  },
+  {
+    "motel_id": 68,
+    "room_id": 23,
+    "price": 790000
+  },
+  {
+    "motel_id": 68,
+    "room_id": 269,
+    "price": 650000
+  },
+  {
+    "motel_id": 69,
+    "room_id": 77,
+    "price": 260000
+  },
+  {
+    "motel_id": 69,
+    "room_id": 270,
+    "price": 140000
+  },
+  {
+    "motel_id": 69,
+    "room_id": 271,
+    "price": 760000
+  },
+  {
+    "motel_id": 69,
+    "room_id": 272,
+    "price": 580000
+  },
+  {
+    "motel_id": 69,
+    "room_id": 273,
+    "price": 390000
+  },
+  {
+    "motel_id": 70,
+    "room_id": 274,
+    "price": 890000
+  },
+  {
+    "motel_id": 70,
+    "room_id": 12,
+    "price": 480000
+  },
+  {
+    "motel_id": 70,
+    "room_id": 275,
+    "price": 980000
+  },
+  {
+    "motel_id": 70,
+    "room_id": 46,
+    "price": 860000
+  },
+  {
+    "motel_id": 70,
+    "room_id": 84,
+    "price": 650000
+  },
+  {
+    "motel_id": 71,
+    "room_id": 276,
+    "price": 300000
+  },
+  {
+    "motel_id": 71,
+    "room_id": 40,
+    "price": 270000
+  },
+  {
+    "motel_id": 71,
+    "room_id": 26,
+    "price": 330000
+  },
+  {
+    "motel_id": 71,
+    "room_id": 17,
+    "price": 330000
+  },
+  {
+    "motel_id": 71,
+    "room_id": 277,
+    "price": 660000
+  },
+  {
+    "motel_id": 71,
+    "room_id": 278,
+    "price": 720000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 279,
+    "price": 700000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 280,
+    "price": 690000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 281,
+    "price": 750000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 282,
+    "price": 420000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 283,
+    "price": 460000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 284,
+    "price": 780000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 285,
+    "price": 220000
+  },
+  {
+    "motel_id": 72,
+    "room_id": 286,
+    "price": 190000
+  },
+  {
+    "motel_id": 73,
+    "room_id": 3,
+    "price": 610000
+  },
+  {
+    "motel_id": 73,
+    "room_id": 12,
+    "price": 380000
+  },
+  {
+    "motel_id": 73,
+    "room_id": 17,
+    "price": 720000
+  },
+  {
+    "motel_id": 73,
+    "room_id": 238,
+    "price": 690000
+  },
+  {
+    "motel_id": 74,
+    "room_id": 3,
+    "price": 280000
+  },
+  {
+    "motel_id": 74,
+    "room_id": 287,
+    "price": 440000
+  },
+  {
+    "motel_id": 74,
+    "room_id": 288,
+    "price": 710000
+  },
+  {
+    "motel_id": 74,
+    "room_id": 289,
+    "price": 210000
+  },
+  {
+    "motel_id": 74,
+    "room_id": 290,
+    "price": 530000
+  },
+  {
+    "motel_id": 74,
+    "room_id": 291,
+    "price": 880000
+  },
+  {
+    "motel_id": 75,
+    "room_id": 40,
+    "price": 240000
+  },
+  {
+    "motel_id": 75,
+    "room_id": 292,
+    "price": 670000
+  },
+  {
+    "motel_id": 75,
+    "room_id": 18,
+    "price": 920000
+  },
+  {
+    "motel_id": 75,
+    "room_id": 17,
+    "price": 250000
+  },
+  {
+    "motel_id": 75,
+    "room_id": 293,
+    "price": 120000
+  },
+  {
+    "motel_id": 76,
+    "room_id": 294,
+    "price": 270000
+  },
+  {
+    "motel_id": 76,
+    "room_id": 17,
+    "price": 230000
+  },
+  {
+    "motel_id": 76,
+    "room_id": 18,
+    "price": 190000
+  },
+  {
+    "motel_id": 77,
+    "room_id": 3,
+    "price": 650000
+  },
+  {
+    "motel_id": 77,
+    "room_id": 13,
+    "price": 820000
+  },
+  {
+    "motel_id": 77,
+    "room_id": 295,
+    "price": 690000
+  },
+  {
+    "motel_id": 77,
+    "room_id": 47,
+    "price": 990000
+  },
+  {
+    "motel_id": 77,
+    "room_id": 23,
+    "price": 330000
+  },
+  {
+    "motel_id": 77,
+    "room_id": 88,
+    "price": 260000
+  },
+  {
+    "motel_id": 78,
+    "room_id": 171,
+    "price": 300000
+  },
+  {
+    "motel_id": 78,
+    "room_id": 44,
+    "price": 940000
+  },
+  {
+    "motel_id": 78,
+    "room_id": 296,
+    "price": 660000
+  },
+  {
+    "motel_id": 79,
+    "room_id": 297,
+    "price": 160000
+  },
+  {
+    "motel_id": 79,
+    "room_id": 77,
+    "price": 620000
+  },
+  {
+    "motel_id": 79,
+    "room_id": 17,
+    "price": 320000
+  },
+  {
+    "motel_id": 79,
+    "room_id": 18,
+    "price": 630000
+  },
+  {
+    "motel_id": 80,
+    "room_id": 3,
+    "price": 980000
+  },
+  {
+    "motel_id": 80,
+    "room_id": 12,
+    "price": 840000
+  },
+  {
+    "motel_id": 80,
+    "room_id": 298,
+    "price": 340000
+  },
+  {
+    "motel_id": 80,
+    "room_id": 11,
+    "price": 450000
+  }
+]
