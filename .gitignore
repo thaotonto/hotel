@@ -34,4 +34,12 @@ config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
 # Ignore uploaded test images.
-/public/uploads
+# /public/uploads
+
+tmp/*
+.idea/*
+log/*
+db/test.sqlite3
+log/development
+public/uploads/*
+Gemfile.lock

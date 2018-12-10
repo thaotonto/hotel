@@ -62,11 +62,11 @@
         </div>
       </div>
     </div>
-    <% if review.images.count != 0 %>
-      <% if review.images.count < 5 %>
+    <% if review.pictures.count != 0 %>
+      <% if review.pictures.count < 5 %>
         <div class="img-show">
-          <% review.images.each do |img| %>
-            <%= image_tag img.url, height: '100', width: '100' %>
+          <% review.pictures.each do |img| %>
+            <%= image_tag img.picture.url, height: '100', width: '100' %>
           <% end %>
         </div>
       <% else %>
@@ -142,7 +142,10 @@
         <% end %>
       </div>
     </div>
+     
+
   </div>
+  
 </div>
 
 <script type="text/javascript">

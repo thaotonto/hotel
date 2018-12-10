@@ -11,6 +11,6 @@ class CreateMotels < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    add_index :motels, :address, unique: true
+    add_index :motels, :address
   end
 end

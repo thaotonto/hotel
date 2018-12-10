@@ -1,4 +1,5 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:80px;">
+      <% a = Motel.order("RANDOM()").all %>
 <ol class="carousel-indicators">
   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
   <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -6,8 +7,8 @@
 </ol>
 <div class="carousel-inner">
   <div class="item active">
-    <% p = Motel.order("RANDOM()").first %>
-      <%= image_tag p.images[0].url%>
+    <% p = a[47] %>
+      <%= image_tag p.images.first.image.url%>
       <%= link_to motel_path(p) do %>
         <div class="carousel-caption">
           <h3><%= p.name %></h3>
@@ -17,8 +18,9 @@
   </div>
 
   <div class="item">
-    <% p = Motel.order("RANDOM()").second %>
-      <%= image_tag p.images[0].url%>
+
+    <% p = a[0] %>
+      <%= image_tag p.images.first.image.url%>
       <%= link_to motel_path(p) do %>
         <div class="carousel-caption">
           <h3><%= p.name %></h3>
@@ -28,8 +30,8 @@
   </div>
 
   <div class="item">
-    <% p = Motel.order("RANDOM()").third %>
-      <%= image_tag p.images[0].url%>
+    <% p = a[21] %>
+      <%= image_tag p.images.first.image.url%>
       <%= link_to motel_path(p) do %>
         <div class="carousel-caption">
           <h3><%= p.name %></h3>

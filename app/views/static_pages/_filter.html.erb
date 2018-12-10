@@ -12,13 +12,13 @@
         <%= a.name %></br>
       <% end %>
     </div>
-    <h4> Room</h4>
-    <div>
-      <% Room.all.each do |a| %>
-        <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
-        <%= a.room_type %></br>
-      <% end %>
-    </div>
+    <!--<h4> Room</h4>-->
+    <!--<div>-->
+    <!--  <% Room.all.each do |a| %>-->
+    <!--    <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>-->
+    <!--    <%= a.room_type %></br>-->
+    <!--  <% end %>-->
+    <!--</div>-->
     <div>
       <%= link_to('Reset filters', reset_filterrific_url) %>
     </div>

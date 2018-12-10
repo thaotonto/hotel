@@ -16,3 +16,110 @@
  *= require_tree .
  *= require_self
  */
+/*
+ *= require progressive_render
+ */
+
+ .form-search-review {
+    padding: 7px 0px;
+ }
+
+ .form-search-review input[type="text"] {
+     width: 50%;
+     padding: 6px;
+     border: 1px solid #ada2a2;
+     background: #e6e6e6;
+     border-radius: 2px;
+ }
+
+ .form-search-review input[type="text"]:focus{
+    width: 100%;
+    transition: 0.9s;
+ }
+
+ .form-search-review input[type="text"]::placeholder {
+     font-weight: 400;
+}
+
+.form-search-review select {
+    padding: 9px;
+    border-radius: 2px;
+    background: #ffae1aa1;
+
+}
+
+.list-key ul {
+    margin: 0;
+    padding: 0;
+}
+
+.list-key ul li{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #dedede;
+    margin: 5px 5px;
+    list-style: none;
+    cursor: pointer;
+    background: #e8ebff;
+    font-weight: 500;
+}
+
+.list-key ul li:hover {
+    background: orange;
+    transition: 0.3s;
+    font-weight: 900;
+} 
+
+.list-key ul li:hover a {
+    color:white;
+}
+
+.list-key ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+.Review-comment {
+    border: none;
+}
+
+.box-filter-review {
+    margin-top: 10px;
+    padding: 18px;
+    border: 1px solid #e0dede;
+}
+
+.review-kaku {
+    margin: 20px 0px;
+}
+.review-kaku a {
+    padding: 10px 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background: blue;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.review-kaku a:hover {
+    background: peru;
+    transition: 0.6s;
+}
+
+.col1-container {
+    display: flex;
+    margin: 20px 0px;
+    padding: 0px !important;
+  }
+  
+.col1-container div:nth-child(1){
+    flex: 2.3;
+    margin-right: 15px;
+
+}
+
+.col1-container div:nth-child(2){
+    flex:1;
+}

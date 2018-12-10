@@ -1,0 +1,9 @@
+$("#reviews").html("<%= j render partial: "review", collection: @reviews %>");
+$("#paginator1").html("<%= j paginate(@reviews, remote: true) %>");
+$(document).ajaxSend(function(event, request, settings) {
+  $('#loading-indicator').show();
+});
+
+$(document).ajaxComplete(function(event, request, settings) {
+  $('#loading-indicator').hide();
+});

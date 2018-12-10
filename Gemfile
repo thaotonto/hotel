@@ -31,7 +31,7 @@ gem 'gmaps4rails'
 gem 'filterrific', :git => 'https://github.com/jhund/filterrific.git', :ref => '292ecd953df4ec70f2f9a879105ef5aba5b77e95'
 gem 'tiny_segmenter'
 gem 'text_rank'
-
+gem 'progressive_render'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
