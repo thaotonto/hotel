@@ -50,9 +50,9 @@
   <div class="Review-comment-right">
     <div class="Review-comment-bubble blue">
       <div class="Review-comment-body" data-selenium="">
-        <div class="Review-comment-bodyTitle"><%= review.title %></div>
+        <div class="Review-comment-bodyTitle"><%= highlight(review.title, params[:keyword]) %></div>
         <div id="Review-comment-bodyText-<%= review.id %>" class="Review-comment-bodyText" data-type="comment">
-          <%= truncate(review.content, :length => 250) {link_to "もっと見る", load_more_path(review_id: review.id), remote: true} %>
+          <%= truncate(highlight(review.content, params[:keyword]), :length => 250) {link_to "もっと見る", load_more_path(review_id: review.id, keyword: params[:keyword]), remote: true} %>
         </div>
       </div>
       <div class="Review-statusBar">

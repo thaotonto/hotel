@@ -123,3 +123,8 @@
 .col1-container div:nth-child(2){
     flex:1;
 }
+
+mark {
+    font-weight: bold;
+    background: yellow;
+}
