@@ -57,8 +57,7 @@
       </div>
       <div class="Review-statusBar">
         <div class="Review-statusBar-right">
-          <button class="Review-statusBar-translateButton" onclick="toggleComment(<%= review.id %>)">コメント(<%= review.comments.count %>
-            )
+          <button id="count-comment-<%= review.id %>"class="Review-statusBar-translateButton" onclick="toggleComment(<%= review.id %>)">コメント(<%= review.comments.count %>)
           </button>
         </div>
       </div>

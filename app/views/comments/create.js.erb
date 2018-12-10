@@ -2,6 +2,9 @@ $("#review-comments-<%= @review.id %>").html(
   "<%= escape_javascript render @comments %>"
 );
 $("#paginate-<%= @review.id %>").data('max', "<%= @review.comments.count %>");
+$("#count-comment-<%= @review.id %>").html(
+ "コメント(<%= @review.comments.count %>)"
+)
 var limit = $("#paginate-<%= @review.id %>").data("limit");
 var max = $("#paginate-<%= @review.id %>").data("max");
 if (limit >= max){
