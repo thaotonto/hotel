@@ -16,7 +16,9 @@
  *= require_tree .
  *= require_self
  */
-
+/*
+ *= require progressive_render
+ */
 
  .form-search-review {
     padding: 7px 0px;

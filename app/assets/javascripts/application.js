@@ -21,3 +21,4 @@
 //= require turbolinks
 //= require jquery.easy-autocomplete
 //= require_tree .
+//= require progressive_render

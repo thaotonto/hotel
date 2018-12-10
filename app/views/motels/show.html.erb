@@ -246,7 +246,6 @@
             <% top_keywords = @ke.extract_keyphrase(@reviews_text.join("\n")) %>
 
               <% top_keywords.each do |key, value| %>
-                <!--              <li><a href="#"><%#= key %></a></li>-->
               <li>
                 <%= link_to searchs_index_url(id: @motel.id, keyword: key), class: "search_reviews", remote: true, :method => 'get' do %>
                   <%= key %>
@@ -260,10 +259,15 @@
     <div style="margin-top: 100px;" class="review_search_content" id="reviews">
       <%= render partial: "motels/review", collection: @reviews.order_after_like %>
     </div>
-  </div>
-  <div id="paginator1">
+    <div id="paginator1">
     <%= paginate @reviews, remote: true %>
+</div>
+<div id="loading-indicator">
+ <%= image_tag("ajax-loader.gif", :id => "loading-indicator", :style => "display:none") %>
+</div>
   </div>
+  
+
 </div>
 
 <script type="text/javascript">
