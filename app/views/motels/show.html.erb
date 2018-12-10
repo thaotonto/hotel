@@ -261,7 +261,7 @@
 </div>
 
 <script type="text/javascript">
-    $("#search_reviews").onclick(function () {
+    $("#search_reviews").keyup(function () {
         $.ajax({
             url: 'search/index',
             data: {index: $(this).serialize()}
