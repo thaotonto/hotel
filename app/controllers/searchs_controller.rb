@@ -8,6 +8,10 @@ class SearchsController < ApplicationController
       reviews_all = @motel.reviews
     end
 
+    reviews_all.each do |t|
+      puts t.id
+    end
+
     if params[:sort_order] == "昇順"
       if params[:sort_type] == "評価点"
         @results = reviews_all.sort_by { |x| x.rate }
@@ -24,10 +28,12 @@ class SearchsController < ApplicationController
       elsif params[:sort_type] == "投稿日"
         @results = reviews_all.sort_by { |x| x.created_at }.reverse
       end
+    else
+      @results = reviews_all
     end
 
     @results = Kaminari.paginate_array(@results).page(params[:page]).per 15
-
+    puts "abcd"
     respond_to :js
   end
 
