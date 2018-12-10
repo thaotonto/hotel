@@ -109,22 +109,6 @@ class MotelsController < ApplicationController
     end
   end
 
-  def add_my_list
-<<<<<<< HEAD
-    @motel = Motel.find_by id: params[:motel_id]
-    UserHotel.create user_id: current_user.id, motel_id: @motel.id
-=======
-    UserHotel.create user_id: current_user.id , motel_id: @motel.id
->>>>>>> 3a3b00f3e4defcdcda2cfac9d9e5477b4bbc528d
-    redirect_to motel_path(@motel)
-  end
-
-  def delete_my_list
-    @motel = Motel.find_by id: params[:motel_id]
-    UserHotel.where(user_id: current_user.id, motel_id: @motel.id).delete_all
-    redirect_to motel_path(@motel)
-  end
-
 
   private
 
