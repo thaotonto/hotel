@@ -243,14 +243,18 @@
         <div class="col-md-12 list-key">
           <h4>レビューハイライト:</h4>
           <ul>
-            <% top_keywords = @ke.extract_keyphrase(@reviews_text.join("")) %>
-            <% top_keywords = Hash[top_keywords.sort_by {|k, v| -v}[0..20]] %>
-            <% top_keywords.each do |key, value| %>
-              <li><a href="#"><%= key %></a></li>
-            <% end %>
+            <% top_keywords = @ke.extract_keyphrase(@reviews_text.join("\n")) %>
+
+              <% top_keywords.each do |key, value| %>
+                <!--              <li><a href="#"><%#= key %></a></li>-->
+              <li>
+                <%= link_to searchs_index_url(id: @motel.id, keyword: key), class: "search_reviews", remote: true, :method => 'get' do %>
+                  <%= key %>
+                <% end %>
+              </li>
+              <% end %>
           </ul>
         </div>
-        　
       </div>
     </div>
     <div style="margin-top: 100px;" class="review_search_content" id="reviews">
@@ -263,7 +267,7 @@
 </div>
 
 <script type="text/javascript">
-    $("#search_reviews").keyup(function () {
+    $("#search_reviews").onclick(function () {
         $.ajax({
             url: 'search/index',
             data: {index: $(this).serialize()}
