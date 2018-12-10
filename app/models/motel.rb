@@ -7,6 +7,7 @@ class Motel < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :user_hotels, inverse_of: :motel, dependent: :destroy
   has_many :users, through: :user_hotels
+  belongs_to :genre
 
   geocoded_by :address
 

@@ -7,7 +7,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Ấp Xuân Anでの当サイトおすすめLocated in Ấp Xuân An, Ánh Diệp provides accommodation with a flat-screen TV. Complimentary WiFi is available. Some units also have a kitchen equipped with a microwave. An Asian breakfast can be enjoyed at the property. The homestay offers a terrace. Guests can also relax in the garden. Da Lat is 1.9 km from Ánh Diệp. Lien Khuong Airport is 28 km from the property.   ",
     "zone": " Ấp Xuân An",
     "latitude": "108.44506200",
-    "longtitude": "11.93729400"
+    "longtitude": "11.93729400",
+    "genre": "ホームステイ",
+    "genre_id": 0
   },
   {
     "name": "Vinpearl Discovery Ha Tinh",
@@ -17,7 +19,9 @@
     "desciption": "    Vinpearl Discovery Ha Tinhで世界最高峰のサービスを体験  この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Situated in Ha Tinh, Vinpearl Ha Tinh Ocean Villas features views of Xuan Hai beach. Guests can enjoy meals at the on-site restaurant, or have a dip in the outdoor pool. Free WiFi access is available. All units at the villa feature air conditioning, large windows and private balconies overlooking the ocean. Private bathroom has shower facility and free toiletries. Sitting on a 160 m²  land, Sand Dream Restaurant serves an array of seafood, Vietnamese, Asian and European dishes. The nearest airport is Vinh Airport, 35 km from the property.   ",
     "zone": " Ha Tinh",
     "latitude": "105.89077950",
-    "longtitude": "18.49099520"
+    "longtitude": "18.49099520",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "Amira Cruise",
@@ -27,7 +31,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ハロンでの当サイトおすすめAmira Cruise offers leisurely cruises and activities across Ha Long Bay and embarks from Hon Gai Wharf, 3.5 km from Ha Long Night Market. Featuring elegant accommodation on board, the cruise ship boasts views of the sea and barbecue facilities. Guests can relax in a hot tub and lounge in the sun terrace. Free WiFi can be accessed throughout the property. Furnished in white, all units are air conditioned and features a desk and dressing room with wardrobe. Views of the sea and mountain can be seen from all units. Certain units offer a seating area with sofa. An iPod docking station, electric kettle and refrigerator are included. Each unit is equipped with an en suite bathroom with a bath or shower, hairdryer and free toiletries. Guests can enjoy a meal at the in-house restaurant or grab a drink at the bar. There is a shared kitchen and TV area on board. Airport transfers and luggage storage can be arranged upon request at the 24-hour front desk. Complimentary shuttle service to property is also offered. The nearest airport is Cat Bi International, 40 km from Amira Cruise.   ",
     "zone": " ハロン",
     "latitude": "107.08187099",
-    "longtitude": "20.94872762"
+    "longtitude": "20.94872762",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "Phung Hoang Golden Hotel",
@@ -37,7 +43,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   ロケーション抜群！地図を表示      当サイトではホーチミンのベストセラー！ タンソンニャット国際空港からわずか7kmに位置するPhung Hoang Gold Palace Hotelは、ホーチミン市内中心部にあるホテルで、館内全域での無料Wi-Fi回線を提供しています。 ホテルは中心部にあり、ベンタイン市場、ファインアート美術館、タオダン公園などの人気の観光スポットから約800m、サイゴンエキシビション＆コンベンションセンターから約5kmです。 全ての客室に、電気ポット、ミニバー、シーティングエリア、専用バスルーム（ヘアドライヤー、無料バスアメニティ付）が備わります。 24時間対応のフロントデスクでは、食料品の配達、外貨両替、ランドリー/アイロンサービスを提供しています。レンタカー、自転車レンタルで市内観光を楽しめます。 併設レストランでは美味しい本格的なベトナム料理を用意しています。リクエストに応じて客室内での食事や特別食も可能です。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69272515",
-    "longtitude": "10.76672178"
+    "longtitude": "10.76672178",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "アイコン 36 ホテル（Icon 36 Hotel）",
@@ -47,7 +55,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   ロケーション抜群！地図を表示      当サイトではハノイのベストセラー！ Icon 36 Hotelはホアンキエム湖から徒歩10分のハノイ旧市街中心部にあり、快適な客室（ノートパソコン、無料Wi-Fi付）を提供しています。 ドンスアン市場などの地元の観光スポットまで徒歩5分、ノイバイ国際空港まで車で45分です。 Icon 36 Hotelの客室には、エアコン、専用バスルーム、電子式セーフティボックス、ミニバー、紅茶/コーヒーメーカー、ヘアドライヤー、電気ポットが備わっています。 Icon 36 Hotelに滞在中は、レンタカー、マッサージサービス、空港トランスファーサービス、ツアー手配サービスを利用できます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84666371",
-    "longtitude": "21.03444197"
+    "longtitude": "21.03444197",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ガリーナ ホテル ＆ スパ（Galina Hotel & Spa）",
@@ -57,7 +67,9 @@
     "desciption": "   Galina Hotel & Spaは、ニャチャンの中心部に位置する豪華な宿泊施設です。屋外スイミングプール、伝統的な泥風呂などのアンチエイジングのスパトリートメントを提供しています。人気のニャチャンビーチからわずか400mです。 周囲エリアにはトラムフォーンタワー、2/4広場があり（ともに300m先）、ニャチャン空港からは27kmで、便利な空港送迎サービスの手配を受付けています。 魅力的なGalina Hotel & Spaのエレガントな客室には、エアコン、薄型ケーブルテレビ、ミニ冷蔵庫が備わります。室内はカーペットフロアで、大きな窓越しに市街または海の景色を望めます。専用バスルームが備わります。 滞在中は、サウナ施設で疲れた筋肉をほぐしたり、フィットネスセンターでエクササイズを楽しめます。ツアーデスクでは、観光ツアー、無料のシャトルサービス、車や自転車のレンタルサービスのサポートを行っています。24時間対応のフロント、キッズクラブ、会議施設も併設しています。 併設レストランでは、美味しい地元のベトナム料理および各国料理を楽しめます。ルームサービスの利用も可能です。   ",
     "zone": " ニャチャン",
     "latitude": "109.19523859",
-    "longtitude": "12.23802410"
+    "longtitude": "12.23802410",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "オー ラック ホテル（Au Lac Hotel）",
@@ -67,7 +79,9 @@
     "desciption": "   ベトナムの歴史的な王国にちなんで名付けられたAu Lac Hotelはホーチミン中心部に位置し、サイゴン大聖堂などの有名な観光スポットに囲まれています。居心地の良い客室、無料のWi-Fiと駐車場を提供しています。 Hotel Au Lacはベンタイン市場、Con Rua池から徒歩10分、タンソンニャット国際空港から車で30分です。 Au Lacの客室にはエアコン、木製家具、専用バスルーム（バスタブ付）、ケーブル/衛星テレビ、ミニバーが備わります。 滞在中はツアーデスクで興味深い日帰り旅行を手配したり、自転車をレンタルしてエリアをゆっくり探索できます。ビジネスセンター、ランドリーサービスも利用できます。 Au Lacレストランではベトナム料理や各国料理を取り揃えています。小さな庭園内のCoffee Shopでは、コーヒーや軽食を楽しみながらリラックスできます。    ホーチミン3区は「レストラン」「歴史」「コーヒー」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69599473",
-    "longtitude": "10.78093467"
+    "longtitude": "10.78093467",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "フィネガンズ ホテル（Finnegans Hotel）",
@@ -77,7 +91,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示      当サイトではハノイのベストセラー！ Finnegans Hotelはハノイ旧市街に位置し、無料Wi-Fi付のエレガントな客室を提供しています。 独特なスタイルの客室には、ハノイの生活や芸術をモチーフとした美しい内装が施され、エアコン、薄型ケーブルテレビ、シーティングエリア、電気ポットが備わります。一部の客室にはバルコニーまたはテラスが付いています。 ツアーデスクでは、ハロン湾クルーズやサパ、マイチャウバレーへの日帰り旅行などのチケットサービスや旅行情報を無料で提供しています。 Finnegans Hotelから、美しいホアンキエム湖、タンロン水上人形劇場、ドンスアン市場まで徒歩5分、ノイバイ国際空港まで車で40分です。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85311592",
-    "longtitude": "21.03637409"
+    "longtitude": "21.03637409",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "V Pool Villa",
@@ -87,7 +103,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 V Pool Villa is set in Thanh Thù and offers a seasonal outdoor swimming pool and barbecue facilities. This villa also has a private pool. This air-conditioned 3-bedroom villa comes with a kitchen, a seating area, a dining area and a cable flat-screen TV. Hanoi is 49 km from the villa. The nearest airport is Noi Bai International Airport, 29 km from V Pool Villa.   ",
     "zone": " Thanh Thù",
     "latitude": "105.86073249",
-    "longtitude": "21.41457482"
+    "longtitude": "21.41457482",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "Park View Saigon Hotel",
@@ -97,17 +115,21 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   すばらしいロケーション - 地図を表示     この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ホーチミンでの当サイトおすすめSituated just a 10-minute walk to Ben Thanh Market, Park View Saigon Hotel offers comfortable rooms in District 1. Featuring a dining option on site, the hotel operates 24-hour front desk and provides free WiFi access in all areas. Furnished in light beige and brown with hint of red, all rooms are air conditioned and fitted with a personal safe and desk. Rooms also come with a cable flat-screen TV, refrigerator and an electric kettle. En suite bathroom is equipped with bath/shower facility, slippers and a hairdryer. Guests can relax with professional massage after a busy day. Conversed in English and Vietnamese, staff can help you with a variety of services, including luggage storage, express check-in/check-out, dry cleaning and laundry services. Day trips and shuttle service can be arranged at the tour desk. The on-site restaurant serves delectable dishes of Vietnamese, Asian and European favourites. Many choices of drinks are also offered. Room service is available aternatively. Fine Arts Museum is 700 metres from the hotel, while Reunification Palace is 900 metres away. The nearest airport is Tan Son Nhat International Airport, 7.1 km from Park View Saigon Hotel.    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69287801",
-    "longtitude": "10.76971256"
+    "longtitude": "10.76971256",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "バンヤンツリー ランコー（Banyan Tree Lang Co）",
-    "address": "Cu Du Village, Loc Vinh Commune, ランコー, ベトナム",
+    "address": "41, Cu Du Village, Loc Vinh Commune, ランコー, ベトナム",
     "phone": "0948330645",
     "level": "5",
     "desciption": "    バンヤンツリー ランコーで世界最高峰のサービスを体験    ランコーでの当サイトおすすめ — ゲストにも好評です。  ベトナム中南部の海岸沿いにあるBanyan Tree Lang Coは、ベトナム王室様式の豪華な大型複合施設です。開放的な中庭を併設しており、リゾート内の至る所に陶器や伝統的なベトナムの織物が飾られています。広々としたヴィラ（専用プール、無料Wi-Fi付）、空港往復トランスファーサービスを提供しています。 白い砂浜と壮大な山々に囲まれたヴィラは、エレガントな絵画、竹などの環境に優しい素材を用いた内装で、エアコン、薄型テレビ、ミニバー、シーティングエリア、専用バスルーム（バスタブ付）が備わります。 Banyan Tree Lang Coは皇都のフエから車で1時間30分、世界遺産のホイアンとミーソン聖域から車で2時間、フバイ国際空港から44km、ダナン国際空港から60kmです。 フルボディマッサージでリラックスできるスパ、設備の整ったジム、ビジネスセンターを併設しており、無料の自転車レンタルも利用できます。3.2km以内の場所にゴルフコースがあります。 The Water Courtでは毎日のビュッフェ式朝食、Saffronレストランではタイのフュージョン料理、ビーチフロントのAzuraレストランではイタリア料理、地中海料理、ドリンクを提供しています。   ",
     "zone": " ランコー",
     "latitude": "107.95345992",
-    "longtitude": "16.33799489"
+    "longtitude": "16.33799489",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "ラ ストーリア ルビー ホテル（La Storia Ruby Hotel）",
@@ -117,7 +139,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示       ハノイでの当サイトおすすめ — ゲストにも好評です。  La Storia Ruby Hotelはハノイの旧市街に位置し、ホアンキエム湖から徒歩数分です。防音対策済みのお部屋にはインターネット回線付きのパソコンが備わり、無料Wi-Fiも利用できます。 La Storia Ruby Hotelからハノイ駅とバスステーションまで車で15分、ノイバイ国際空港まで車で35分です。 広々としたウッドフロアのお部屋には、薄型ケーブルテレビ、お茶/コーヒーが備わります。 ツアーデスクでは親切なスタッフが、観光ツアのー手配や外貨両替をサポートします。レンタカーやレンタル自転車を利用して周辺エリアを観光でき、便利な郵便サービスも提供しています。 ホテル内で朝食を提供しています。24時間対応のルームサービスも利用できます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84786281",
-    "longtitude": "21.03193716"
+    "longtitude": "21.03193716",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Golden Sands Service Apartment",
@@ -127,7 +151,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Providing pool views, Golden Sands Service Apartment in Ho Chi Minh City provides accommodation and a fitness centre. Complimentary WiFi is featured. Every unit has air-conditioned rooms and a kitchen with a microwave and kettle. A balcony with city views is offered in each unit. The aparthotel offers a terrace. Both a bicycle rental service and a car rental service are available at Golden Sands Service Apartment. Vietnam History Museum is 500 metres from the accommodation, while Jade Emperor Pagoda is 1.2 km from the property. The nearest airport is Tan Son Nhat International Airport, 13 km from Golden Sands Service Apartment.    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.70355500",
-    "longtitude": "10.78733100"
+    "longtitude": "10.78733100",
+    "genre": "アパートメント",
+    "genre_id": 4
   },
   {
     "name": "Phuong Dong Hotel",
@@ -137,7 +163,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Boasting a terrace and a restaurant, Phuong Dong Hotel is set in Cat Ba. Around 1.1 km from Dau Be Island, the property is also close to Cat Ba Ferry Station. Soi Sim Island is 19 km from the property. The units in the hotel are equipped with a kettle. All rooms come with a private bathroom, while some boast a mountain view. At Phuong Dong Hotel, the rooms have a flat-screen TV with cable channels. An Asian breakfast is available every morning at the property. Staff at the 24-hour front desk can help guests with any queries that they may have. Cannon Fort is less than 1 km from the accommodation. Cat Bi International Airport is 53 km from the property.   ",
     "zone": " カットバ島",
     "latitude": "107.05209583",
-    "longtitude": "20.72670442"
+    "longtitude": "20.72670442",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ハノイ エリート ホテル（Hanoi Elite Hotel）",
@@ -147,7 +175,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示      当サイトではハノイのベストセラー！ リラックスできるHanoi Elite Hotelは、観光スポットへ簡単にアクセスできる旧市街内の便利なロケーションで、ホアンキエム湖から徒歩5分です。無料インターネットが備わるモダンで設備の整った客室を提供しています。 Elite Hotel Hanoiは地元のカフェ、ショップ、マーケットの近くに位置し、ガロンビエン駅から徒歩わずか12分です。33km先のノイバイ国際空港行きの空港シャトルを手配できます。 Hanoi Eliteの快適な客室には洋式のバスルーム、エアコン、薄型テレビ（DVDプレーヤー付）、冷蔵庫（ミニバー付）が備わっています。 滞在中は、便利なレンタル自転車で周辺エリアを探索できます。コンシェルジュサービス、ツアーデスク、リラックスできるマッサージも提供しています。 館内レストランではビュッフェ式朝食をはじめ、アラカルトメニューを楽しめます。ルームサービスを毎日22:00まで利用できます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85248023",
-    "longtitude": "21.03530511"
+    "longtitude": "21.03530511",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "シックス センシズ コン ダオ（Six Senses Con Dao）",
@@ -157,7 +187,9 @@
     "desciption": "    シックス センシズ コン ダオで世界最高峰のサービスを体験    コンダオでの当サイトおすすめ — ゲストにも好評です。  コンダオの国立海洋公園内に位置するSix Sensesは、白砂のプライベートビーチ、館内レストラン2軒、バー、スイミングプール、スパ、フィットネスセンター、無料Wi-Fiを提供しています。 伝統的な漁村をイメージしたモダンなデザインのリゾートでは、遮るもののない海の景色を望む豪華なヴィラ（専用インフィニティプール付）を用意しています。ユニットには広いシーティング＆ダイニングエリア、DVDプレーヤー、薄型テレビが備わります。 Six Senses Con Daoでは、リゾートの有機栽培の菜園から収穫した野菜を使用しています。By The Marketレストランでは食欲をそそるベトナム料理、By The Beachレストランでは各国料理を提供しています。リクエストに応じて、異なるダイニングスポットでの食事を手配しています。 ウォータースポーツ、ビーチスポーツ、ハイキング、タートル（亀）ウォッチングなど、様々なレジャーアクティビティを楽しめます。 コンダオ島へは、ホーチミンからの国内線フライト（所要わずか40分）とそれに続くコンソン空港からのアイランドトランスファー（所要15分）により簡単にアクセスできます。リクエスト制で、トランスファーサービスを利用可能です。   ",
     "zone": " コンダオ",
     "latitude": "106.63356364",
-    "longtitude": "8.70090744"
+    "longtitude": "8.70090744",
+    "genre": "リゾート",
+    "genre_id": 5
   },
   {
     "name": "オウ コー ダノイ ブティック ホテル（Au Coeur d'Hanoi Boutique Hotel）",
@@ -167,7 +199,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     ハノイの有名な旧市街の中心部にあるAu Coeur d'Hanoi Boutique Hotelは、フランスと東洋のアクセントの内装が魅力的な3つ星の宿泊施設です。無料Wi-Fiを利用でき、ホアンキエム湖、ゴック・サン・テンプル、ドンスアン市場、ハノイ・オペラハウスまで徒歩わずか3分です。 モダンな客室にはエアコン、32インチ薄型テレビ、セーフティボックス、専用バスルーム（バスタブまたはシャワー付）が備わります。一部の客室からは市街の景色を望め、品揃え豊富なミニバーもあります。 Au Coeur d'Hanoi Boutique Hotelからノイバイ国際空港まで車で30分で、有料で空港トランスファーの手配が可能です。敷地内の駐車場は無料です。 Vietレストランでは各国料理、ベトナム料理を提供しており、ランチパック、ルームサービスにも対応しています。 ツアーデスクで日帰り旅行の手配が可能です。ランドリーサービスも提供しています。24時間対応のフロントデスクでは荷物預かりを利用できます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85365504",
-    "longtitude": "21.03224835"
+    "longtitude": "21.03224835",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ムオン タン ラグジュアリー クアン ニン ホテル（Muong Thanh Luxury Quang Ninh Hotel）",
@@ -177,7 +211,9 @@
     "desciption": "    ムオン タン ラグジュアリー クアン ニン ホテルが提供するワールドクラスのサービスで、贅沢なひとときを  ハロン市にあるMuong Thanh Quang Ninh Hotelは、バイチャイビーチから800m、ハロンナイトマーケット、マリンプラザから4kmの場所に位置し、無料Wi-Fi、屋外プール、フィットネスセンター、サウナを提供しています。 ホテルは、ビッグCハイパーマーケットから6km、バイトー山から10km、トゥアンチャウ島から15km、カットビ国際空港から70kmです。 客室には薄型ケーブルテレビ、セーフティボックス、ミニバー、紅茶/コーヒーメーカー、専用バスルーム（バスタブ、ヘアドライヤー、バスアメニティ付）が備わり、一部の客室からは海の景色を望めます。 Van Xuanではアジア料理や洋食、Thien Cungではアジア料理と毎日のビュッフェ式朝食を用意しています。 滞在中は、テニス、カラオケ、リラックスできるマッサージを楽しんだり、会議/宴会スペース、ビジネスセンター、ツアーデスクを利用できます。24時間対応のフロントでは荷物預かり、ランドリー、アイロン、空港シャトルなどのサービスを提供しています。   ",
     "zone": " ハロン",
     "latitude": "107.04945624",
-    "longtitude": "20.95663551"
+    "longtitude": "20.95663551",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "VELA Bungalow",
@@ -187,17 +223,21 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Located in Phu Quoc, near Coi Nguon Museum, VELA Bungalow features free WiFi, and guests can enjoy a garden and a terrace. Providing a balcony, specific units are air conditioned and include a dining area and a seating area with a flat-screen TV. There is also a kitchen in some of the units equipped with a fridge. Both a bicycle rental service and a car rental service are available at this property, while hiking can be enjoyed nearby Sung Hung Pagoda is 4.2 km from the holiday home.    Duong Dongは「食事」「ビーチの散歩」「地元グルメ」に興味がある人におすすめ。  ",
     "zone": " フーコック",
     "latitude": "103.97031144",
-    "longtitude": "10.18480702"
+    "longtitude": "10.18480702",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "アンサナ ラング コ（Angsana Lang Co）",
-    "address": "41, Cu Du Village, Loc Vinh Commune, ランコー, ベトナム",
+    "address": "Cu Du Village, Loc Vinh Commune, ランコー, ベトナム",
     "phone": "0948330645",
     "level": "5",
     "desciption": "    アンサナ ラング コで世界最高峰のサービスを体験  Angsana Lang Coはスタイリッシュな内装が自慢のモダンなリゾートで、エアコン完備のユニット（無料Wi-Fi付）、レストラン2軒、バー、スパ、屋外スイミングプールを提供しています。 広々としたお部屋、スイート、ロフトには薄型衛星テレビ、DVDプレーヤー、専用バスルーム（バスタブ、ヘアドライヤー、バスローブ、無料バスアメニティ付）が備わります。スイートとロフトには簡易キッチン、広々としたリビングエリアもあります。 Angsana Lang Coからフエ王宮まで車で1時間30分、世界遺産登録の街ホイアン、歴史的なミーソン聖域まで車で2時間、フエ空港まで44km、ダナン空港まで60kmです。 リラクゼーション・マッサージ、フィットネスセンター、ウォータースポーツ・アクティビティ、24時間対応のフロント（荷物預かり、セーフティボックスあり）、ランドリー/アイロンサービス（有料）を提供しています。 リゾートのメインレストランではアジア料理を屋内/屋外で楽しめます。Rice Barでは種類豊富な米料理のメニューとドリンク、カジュアルなビーチフロントレストランMoomba（ダンスフロアあり）ではタパスを用意しています。   ",
     "zone": " ランコー",
     "latitude": "107.95446038",
-    "longtitude": "16.33943421"
+    "longtitude": "16.33943421",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "ブルー ハノイ イン ホテル（Blue Hanoi Inn Hotel）",
@@ -207,7 +247,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     ハノイでの当サイトおすすめハノイの旧市街に位置するBlue Hanoi Inn Hotelは、薄型テレビと無料Wi-Fi付きの広々とした客室を提供しています。ホアンキエム湖から徒歩3分の新規オープンした宿泊施設で、レストラン、無料駐車場を併設しています。 専用バルコニー付きの客室で、ウッドフロアの室内にはエアコン、クラシックな家具、便利な電気ポット、ミニバー、専用バスルーム（バスタブ、ヘアドライヤー付）が備わっています。 ハノイの観光に便利なツアー、レンタカーやレンタル自転車を提供しています。Blue Hanoi Inn Hotelはビジネスセンター、24時間対応のフロントデスクを併設し、セキュリティは24時間体制です。 レストランは様々な地元のベトナム料理と洋食を提供しています。食事は客室内でも楽しめます。Blue Hanoi Inn Hotelの徒歩圏内には、数多くの飲食店やショップがあります。 ノイバイ国際空港まで車で約1時間です。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84837645",
-    "longtitude": "21.03032063"
+    "longtitude": "21.03032063",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ケイティー ブティック ハウス（Katie Boutique House）",
@@ -217,7 +259,9 @@
     "desciption": "    当サイトではホーチミンのベストセラー！ ホーチミン市のVincomショッピングセンターから徒歩5分、サイゴン・オペラハウスから500mのKatie Boutique Houseは、共用ラウンジを提供する宿泊施設です。全てのお部屋に薄型衛星テレビ、専用バスルーム、街の景色を望むテラスがあります。 お部屋にはエアコン、食器洗い機、電子レンジ、コーヒーメーカー、ホットタブ、無料バスアメニティ、デスク、ポットが備わり、一部のお部屋には冷蔵庫付きのキッチン、シーティングエリアが備わります。 アメリカンブレックファーストを毎朝楽しめます。 フロントではスタッフが英語とベトナム語で常時対応しています。 ホテル周辺にはユニオンスクエア、ホーチミン市庁舎、中央郵便局などの人気スポットがあります。タンソンニャット国際空港まで7kmです。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.70526059",
-    "longtitude": "10.78035606"
+    "longtitude": "10.78035606",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "オリヴィング サービスド レジデンス（Oliving Serviced Residence）",
@@ -227,7 +271,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   ロケーション抜群！地図を表示     ハノイにある築200年のフレンチヴィラを利用したOliving Serviced Residenceは、テラス付きのお部屋、無料Wi-Fi回線を提供しています。旧市街から200mの場所に位置しています。 各お部屋に薄型テレビ、お茶を楽しめるバルコニーまたはパティオ、専用バスルーム、スリッパ、無料バスアメニティが備わります。 フロントは2階に位置し、1階にはナイトクラブがあります。 Oliving Serviced Residenceからドンスアン市場まで300m、タンロン水上人形劇場まで500m、ノイバイ国際空港まで20kmです。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85124142",
-    "longtitude": "21.03576383"
+    "longtitude": "21.03576383",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ハノイ ゴールデン ムーン ホテル（Hanoi Golden Moon Hotel）",
@@ -237,7 +283,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示      当サイトではハノイのベストセラー！ 無料のWi-Fi回線、快適な客室を提供するHanoi Golden Moon Hotelは、、旧市街の中心部に位置し、ホアンキエム湖からわずか300mです。 ホーチミン廟、トラン・クイ・キャップ駅と文廟からわずか1kmの中心部にあり、ノイバイ国際空港から31kmです。 上品な内装の客室には、エアコン、紅茶/コーヒーメーカー、ケーブルテレビ、広々としたワークスペース、専用バスルーム（温水シャワー、バスアメニティ、ヘアドライヤー付）が備わります。 24時間対応のフロントデスクでは、ランドリー、アイロン、シャトル、荷物預かりサービスを提供しています。ツアーデスク、ビジネスセンターも利用できます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85436583",
-    "longtitude": "21.03264140"
+    "longtitude": "21.03264140",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "シルバーランド チャールナー ホテル（Silverland Charner Hotel）",
@@ -247,7 +295,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   すばらしいロケーション - 地図を表示       ホーチミンでの当サイトおすすめ — ゲストにも好評です。  ホーチミン市の中心部に位置するSilverland Charner Hotelは、フランスの植民地時代のティーハウスに触発されたスタイリッシュな宿泊施設です。市内の活気あるショッピング＆エンターテイメントエリアから徒歩ですぐ、歴史あるオペラハウスとノートルダム大聖堂から徒歩わずか5分です。併設レストランがあり、館内全域で無料Wi-Fiを利用できます。 パステルカラーのお部屋には、籐の家具、エアコン、32インチのケーブルテレビ、セーフティボックス、ミニバー、電気ポット、ミニバー、専用バスルーム（バスタブ/シャワー設備、ヘアドライヤー、無料バスアメニティ付）が備わります。 心地よいマッサージでリラックスしたり、ツアーデスクで日帰り旅行を手配することができます。24時間対応のフロントデスクのスタッフは、荷物預かり、ランドリー、外貨両替サービスを提供しています。空港トランスファー、レンタカーの手配も行っています。 周辺エリアには伝統的な市場、露店、カフェ、レストランがあります。 ホーチミン高島屋、ベンタイン市場、美術館まで800m以内、スリ・マハマリアマン寺院まで1km、タンソンニャット国際空港まで8kmです。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.70395285",
-    "longtitude": "10.77162027"
+    "longtitude": "10.77162027",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "インドシナ セールズ クルーズ（Indochina Sails Cruise）",
@@ -257,7 +307,9 @@
     "desciption": "    インドシナ セールズ クルーズで世界最高峰のサービスを体験  美しいハロン湾の近くにあるIndochina Sailsでは、ベトナム風の木造キャビンを提供しています。屋外ダイニング、ハノイからの無料往復トランスファー、ツアー、マッサージなどサービスを提供しています。 エアコン完備のキャビンでは、オーバーサイズの窓からの景色を楽しめます。各客室には、クラシックな木製家具、ミニバー、（マッサージシャワーとヘアドライヤー付）が備わっています。 ホテルスタッフが、カヤック洞窟ツアー、太極拳のレッスンなどの手配もしています。一日のアクティビティの後にリラックスできるマッサージもあります。 レストランでは、ベトナム料理と西洋料理をビュッフェスタイルとセットメニューで終日用意しています。 ハノイからハロン湾まで車で約3時間です。   ",
     "zone": " ハロン",
     "latitude": "107.04425812",
-    "longtitude": "20.95214186"
+    "longtitude": "20.95214186",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "Tam Coc Victoria Hotel",
@@ -267,7 +319,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Located in Vũ Lâm, Tam Coc Victoria Hotel provides free WiFi. Boasting a 24-hour front desk, this property also has a restaurant and a terrace. Guests can have a drink at the bar. At the hotel, every room is fitted with a balcony. All rooms include a private bathroom with free toiletries and a hair dryer. The units at Tam Coc Victoria Hotel include air conditioning and a desk. An Asian breakfast can be enjoyed at the property. You can play billiards at the accommodation. Ninh Binh is 7 km from Tam Coc Victoria Hotel.   ",
     "zone": " Vũ Lâm",
     "latitude": "105.93767264",
-    "longtitude": "20.21674375"
+    "longtitude": "20.21674375",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ドラゴン パール ホテル（Dragon Pearl Hotel）",
@@ -277,7 +331,9 @@
     "desciption": "   ハノイでの当サイトおすすめDragon Pearl Hotelは建物、内装ともにモダンなベトナム様式で、ドンスアン市場から100mに位置しています。無料Wi-Fi、2軒の飲食店、薄型テレビ付きの客室を提供しています。 Dragon Pearl Hotelの禁煙の客室はハードウッドフロアで、温かみのある照明、セーフティボックス、温水シャワー設備付きの専用バスルームが備わります。 レンタル自転車、レンタカーも手配可能です。ツアーデスクでは、旅行や観光の手配を行っています。リクエストに応じてチケット発券やコンシェルジュサービスも提供しています。 レストランでは洗練されたアジア料理と洋食を楽しめます。ハノイの旧市街の景色を望むMimosaワインバーでは、軽食や爽やかなドリンクを提供しています。 ホテルはノイバイ国際空港まで車で40分です。    バディン区は「観光」「街歩き」「文化」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84550381",
-    "longtitude": "21.03991142"
+    "longtitude": "21.03991142",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "アルコーヴ ライブラリー ホテル（The Alcove Library Hotel）",
@@ -287,7 +343,9 @@
     "desciption": "    当サイトではホーチミンのベストセラー！ The Alcove Library Hotelは、図書館をイメージしたデザインの壁に大規模な本のコレクションが並ぶ印象的なホテルです。タンソンニャット国際空港から車でわずか5分の距離にあるブティックホテルで、のどかな休暇を楽しむことができます。 モダンで広々とした客室およびスイートには、エアコン、薄型テレビ、iPodドック、セーフティボックスが備わっています。スイートには小さな簡易キッチンが付いています。専用バスルームにはリラックスできるレインシャワー、バスアメニティがあります。 The Alcove Library Hotelはグエンヴァントロイに近い静かな通り沿いにあり、ノートルダム教会、ダイアモンドショッピングセンター、戦争博物館からわずか車で15分です。ベンタイン市場、オペラハウスへは車で20分です。 無料のウェルカムドリンク、フルーツを終日楽しむことができます。ホテルの書籍を借りて読むこともできます。 24時間対応のフロントデスクでは、ツアー予約ができます。ランドリー、荷物置き場のサービスも利用できます。 屋上にある併設レストランBookmarkでは、さまざまな好みに合うベトナム料理とヨーロッパ料理を提供しています。レストランからは周辺の美しい景色を眺めることができます。    フーニャン区は「フレンドリーな地域性」「レストラン」「コーヒー」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.67700201",
-    "longtitude": "10.79555519"
+    "longtitude": "10.79555519",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "CatBa Sky View Hotel",
@@ -297,7 +355,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではカットバ島のベストセラー！ CatBa Sky View Hotel is situated in Cat Ba, 1.2 km from Dau Be Island, and has a shared lounge. With free WiFi, this 1-star hotel offers a 24-hour front desk and room service. The property is 20 km from Soi Sim Island and 500 metres from Cat Ba Ferry Station. At the hotel, each room includes a wardrobe and a flat-screen TV. All guest rooms will provide guests with a fridge. Breakfast is available daily, and includes buffet, American and Asian options. Cannon Fort is less than 1 km from CatBa Sky View Hotel, while Ben Beo Harbour is a 15-minute walk from the property. The nearest airport is Cat Bi International Airport, 54 km from the property.   ",
     "zone": " カットバ島",
     "latitude": "107.05119111",
-    "longtitude": "20.72624025"
+    "longtitude": "20.72624025",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Mekong Lodge Resort",
@@ -307,7 +367,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Cai Beでの当サイトおすすめProviding free bicycle rentals and free fishing equipment, Mekong Lodge is a charming nature getaway surrounded by gardens and the Tien River. Free 2-way transfers from Cai Be Tourist Pier are included. Free Wi-Fi is available in the business centre. All rooms and bungalows come with air conditioning, as well as a terrace with views of the garden and river. Mosquito nets are provided. En suite bathrooms come with a bathtub and free toiletries. Mekong Lodge is 100 metres from Cai Be Floating Market and 150 metres from Cai Be Church. It is a 1-hour, 30-minute drive from Can Tho Airport. Ho Chi Minh City is a 2-hour, 30-minute drive away. Day trips, car rentals and airport transfers can be arranged at the tour desk at an extra charge, 24-hour front desk. Local set menus are available at the resort's 2 on-site restaurants. There is also a bar and 24-hour room service.   ",
     "zone": " Cai Be",
     "latitude": "106.04582995",
-    "longtitude": "10.32425544"
+    "longtitude": "10.32425544",
+    "genre": "リゾート",
+    "genre_id": 5
   },
   {
     "name": "Panoramic LUX 43rd floor - Home Chi Minh City",
@@ -317,7 +379,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではホーチミンのベストセラー！ Panoramic LUX 43rd floor - Home Chi Minh City is located in Ho Chi Minh City, 4.2 km from Saigon Opera House, and water sports facilities and a fitness centre are available on-site. Housed in a building dating from 2018, this apartment offers free WiFi. The apartment is equipped with 2 bedrooms, a flat-screen TV with cable channels and a fully equipped kitchen that provides guests with a dishwasher, a microwave, a washing machine, a toaster and a fridge. Speaking English and French at the reception, staff will be happy to provide guests with practical information on the area. Guests can make use of the hot tub. A children's playground is also available at the property, while guests can also relax in the garden. Ho Chi Minh City Hall is 4.2 km from the apartment. The nearest airport is Tan Son Nhat International Airport, 15 km from the property.    ビンタイン区は「ムードのある場所」「コーヒー」「市内観光」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.72178221",
-    "longtitude": "10.79373490"
+    "longtitude": "10.79373490",
+    "genre": "ヴィラ",
+    "genre_id": 1
   },
   {
     "name": "ノボテル ハ ロング ベイ ホテル（Novotel Ha Long Bay Hotel）",
@@ -327,7 +391,9 @@
     "desciption": "   ハロンでの当サイトおすすめバイチャイの中心部にある快適な4つ星ホテル、Novotel Ha Long Bay Hotelからはユネスコ世界遺産に登録されたハロン湾の景色を望めます。屋外プール、屋外プールデッキ、レストラン、敷地内の無料専用駐車場を併設しています。 ハイテクを取り入れたエレガントな内装のユニットで贅沢な滞在を楽しめます。設備の整ったユニットには、無料Wi-Fi、モダンな家具、エアコン、セーフティボックス、ワードローブ、専用バスルーム（シャワー、無料バスアメニティ付）が備わります。一部のユニットには、素晴らしい景色を望む専用バルコニーが付いています。 Novotel Ha Long Bay Hotelのツアーデスクと24時間対応のフロントデスクでは、24時間対応のルームサービス、外貨両替、レンタカーの手配といった様々なサービスを提供しています。Novotelのフレンドリーなスタッフがハロン湾のクルーズも手配しています。 Novotel Ha Long Bay Hotelからハロン・ナイトマーケットまで800m、サンワールド・ハロンパークまで1km、ビンコム・プラザ・ハロンまで4.4km、最寄りのカットビ国際空港まで36kmです。 プールサイドのレストラン、The Squareではおいしい各国料理を提供しており、プールとハロン湾の景色を眺めながら食事を楽しめます。   ",
     "zone": " ハロン",
     "latitude": "107.04186559",
-    "longtitude": "20.95175110"
+    "longtitude": "20.95175110",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ジア ヴィエン ホテル（Gia Vien Hotel）",
@@ -337,7 +403,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   ロケーション抜群！地図を表示     ホーチミンでの当サイトおすすめGia Vien Hotelは、ベンタイン市場から徒歩10分、サイゴンオペラハウスから徒歩20分の場所に位置し、無料駐車場、無料Wi-Fi回線を提供しています。 サイゴン大教会から車で10分、タンソンニャット国際空港から車で45分です。 タイルフロアの禁煙ルームには、薄型ケーブルテレビ、セーフティボックス、ワードローブ、ミニバー、専用バスルーム（ヘアドライヤー付）が備わっています。 Gia Vienの併設レストランで朝食を毎日提供しており、ルームサービスも利用できます。 ビジネスセンターを併設しており、ツアーデスクで各種旅行手配を行っています。フロントデスクは24時間対応で、ランドリー/アイロンサービス、レンタカーサービスを提供しています。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69416815",
-    "longtitude": "10.76862432"
+    "longtitude": "10.76862432",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Tam Coc Valley Bungalow",
@@ -347,7 +415,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ニンビンでの当サイトおすすめTam Coc Valley Bungalow is situated in Ninh Binh, 26 km from Bai Dinh Temple and provides air-conditioned accommodation with free WiFi, as well as access to a sun terrace. A balcony with mountain views is offered in every unit. A buffet breakfast is served daily at the property. Guests at the lodge can enjoy billiards on site, or cycling in the surroundings. Phat Diem Cathedral is 35 km from Tam Coc Valley Bungalow, while Ninh Binh Stadium is 9 km from the property.   ",
     "zone": " ニンビン",
     "latitude": "105.93797207",
-    "longtitude": "20.22399208"
+    "longtitude": "20.22399208",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "アザレア クルーズ（Azalea Cruise）",
@@ -357,7 +427,9 @@
     "desciption": "    アザレア クルーズで世界最高峰のサービスを体験    ハロンでの当サイトおすすめ — ゲストにも好評です。  ハイフォン市にあるゴット・フェリー（Got ferry）から出航するAzalea Cruiseは、ランハ湾とハロン湾の自然のままのエリアを巡るクルーズ客船で、無料Wi-Fiを提供しています。 クラシックな建築様式が特徴的な各ユニットには、薄型衛星テレビ、ミニバー、電気ポット、専用バスルーム（バスローブ、スリッパ付）、ベッドリネンが備わります。一部のユニットにはシーティングエリアとバルコニー（またはどちらか一方）が付いています。 Azalea Cruiseにはスパセンター、館内レストラン、バーもあります。 追加料金にて、ハノイとハロン湾間の豪華なミニバンによる乗り合いのトランスファーを利用できます（所要時間1時間30分）。   ",
     "zone": " ハロン",
     "latitude": "106.90196675",
-    "longtitude": "20.80694411"
+    "longtitude": "20.80694411",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "ラベンダー ブティック ホテル（Lavender Boutique Hotel）",
@@ -367,7 +439,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   ロケーション抜群！地図を表示     ホーチミンでの当サイトおすすめLavender Boutique Hotel Managed by Meliaはベンタイン市場から300mの場所に位置し、エアコンと無料Wi-Fi付きのお部屋、レストラン、バーを提供しています。 Lavender Boutique Hotel Managed by Meliaはタオダン公園から400m、美術館から500m、タンソンニャット国際空港から7kmです。 各お部屋に薄型ケーブルテレビ、セーフティボックス、ミニバー、電気ポット、リビングエリア、専用バスルーム（シャワー、ヘアドライヤー、無料バスアメニティ付）が備わり、スリッパ、タオル、リネンも用意しています。 Lavender Boutique Hotel Managed by Meliaでは、外貨両替、ツアーデスク、チケットサービスなども提供しています。フロントデスクは24時間対応です。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69557899",
-    "longtitude": "10.77274750"
+    "longtitude": "10.77274750",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "モン シェリ クルージズ（Mon Chéri Cruises）",
@@ -377,7 +451,9 @@
     "desciption": "    モン シェリ クルージズで世界最高峰のサービスを体験    ハロンでの当サイトおすすめ — ゲストにも好評です。  Mon Chéri Cruisesはハロンのバイチャイ地区にあり、5つ星のお部屋（無料Wi-Fi付）を提供しています。クイーン・ケーブルカー駅から1km、ビンコム・プラザ・ハロンから2.8kmです。海を望む宿泊施設で、テラスを併設しています。フロントデスクは24時間対応です。 Mon Chéri Cruisesのお部屋には、ポット、専用バスルーム（バスタブ付）、バルコニー（一部の部屋のみ）、デスクが備わります。 Mon Chéri Cruisesでは毎日ビュッフェ式朝食を用意しています。館内レストランでは様々なアジア料理を楽しめます。 滞在中は、フィットネスセンターを利用できます。Mon Chéri Cruisesではミニゴルフも楽しめます。レンタカーも提供しています。 Mon Chéri Cruisesからクアンニン博物館まで4.1km、トゥアンチャウ港まで8kmです。カットビ国際空港まで38kmで、無料空港シャトルサービスを提供しています。   ",
     "zone": " ハロン",
     "latitude": "107.05841206",
-    "longtitude": "20.95579420"
+    "longtitude": "20.95579420",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "オーキッド ハロン クルーズ（Orchid Ha Long Cruise）",
@@ -387,7 +463,9 @@
     "desciption": "    オーキッド ハロン クルーズで世界最高峰のサービスを体験    ハロンでの当サイトおすすめ — ゲストにも好評です。  Orchid Ha Long Cruiseは、サンテラス、ハロン湾とランハ湾沿いのクルーズ、全域での無料Wi-Fiを提供しています。 お部屋にはエアコン、景色が見える専用バルコニーが備わります。シーティングエリアには衛星テレビとミニバーが備わり、専用バスルームにはバスタブ、ヘアドライヤー、無料バスアメニティが備わります。バスローブ、スリッパを提供しています。 フロントデスクは24時間対応で、スパセンターでのマッサージサービスを手配しています。フィットネスセンターも利用できます。 Orchid Ha Long Cruiseからハノイまで車で2時間、カットビ国際空港まで35kmです。   ",
     "zone": " ハロン",
     "latitude": "106.90205008",
-    "longtitude": "20.80729607"
+    "longtitude": "20.80729607",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "Hoian Nostalgia Hotel & Spa",
@@ -397,7 +475,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Hoian Nostalgia Hotel & Spa provides homely accommodation in the heart of Hoi An Ancient Town. It features an outdoor swimming pool, a tour desk and a 24-hour front desk. The hotel offers an airport shuttle, laundry services and free Wi-Fi throughout the property. Hoian Nostalgia Hotel & Spa is only 1 km from town centre and popular attractions like Song Hoai Square, the Japanese Bridge, and Quan Cong Temple. Da Nang International Airport is located a 45-minute drive away. The rooms are all air conditioned and equipped with a cable TV, a minibar and an en suite bathroom. They offer views of the garden or swimming pool. A hair dryer, slippers and free toiletries are provided for guests’ convenience. Free bike rentals are available at the property. The staff can provide useful information to all guests. The all-day dining, in-house restaurant serves a selection of Vietnamese specialities. An international menu is also available.    Cam Phoは「文化」「旧市街」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ホイアン",
     "latitude": "108.32030565",
-    "longtitude": "15.87940184"
+    "longtitude": "15.87940184",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "サニー トロピカル（Sunny Tropical）",
@@ -407,7 +487,9 @@
     "desciption": "   ホーチミンでの当サイトおすすめホーチミン市の4区にあるSunny Tropicalはニャロン埠頭から400mの場所に位置し、モダンなスタイルのお部屋とアパートメント、無料Wi-Fi、無料の公共駐車場、屋上スイミングプール、無料のフィットネスセンターを提供しています。 お部屋には薄型テレビ、専用バスルーム、スリッパ、無料バスアメニティ、ヘアドライヤーが備わり、全室から川または市街の景色を望めます。ミネラルウォーター、ソフトドリンク、トロピカルフルーツも無料で提供しています。 Sunny Tropicalのフレンドリーなスタッフが観光情報の案内をはじめ、会議室やエグゼクティブ・オフィススペースの手配を行っています。館内でパソコン、印刷サービス、ランドリーサービスを無料で利用できます。館内には 24時間セキュリティ、自動火災報知器、消防システムが備わっています。 アパートメントは市内中心部から車でわずか2分の場所に位置し、美術館（600m先）などの観光スポットに近い便利なロケーションです。ベンタイン市場まで800m、サイゴンスクエア・ショッピングセンターまで約1.1km、ビンコムセンター・ショッピングモールまで2.8km、バックパッカー地区や9月23日公園などの観光スポットまで車でわずか5分、ノートルダム大聖堂、サイゴン中央郵便局、統一会堂、サイゴン動植物園まで車で15分以内、タンソンニャット国際空港まで8kmです。    District 4は「地元グルメ」「レストラン」「文化」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.70272247",
-    "longtitude": "10.76624054"
+    "longtitude": "10.76624054",
+    "genre": "アパートメント",
+    "genre_id": 4
   },
   {
     "name": "カリプソ スイーツ ホテル（Calypso Suites Hotel）",
@@ -417,7 +499,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     伝統的なフレンチスタイルの客室（無料Wi-Fi付）を提供するCalypso Suites Hotelは、ハノイの旧市街に位置し、ホアンキエム湖から徒歩3分です。レストランと24時間対応のフロントデスクを併設しています。 ゴックソン（Ngoc Son）パゴダやタートルタワーなど最寄りの観光スポットまで徒歩3分、ドンスアン市場とハノイオペラハウスまで徒歩10分、ノイバイ国際空港まで車で約45分です。 客室は赤と白をテーマにしたエレガントな内装で、薄型ケーブルテレビ、セーフティボックス、デスク、紅茶/コーヒーメーカー、ボトル入り飲料水が備わっています。 Calypso Suites Hotelでは外貨両替、ツアーデスク、チケットサービスのほか、レンタル自転車、レンタカーサービスも提供しています。 併設レストランでビュッフェ式朝食を毎朝用意しています。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85212886",
-    "longtitude": "21.03345754"
+    "longtitude": "21.03345754",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Granda Trung Hoa Apartment",
@@ -427,7 +511,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではハノイのベストセラー！ Located within 2.5 km of Vincom Center Nguyen Chi Thanh and 4.1 km of Vietnam Museum of Ethnology in Hanoi, Granda Trung Hoa Apartment offers accommodation with a kitchen. Complimentary WiFi is provided. All units feature air conditioning and a satellite flat-screen TV. An oven and microwave are also featured, as well as a kettle. An Asian breakfast is served each morning at the property. At the aparthotel you will find a restaurant serving Asian cuisine. Granda Trung Hoa Apartment offers a terrace. Guests can relax in the garden at the property. VCCA Vincom Centre of Contemporary Art is 4.4 km from the accommodation, while Vietnamese Air Force Museum is 5 km away. The nearest airport is Noi Bai International Airport, 29 km from Granda Trung Hoa Apartment.    Cau Giayは「市内観光」「旧市街」「伝統料理」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.80023826",
-    "longtitude": "21.01432350"
+    "longtitude": "21.01432350",
+    "genre": "アパートメント",
+    "genre_id": 4
   },
   {
     "name": "ゴールデン ムーン スイート ホテル（Golden Moon Suite Hotel）",
@@ -437,7 +523,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     ハノイにあるGolden Moon Suite Hotelはセント・ジョセフ教会から400mです。無料Wi-Fi、エアコン付きのお部屋を提供しています。 一部のユニットにはリラックスできるシーティングエリアが付いています。お部屋にはポット、専用バスルーム、スリッパ、無料バスアメニティ、薄型テレビが備わります。 館内でドライクリーニングサービスを利用できます。 ホテルで自転車もレンタルできます。Golden Moon Suite Hotelから玉山祠まで500m、ホアンキエム湖まで600m、ノイバイ国際空港まで21kmです。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84809463",
-    "longtitude": "21.03212300"
+    "longtitude": "21.03212300",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Primrose Homestay Cao Bang",
@@ -447,7 +535,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Cao Bằngでの当サイトおすすめLocated in Cao Bằng, Primrose Homestay Cao Bang offers accommodation with a terrace and free WiFi. The units are fitted with air-conditioned bedrooms and a kitchen with an oven, microwave and stovetop. There is a shared bathroom with bidet in all units, along with free toiletries and a hair dryer. A bicycle rental service is available at the homestay.   ",
     "zone": " Cao Bằng",
     "latitude": "106.26005180",
-    "longtitude": "22.66480840"
+    "longtitude": "22.66480840",
+    "genre": "ホームステイ",
+    "genre_id": 0
   },
   {
     "name": "Qcub3 Homestay",
@@ -457,7 +547,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではホーチミンのベストセラー！ Set in the District 1 district of Ho Chi Minh City, Qcub3 Homestay offers free bikes, barbecue facilities and a terrace. The property is close to Fine Arts Museum, Ben Thanh Market and Mariamman Hindu Temple. The tour desk can help arrange some activities and free WiFi is available. At the guest house, rooms are equipped with a balcony. The rooms have a private bathroom with free toiletries. At Qcub3 Homestay, rooms have a seating area. With staff speaking English and Vietnamese, guidance is available at the reception. Ben Thanh Street Food Market is 2 km from the accommodation, while An Dong Plaza is 2 km from the property. The nearest airport is Tan Son Nhat International Airport, 13 km from Qcub3 Homestay.    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.68775900",
-    "longtitude": "10.76214700"
+    "longtitude": "10.76214700",
+    "genre": "ホームステイ",
+    "genre_id": 0
   },
   {
     "name": "Stellar of the Seas Cruise",
@@ -467,7 +559,9 @@
     "desciption": "    Stellar of the Seas Cruiseで世界最高峰のサービスを体験  この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ハロンでの当サイトおすすめStellar of the Seas Cruise is located in Ha Long, 2.5 km from Tuan Chau Harbour, and has a seasonal outdoor swimming pool, barbecue facilities and a terrace. Well located in the Tuan Chau district, this cruise is set 21 km from Vincom Plaza Ha Long. The property features a children's playground and free WiFi. Guest rooms in the cruise are fitted with a flat-screen TV. Featuring a private bathroom, rooms at Stellar of the Seas Cruise also boast a sea view. All rooms have a desk. A buffet, vegetarian or vegan breakfast can be enjoyed at the property. There is an in-house restaurant, which specialises in American and Asian cuisine and also offers vegan and dairy-free options. Guests can take part in various activities in the surroundings, including snorkelling and cycling. For any tips on how to get around or what to do in the area, guests can ask at the reception. Queen Cable Car Station is 22 km from the accommodation, while Quang Ninh Museum is 22 km away. Cat Bi International Airport is 69 km from the property.   ",
     "zone": " ハロン",
     "latitude": "106.98178500",
-    "longtitude": "20.92867700"
+    "longtitude": "20.92867700",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "ローザ クルーズ（Rosa Cruise）",
@@ -477,7 +571,9 @@
     "desciption": "   ハロンでの当サイトおすすめRosa Cruiseではシュノーケリング、ダイビング、​​釣りなど、さまざまなアクティビティを楽しめるハロン湾クルーズの旅程を提供しています。サンデッキでリラックスしながら海の景色を楽しめます。 クルーズのお部屋には眺めの良いバルコニー、エアコン、専用バスルームが備わります。 Rosa Cruiseではアラカルトの朝食またはアメリカンブレックファーストを提供しています。併設レストランではヨーロッパ料理を楽しめます。 フロントではスタッフがいつでも様々なニーズに対応しています。 Rosa Cruiseからハロン・ナイトマーケットまで8km、最寄り空港のカットビ国際空港まで30kmです。   ",
     "zone": " ハロン",
     "latitude": "106.98885441",
-    "longtitude": "20.91706972"
+    "longtitude": "20.91706972",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "HD ハウス（HD House）",
@@ -487,7 +583,9 @@
     "desciption": "   HD HouseはHương Giaにある3つ星ホテルで、無料Wi-Fi、24時間対応のフロントデスク、館内レストラン、バーを提供しています。 HD Houseからハノイまで22km、イェンバイまで43km、ノイバイ国際空港まですぐです。   ",
     "zone": " Hương Gia",
     "latitude": "105.78257117",
-    "longtitude": "21.21842246"
+    "longtitude": "21.21842246",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Mekong Riverside Boutique Resort & Spa",
@@ -497,7 +595,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 Set amongst lush tropical fruit gardens, Mekong Riverside Boutique Resort & Spa offers free Wi-Fi and an outdoor swimming pool. The property is 1.5 km from the Cai Be Floating Market. Guests can dine at Medley Restaurant, an in-house restaurant serving Vietnamese and international cuisines or simply lounge by the bars at the poolside and at the reception. A 24-hour front desk can assist guests with bicycle rentals, laundry and dry cleaning services. Guests can indulge in activities like fishing, kayaking, canoeing and hiking. The resort also offers barbeque facilities and a spa and wellness centre. Offering scenic views, air-conditioned rooms are equipped with a sofa, flat-screen TV with cable channels, minibar and a spacious balcony. En suite bathrooms include shower facilities and free toiletries. Mekong Riverside Boutique Resort & Spa is situated 60 km from Can Tho City and 120 km to Ho Chi Minh City.   ",
     "zone": " Cai Be",
     "latitude": "106.01773113",
-    "longtitude": "10.32366963"
+    "longtitude": "10.32366963",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "レッド ホテル（Red Hotel）",
@@ -507,7 +607,9 @@
     "desciption": "   コンダオでの当サイトおすすめコンダオビーチとボーティサウの像からわずか100mに位置するRed Hotelは、無料Wi-Fi、専用駐車場を提供しています。 100m圏内にベトナム郷土料理、シーフード料理のレストランがあります。ハンドゥオン墓地（コンダオ刑務所で命を落とした受刑者の記念墓地）まで500m、コンダオ博物館まで600mです。 客室にはエアコン、ケーブルテレビ、電気ポット、ミニバー、専用バスルーム（シャワーとスリッパ付）が備わっています。 ダイビングツアーの手配が可能です。またカヌーのレンタルのほか、24時間対応のフロントデスクではチケット、空港シャトル、ランドリー、レンタカーサービスを提供しています。   ",
     "zone": " コンダオ",
     "latitude": "106.61121815",
-    "longtitude": "8.68723687"
+    "longtitude": "8.68723687",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "アリサ プレミア クルーズ（Alisa Premier Cruise）",
@@ -517,7 +619,9 @@
     "desciption": "    アリサ プレミア クルーズで世界最高峰のサービスを体験  ハロンでの当サイトおすすめAlisa Premier Cruiseはクアンニン省のハロン湾の素晴らしいロケーションに、船上のモダンな宿泊施設を提供しています。館内レストランで追加料金なしにすべての食事を楽しめる1泊3食付きパッケージを用意しています。船内全域で無料Wi-Fi回線を利用できます。 防音対策済みの各ユニットには、エアコン、シーティングエリア（ソファ付）、薄型テレビ、ミニバー、ワードローブ、セーフティボックスが備わります。専用バスルームにはシャワー、ヘアドライヤーがあり、そのほとんどにホットタブも付いています。無料バスアメニティ、タオル、スリッパも用意しています。 スパセンターでは、ホットタブやプロのマッサージでリラックスできます。館内バーや共用ラウンジもあります。日帰り旅行、リムジンシャトルバスサービス、空港送迎は有料で手配可能です。 Alisa Premier Cruiseからハロン・マリンプラザまで5.3km、サンワールド・ハロン・パークまで8km、最寄りのカットビ国際空港まで29kmです。   ",
     "zone": " ハロン",
     "latitude": "106.98532248",
-    "longtitude": "20.91806588"
+    "longtitude": "20.91806588",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "ハノイ セレンディピティ ホテル（Hanoi Serendipity Hotel）",
@@ -527,7 +631,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     ハノイ旧市街の中心部に位置する、Vietfaceはホアンキエム湖まで徒歩10分です。バー1軒と、客室内の無料インターネットを提供しています。館内にコンピューターが備わっています。 Hanoi Serendipity Hotelｊはショッピングやダイニングエリアへのアクセスが容易で、玉山祠、ホーチミン廟、セントジョセフ大聖堂などの観光スポットも徒歩圏内です。 Vietfaceの客室にはエアコン、IDD電話、衛星テレビ、専用バスルーム（バスタブ付）が備わっています。一部の客室には防音ドアが付いています。 滞在中は、自転車レンタル、空港送迎などのサービスが利用できます。ツアーデスクもあり、周辺地区の観光名所についての情報が得られます。車やバイクのレンタルを手配することもできます。便利なランドリーサービスやドライクリーニングサービスも利用できます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84843144",
-    "longtitude": "21.03041977"
+    "longtitude": "21.03041977",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "シルク パス グランド リゾート ＆ スパ サパ（Silk Path Grand Resort & Spa Sapa）",
@@ -537,17 +643,21 @@
     "desciption": "    シルク パス グランド リゾート ＆ スパ サパが提供するワールドクラスのサービスで、贅沢なひとときを    サパでの当サイトおすすめ — ゲストにも好評です。  サパにあるSilk Path Grand Resort & Spa Sapaは、最先端の設備と居心地の良いお部屋を提供する5つ星ホテルです。屋内温水プール、マッサージを楽しめるスパ、館内全域での無料Wi-Fiを利用できます。 エレガントなデザインのお部屋はナチュラルカラーを基調に、茶色、青、赤みがかったオレンジのファブリックをアクセントに取り入れた内装です。自然光がたっぷり差し込む大きな窓からは山の景色を望め、ダークウッドの家具、エアコン、専用バルコニー、薄型テレビ、ミニバー、専用バスルーム（シャワー、バスタブ付）が備わります。一部のお部屋には独立した座席とテラスがあります。 フロントデスクは24時間対応です。敷地内にギフトショップ、ベビーシッターサービスを提供するキッズクラブがあります。 教会からバギー車での送迎、バギー車でのリゾートエリアの探索も可能です。Silk Path Grand Resort & Spa Sapaからファンシーパン山まで8km、サパ湖まで900mです。   ",
     "zone": " サパ",
     "latitude": "103.83738698",
-    "longtitude": "22.33798319"
+    "longtitude": "22.33798319",
+    "genre": "リゾート",
+    "genre_id": 5
   },
   {
     "name": "Era Cruises Halong",
-    "address": "41, Got Pier, ハロン, ベトナム",
+    "address": "Got Pier, ハロン, ベトナム",
     "phone": "0948330645",
     "level": "5",
     "desciption": "    Era Cruises Halongで世界最高峰のサービスを体験    ハロンでの当サイトおすすめ — ゲストにも好評です。  ビンコムプラザ・ハロンから700m以内、クアンニン博物館から1.8kmの場所に位置するEra Cruises Halongは、ハロンでエアコンと専用バスルーム付きのお部屋を提供しています。ウォータースポーツ施設、無料レンタル自転車、フィットネスセンターなどの様々な施設/設備があります。クイーン・ケーブルカーの駅まで2.2km、トトゥアンチャウ港まで19kmです。 クルーズのお部屋には、シーティングエリア、薄型テレビ、デスクが備わります。 Era Cruises Halongではコンチネンタルブレックファーストまたはビュッフェ式朝食を提供しています。併設レストランではベトナム料理を楽しめます。 滞在中はホットタブを利用できます。近隣でサイクリングなどのアクティビティを楽しめます。 Era Cruises Halongのフロントでは周辺エリアに関する観光情報を提供しています。 サンワールド・ハロンパーク、ハロン・ナイトマーケットまで7kmです。最寄りの空港はカットビ国際空港で、Era Cruises Halongから76kmです。   ",
     "zone": " ハロン",
     "latitude": "107.08202595",
-    "longtitude": "20.94693375"
+    "longtitude": "20.94693375",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "DaNaTrip Ocean Apartment - 2B",
@@ -557,7 +667,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ダナンでの当サイトおすすめBoasting a private beach area, an outdoor swimming pool, and a tennis court, DaNaTrip Ocean Apartment - 2B offers accommodation in Da Nang with free WiFi and lake views. The property has pool and garden views, plus is 500 metres from Non Nuoc Hamlet. The apartment features a terrace, 2 bedrooms, a living room and a well-equipped kitchen. A flat-screen TV is featured. A continental breakfast can be enjoyed at the property. Guests can also relax in the garden or on the shared lounge area. Marble Mountains is 600 metres from the apartment, while Asia Park Danang is 7 km away. Da Nang International Airport is 11 km from the property.   ",
     "zone": " ダナン",
     "latitude": "108.26618500",
-    "longtitude": "16.00691100"
+    "longtitude": "16.00691100",
+    "genre": "アパートメント",
+    "genre_id": 4
   },
   {
     "name": "ゴールデン ロータス ブティックホテル（Golden Lotus Boutique Hotel）",
@@ -567,7 +679,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     ハノイ旧市街の便利な場所にあるGolden Lotus Boutique Hotelは、無料Wi-Fiが備わるエレガントでモダンなお部屋、市街のパノラマの景色が見えるSky Bar、土曜にライブエンターテイメントを楽しめるPiano Barを提供しています。 Golden Lotus Boutique Hotelのベトナムスタイルのお部屋には、エアコン、木製家具、薄型ケーブルテレビ、ミニバー、お茶/コーヒーが備わります。専用バスルームにはヘアドライヤー、バスアメニティが備わります。 Golden Lotus Boutique Hotelにはビジネスセンター、ツアーデスクがあります。24時間対応のフロントデスクで、レンタカーサービスや自転車レンタルサービスを提供しています。空港シャトルを利用できます。 1階にあるGolden Lotusレストランでは伝統的な地元料理や洋食を楽しめます。ビュッフェ式朝食を毎日提供しており、24時間ルームサービスを利用できます。 Golden Lotus Boutique Hotelは有名なHang Trong通り沿いにあり、近くに数多くのカフェやギャラリーがあります。ノイバイ国際空港まで車で45分です。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84970951",
-    "longtitude": "21.03061354"
+    "longtitude": "21.03061354",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ハロン DC ホテル（Ha Long DC Hotel）",
@@ -577,7 +691,9 @@
     "desciption": "    当サイトではハロンのベストセラー！ Ha Long DC Hotelは、市街または港のパノラマ風景を望むモダンで広々とした客室、無料Wi-Fi、屋内スイミングプール、飲食店2軒を提供しています。 客室には、エアコン、衛星テレビ、セーフティボックス、専用バスルーム（シャワー、無料バスアメニティ付）が備わっています。 Ha Long DC Hotelはハイフォンやドソンから車で1時間半、ハノイまで車で3時間、ノイバイ空港から車で4時間です。 フィットネスセンターやギフトショップを併設しています。ランドリーサービス、24時間ルームサービスを利用できます。 併設レストランはベトナム料理と洋食のビュッフェやアラカルトメニューを提供しています。21階のDupin Bar and Caféでは港を一望できます。   ",
     "zone": " ハロン",
     "latitude": "107.07686573",
-    "longtitude": "20.95187885"
+    "longtitude": "20.95187885",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ハノイ レリテージ センター ホテル（Hanoi L'Heritage Centre Hotel）",
@@ -587,7 +703,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     ハノイでの当サイトおすすめHanoi L'Heritage Centre Hotelは、ハノイ旧市街中心部にある、手頃な料金で宿泊できる4つ星ホテルです。ホアンキエム湖、ビジネス街から徒歩ですぐです。 Hanoi L'Heritage Centre Hotelの全てのお部屋にケーブルテレビ、無料の高速Wi-Fiが備わります。 滞在中はHanoi L'Heritage Centreの提携ホテルのスパ＆ウェルネスセンター（サウナ、スチームバスなど）でリラックスできます。ホテルでは旅行やチケットの手配を行っています。 Hanoi L'Heritage Centreのレストラン＆コーヒーハウス（1階）では、ビュッフェ式朝食（洋食、アジア料理、ベトナム料理、特製シーフードなど）を提供しています。 Hanoi L'Heritage Centre Hotelからノイバイ国際空港まで車で45分です。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85009038",
-    "longtitude": "21.03352263"
+    "longtitude": "21.03352263",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Lan Ha Legend Cruise",
@@ -597,7 +715,9 @@
     "desciption": "   ハロンでの当サイトおすすめLan Ha Legend Cruiseは美しいハロン湾を巡るクルーズ船で、ベトナム様式の木造キャビン、サンテラス、館内レストランを提供しています。 ダークレッドウッドとクリーム色を用いた上品な内装のユニットは防音対策済みで、エアコン、ワードローブ、専用バスルーム（ウォークインシャワー、無料バスアメニティ付）が備わります。ユニットからは海および/または山の景色を望めます。 Lan Ha Legend Cruiseからカットバ国立公園まで4.7km、ハロン・マリン・プラザまで19.2kmです。最寄りの空港はカットビ国際空港で、Halong Golden Bay Legend Cruiseから23.4kmです。 Lan Ha Legend Cruiseのフレンドリーなスタッフは24時間対応で、荷物預かり、外貨両替サービス、空港トランスファー&シャトルサービス（リクエスト制/有料）を提供しています。 Lan Ha Legend Restaurant & Barでは様々な各国料理を楽しめます。   ",
     "zone": " ハロン",
     "latitude": "106.98469042",
-    "longtitude": "20.92119866"
+    "longtitude": "20.92119866",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "サヌバ サイゴン ホテル（Sanouva Saigon Hotel）",
@@ -607,7 +727,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   すばらしいロケーション - 地図を表示     Sanouva Saigon Hotelはベンタイン市場のすぐそばに位置し、ゴールデンドラゴン水上人形劇場から300mです。32インチ薄型テレビと無料Wi-Fi付きのモダンな客室を提供しています。 Sanouva Saigon Hotelから統一会堂まで500m、オペラハウスから950m、タンソンニャット国際空港から車で15分です。 Sanouva Saigonの禁煙ルームはモダンな内装で、自然光がたっぷり入ります。全室に紅茶/コーヒーメーカー、専用バスルーム（温水シャワー付）などが備わっています。 フロントデスクは24時間対応です。レンタカー、無料駐車場、荷物預かり、外貨両替、ランドリーサービスを利用できます。 レストランでは国際色豊かなビュッフェ、バーでは軽食と冷たいドリンクを楽しめます。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69605777",
-    "longtitude": "10.77330663"
+    "longtitude": "10.77330663",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "The Au Co Cruise - Managed by Bhaya Cruise",
@@ -617,7 +739,9 @@
     "desciption": "    The Au Co Cruise - Managed by Bhaya Cruiseで世界最高峰のサービスを体験  エメラルドグリーンの海が美しいハロン湾を下るAuco Cruiserは、エアコン、無料インターネット回線、景色を望むバルコニー付きの豪華なキャビン、ベトナム料理の教室やシュノーケリングなどの船上アクティビティ、全ての食事を提供しています。 ウッドフロアのモダンなキャビンには木製家具、薄型テレビ、DVDプレーヤー、豊富なミニバー、無料のミネラルウォーター、豪華なバスルーム（シャワーまたはバスタブ付）が備わります。 Auco Cruiserはハロンのトゥアンチャウ港から出航し、カット・バー島、ラン・ハ湾、バーイ・トゥー・ロン湾を巡ります。ハノイとの往復トランスファー（車で3時間30分）を追加料金で手配できます。 滞在中はサンデッキで毎朝行われる太極拳セッションに参加したり、スパでの贅沢なマッサージやホットタブを楽しめます。外貨両替、ウォータースポーツ用具のレンタルもできます。 The Dining Roomでは各国料理とベトナム料理を用意しています。   ",
     "zone": " ハロン",
     "latitude": "106.99051738",
-    "longtitude": "20.92281109"
+    "longtitude": "20.92281109",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "Vietnam Backpacker Hostels - Saigon",
@@ -627,7 +751,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   すばらしいロケーション - 地図を表示     この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ホーチミンでの当サイトおすすめWithin 500 metres from Ben Thanh Market and Backpackers' Area, Vietnam Backpacker Hostels - Sai Gon offers both dormitory and private guestrooms which overlook the park from all guestrooms. Enjoying panoramic city views, the rooftop bar on the 9th floor has a range of dishes and drinks, as well as hosts nightly events. Free WiFi access is available. Featuring air conditioning, dormitory rooms are fitted with bunk beds, personal reading lights and lockers. Shared bathrooms are available. Private rooms come with a 32-inch flat-screen TV, minibar and en suite bathroom. Vietnam Backpacker Hostels - Sai Gon is within walking distance to War Remmants Museum. Tan Son Nhat International Airport is a 30-minute drive away.    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69038355",
-    "longtitude": "10.76855054"
+    "longtitude": "10.76855054",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "サン リバー ホテル（Sun River Hotel）",
@@ -637,7 +763,9 @@
     "desciption": "   ダナンの中心部に泊まろう –   ロケーション抜群！地図を表示     ダナンでの当サイトおすすめ美しいハン川を見渡すSun River Hotelは、ダナンの中心部に位置し、ダナンビーチから車でわずか10分です。24時間対応のルームサービス、無料Wi-Fiを提供しています。 Hotel Sun Riverは、車でホイアンから30分、ダナン国際空港からわずか10分です。 快適な客室はモダンな内装で、川、市街または山々の美しい景色を望めます。滞在中は、ミニバーのドリンクとともに薄型ケーブルテレビを観ながらリラックスできます。 Sun Riverではダナン観光に便利な自転車を無料で貸し出しています。フロントデスクは24時間対応です。ビジネスセンターもあります。 ダナン市街とハン川を望むHotel Sun Riverレストランでは、アジア料理と西洋料理を提供しています。最上階のBar and Coffeeでは、カクテルやスナックを楽しめます。   ",
     "zone": " ダナン",
     "latitude": "108.22466075",
-    "longtitude": "16.06753723"
+    "longtitude": "16.06753723",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ヘルラ アパートメント アット マステリ タオ ディエン（Herla Apartment at Masteri Thao Dien）",
@@ -647,7 +775,9 @@
     "desciption": "    当サイトではホーチミンのベストセラー！ ホーチミン市のハノイハイウェイ沿いにある第2区の中心部に位置するBrandnew 2BR Apartmentは、街並みとサイゴン川の景色を望むバルコニーを併設し、無料Wi-Fiも利用できます。 ユニットにはシーティングエリア、ソファ、薄型テレビ、洗濯機、キッチン（冷蔵庫付）、専用バスルーム（シャワー付）が備わります。 敷地内に屋外プールがあり、水泳を楽しめます。 ビンコムメガモール・タオディエンのすぐそばにあり、玉皇殿、オペラハウスははBrandnew 2BR Apartmentから8km、最寄りのタンソンニャット国際空港はBrandnew 2BR Apartmentから12kmです。 周辺にはレストランが軒を連ね、近隣で家族向けのアクティビティ、ナイトスポットも楽しめます。    District 2は「レストラン」「ストリートフード」「フレンドリーな地域性」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.74099771",
-    "longtitude": "10.80203715"
+    "longtitude": "10.80203715",
+    "genre": "アパートメント",
+    "genre_id": 4
   },
   {
     "name": "アプリコット プレミアム クルーズ（Apricot Premium Cruise）",
@@ -657,7 +787,9 @@
     "desciption": "   ハロンでの当サイトおすすめApricot Premium Cruiseでは、モダンな専用キャビン（専用バスルーム付）、レストラン、バーがある木造帆船で美しいハロン湾のクルーズを楽しめます。 モダンで広いお部屋はウッドフロアで、窓、専用バルコニー、手作りの家具、エアコン、電話、セーフティボックスが備わります。 太極拳クラスや料理教室に参加してリラックスしたり、イカ釣り、カヤックなどを楽しめます。Apricot Premium Cruiseではマニキュア＆ペディキュア、ベビーシッターサービスも提供しています。リクエストに応じてテーマパーティも手配可能です。 船上のレストランやバーまたはサンデッキで特製カクテルを楽しめます。   ",
     "zone": " ハロン",
     "latitude": "107.02939719",
-    "longtitude": "20.94501091"
+    "longtitude": "20.94501091",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "Khách Sạn Anh Khoa",
@@ -667,7 +799,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。   ファンランでの当サイトおすすめ — ゲストにも好評です。  Boasting a terrace and free WiFi, Khách Sạn Anh Khoa is situated in Phan Rang. All rooms feature a flat-screen TV with cable channels and a private bathroom. The accommodation features a 24-hour front desk and room service for guests. At the japanese-style business hotel, each room includes a desk. Khách Sạn Anh Khoa provides certain units with city views, and every room is equipped with a kettle. The units at the accommodation include air conditioning and a wardrobe. Cam Ranh International Airport is 63 km from the property.   ",
     "zone": " ファンラン",
     "latitude": "108.99332745",
-    "longtitude": "11.56717645"
+    "longtitude": "11.56717645",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "ピン ホテル（Ping Hotel）",
@@ -677,7 +811,9 @@
     "desciption": "   ハノイ市にあるブティックホテルで、ビッグCショッピングセンターから徒歩わずか5分、ベトナム民族博物館から徒歩10分です。無料Wi-Fi回線付きの客室を提供しています。 Ping Hotelは、マイディン・スタジアムから車で5分、ホアンキエム湖から車で20分、ノイバイ国際空港から車で40分の場所に位置しています。 ウッドフロアのモダンな客室は、明るい青と白をテーマとし、エアコン、薄型ケーブルテレビ、ミニバー、専用バスルーム（温水/冷水シャワー、無料バスアメニティ付）が備わっています。 Pingのレストランでは朝食を毎日用意し、併設バーでは様々なドリンクを楽しめます。ルームサービスも利用可能です。 ツアーデスクでは旅行の手配ができ、24時間対応のフロントデスクでは、荷物預かり、レンタカー、外貨両替サービスを提供しています。空港シャトルサービスの利用は有料です。   ",
     "zone": " ハノイ",
     "latitude": "105.78106642",
-    "longtitude": "21.01412930"
+    "longtitude": "21.01412930",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "リバティ サイゴン グリーンビュー（Liberty Saigon Greenview）",
@@ -687,7 +823,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   ロケーション抜群！地図を表示     Liberty Saigon Greenviewはホーチミン市1区にある6階建ての建物内に位置し、無料Wi-Fi付きのモダンなお部屋、館内レストラン、24時間対応のフロントデスクを提供しています。9月23日公園まで徒歩ですぐです。 ウッドフロアのお部屋は白を基調にライトブラウンをアクセントにした内装で、エアコン、ワードローブ、デスク、薄型テレビ、ミニバー、電気ポット、専用バスルーム（シャワー/バスタブ、ヘアドライヤー、無料バスアメニティ付）が備わります。 ツアーデスクでは日帰りツアーの予約、旅行チケットの手配、空港トランスファーサービスの予約を行っています。ルームサービス、ドライクリーニング、同日ランドリーサービスも利用できます。 Liberty Saigon Greenviewからマリアンマン・ヒンドゥー寺院まで500m、ベンタイン市場まで650m、最寄り空港のタンソンニャット国際空港まで7kmです。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.69355661",
-    "longtitude": "10.76837926"
+    "longtitude": "10.76837926",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Bac Ha Eco Homestay",
@@ -697,7 +835,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではBắc Hàのベストセラー！ Situated in Bắc Hà, Bac Ha Eco Homestay features free WiFi, and guests can enjoy a garden, a terrace and a bar. There is a shared bathroom with bidet in all units, along with free toiletries and a hair dryer. A buffet breakfast is available every morning at the homestay. There is an in-house restaurant, which serves a variety of Asian dishes and also offers vegan options.   ",
     "zone": " Bắc Hà",
     "latitude": "104.29767654",
-    "longtitude": "22.53642963"
+    "longtitude": "22.53642963",
+    "genre": "ホームステイ",
+    "genre_id": 0
   },
   {
     "name": "ゴールデン シルク ブティック ホテル（Golden Silk Boutique Hotel）",
@@ -707,7 +847,9 @@
     "desciption": "   ハノイの中心部に泊まろう –       Golden Silk Hotelはハノイの旧市街に位置する4つ星ブティックホテルで、美しいホアンキエム湖や有名な水上人形劇場からわずか700mです。11階建ての宿泊施設で、無料Wi-Fi、24時間営業のフロントデスク、24時間対応のルームサービスを提供しています。 客室には通りを望む窓またはバルコニー、エアコン、薄型テレビ、セーフティボックス、ミニバー、専用バスルーム（シャワーまたはバスタブ、無料バスアメニティ、ヘアドライヤー付）が備わります。 Golden Silk Boutique Hotelはドンスアン市場や週末のナイトマーケットから徒歩10分、ホー・チ・ミン廟、一柱寺、ハノイ駅から4km、ノイバイ国際空港から車で45分です。 ツアーデスクで日帰り旅行やレンタカーを手配できます。ビジネスセンター、ランドリーサービス、空港シャトルサービス（有料）も利用できます。 Orientalレストランでは洋食やアジア料理、Rendezvousピアノバーではドリンクを楽しめます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84937155",
-    "longtitude": "21.03142719"
+    "longtitude": "21.03142719",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "パラダイス エレガンス クルーズ ハロン（Paradise Elegance Cruise Halong）",
@@ -717,7 +859,9 @@
     "desciption": "    パラダイス エレガンス クルーズ ハロンで世界最高峰のサービスを体験    ハロンでの当サイトおすすめ — ゲストにも好評です。  Paradise Elegance Cruise Halongはハロン湾が出港・帰港地のクルーズで、クルーズ船内での滞在に加え、事前に計画された様々なアクティビティを楽しめます。滞在中は、Le Parfumスパでリラックスできるマッサージを受けたり、サンデッキで爽やかなカクテルを飲んだり、クッキングデモンストレーションを見たり、Le Pianoバーでアフタヌーンティーを楽しめます。共用エリアで無料Wi-Fiを利用できます。 モダンなキャビンはベトナム風のデザインで、エアコン、床から天井までの窓、ハロン湾の景色を望む専用バルコニー/テラス、液晶テレビ、セーフティボックス、専用バスルーム（スタンディングシャワー、無料バスアメニティ付）が備わっています。一部のユニットにはバスタブが付いています。 併設レストランのLe Marinでは、フージョン料理のビュッフェ式ランチとアラカルトのディナーを提供しています。   ",
     "zone": " ハロン",
     "latitude": "106.99126650",
-    "longtitude": "20.92069364"
+    "longtitude": "20.92069364",
+    "genre": "クルーズ",
+    "genre_id": 2
   },
   {
     "name": "White Crown Hotel",
@@ -727,7 +871,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではハロンのベストセラー！ 6 km from Vincom Plaza Ha Long, White Crown Hotel is located in Ha Long and offers free WiFi and express check-in and check-out. Among the various facilities of this property are a terrace and a shared lounge. The property is set in the Bai Chay district and Queen Cable Car Station is 8 km away. At the hotel, every room has a wardrobe. Each room is fitted with a private bathroom with a bath, free toiletries and a hair dryer. At White Crown Hotel each room is equipped with air conditioning and a flat-screen TV. A buffet or Asian breakfast is available each morning at the property. The restaurant at the accommodation specialises in Asian cuisine. Speaking English and Vietnamese at the 24-hour front desk, staff are always at hand to help. Quang Ninh Museum is 8 km from White Crown Hotel, while Tuan Chau Harbour is 13 km from the property. The nearest airport is Cat Bi International Airport, 70 km from the hotel.   ",
     "zone": " ハロン",
     "latitude": "107.05096800",
-    "longtitude": "20.95897400"
+    "longtitude": "20.95897400",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "パレス ホテル サイゴン（Palace Hotel Saigon）",
@@ -737,7 +883,9 @@
     "desciption": "   ホーチミンの中心部に泊まろう –   ロケーション抜群！地図を表示     ホーチミンでの当サイトおすすめPalace Hotel Saigonは市内中心部の1区に位置し、サイゴンオペラハウスまで徒歩わずか3分です。屋外プール、レストラン、バー、カフェを併設しています。 Palace Hotel Saigonから市庁舎、ホーチミン市博物館、ベンタイン市場など多くの有名なランドマークまで徒歩10分以内、最寄りのタンソンニャット国際空港まで8kmです。 全室に、薄型衛星テレビ、ミニバー、セーフティボックス、専用バスルーム（バスタブ＆シャワー（またはいずれか一方）、ヘアドライヤー、無料の豪華バスアメニティ付）が備わります。一部の客室には、市街と通りを望む専用バルコニーが付いています。無料のボトル入り飲料水を用意しています。 Palace Hotel Saigonにはスパもあり、ホットタブやサウナルームでリフレッシュしたり、プロによるマッサージでリラックスできます。フロントデスクは24時間対応で、自転車レンタル、レンタカー、外貨両替、コンシェルジュサービスなどの各種サービスを提供しています。また、シャトルサービス、空港トランスファーをリクエストに応じて手配可能です（有料）。 ホテルには3軒のエレガントなレストランLemongrass、Ganh、Calibre Charnerがあり、様々なベトナム料理と各国料理を楽しめます。Calibreバーでは幅広い種類のドリンクと最高級ワインを、Palace Caféではペストリー、軽食、コーヒーを提供しています。    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.70360684",
-    "longtitude": "10.77440540"
+    "longtitude": "10.77440540",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Hanoi Vmaison Boutique Hotel",
@@ -747,7 +895,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ハノイでの当サイトおすすめSet in Hanoi, 400 metres from Thang Long Water Puppet Theater, Hanoi Vmaison Boutique Hotel provides a terrace. Built in 2017, the property is within just 500 metres of Ngoc Son Temple and 700 metres of Old City Gate. The property features a business centre, an on-site restaurant and free WiFi. At the hotel, each room comes with a desk. The rooms are fitted with a private bathroom and free toiletries, and certain units at Hanoi Vmaison Boutique Hotel have a balcony. All guest rooms at the accommodation include air conditioning and a wardrobe. Speaking English and Vietnamese at the reception, staff are willing to help at any time of the day. Hoan Kiem Lake is less than 1 km from Hanoi Vmaison Boutique Hotel. The nearest airport is Noi Bai International Airport, 25 km from the property.    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85494934",
-    "longtitude": "21.03315813"
+    "longtitude": "21.03315813",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "オーキッド ホテル ダナン（Orchid Hotel Da Nang）",
@@ -757,7 +907,9 @@
     "desciption": "   ミーケービーチから徒歩ですぐの便利なロケーションのOrchid Hotelは、海の景色を望む高級ウッドフロアの優雅な客室、マッサージサービス、館内全域での無料Wi-Fiを提供しています。 Hotel Orchidからマーブルマウンテン（五行山）まで約8km、ホイアンの古い町並みまで30km、ハン川橋までわずか2km、ダナン国際空港まで車でわずか10分です。 客室にはエアコン、シーティングエリア、専用バスルーム（バスタブまたはシャワー付）が備わり、スイートには独立したリビングルーム、キッチン、ダイニングエリアがあります。 館内レストランではヨーロッパ料理やアジア料理を終日用意しています。Orchid Hotelはサウナ、カラオケルームなどの施設、マッサージを提供しています。   ",
     "zone": " ダナン",
     "latitude": "108.24490875",
-    "longtitude": "16.07510700"
+    "longtitude": "16.07510700",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "オリエンタル セントラル ホテル（Oriental Central Hotel）",
@@ -767,7 +919,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   すばらしいロケーション - 地図を表示     Oriental Central Hotelでは、さわやかなオレンジジュースでゲストをお迎えしています。美しいホアンキエム湖、テーフック橋から徒歩わずか3分です。エレガントなホテルで、24時間対応のフロント、館内全域での無料Wi-Fiを提供しています。 ハノイ旧市街の中心部にあり、バーディン広場、ホー・チ・ミン廟などの歴史的観光スポットまで車でわずか5分、ノイバイ国際空港まで車で45分です。 伝統的な内装とモダンな設備が調和したお部屋には、シーティングエリアがあり、エアコン、薄型ケーブルテレビ、電気ポット、専用バスルーム（無料バスアメニティ、ヘアドライヤー付）が備わります。 周辺エリアの観光に便利なレンタカーやレンタル自転車サービスを提供しています。ビジネスセンター、ツアーデスクもあり、便利な空港シャトルサービス（有料）も利用できます。 Oriental Central Hotelの併設レストランでは毎日の朝食を用意しているほか、ルームサービス（オプション）にも対応しています。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.85310921",
-    "longtitude": "21.03368937"
+    "longtitude": "21.03368937",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "Special Miehouse",
@@ -777,7 +931,9 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。 ホーチミンでの当サイトおすすめSituated within 1.8 km of Ben Thanh Street Food Market and 1.9 km of Tao Dan Park in Ho Chi Minh City, Special Miehouse offers accommodation with free WiFi and flat-screen TV. Each unit is fitted with air-conditioned bedrooms and a kitchenette with a microwave. There is a private bathroom with shower in all units, along with free toiletries and a hair dryer. The homestay offers a terrace. A car rental service is available at Special Miehouse. Ben Thanh Market is 2 km from the accommodation, while Fine Arts Museum is 2.1 km away. The nearest airport is Tan Son Nhat International Airport, 13 km from the property.    1区は「博物館」「ショッピング」「ナイトライフ」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.68568850",
-    "longtitude": "10.76508818"
+    "longtitude": "10.76508818",
+    "genre": "ホームステイ",
+    "genre_id": 0
   },
   {
     "name": "ライジング ドラゴン エステート ホテル（Rising Dragon Estate Hotel）",
@@ -787,7 +943,9 @@
     "desciption": "   ハノイの中心部に泊まろう –   ロケーション抜群！地図を表示      当サイトではハノイのベストセラー！ ハノイ旧市街に位置するRising Dragon Estate Hotelは、ホアン・キエム（Hoan Kiem）湖から車で5分の場所にあります。キッチン、薄型テレビ、エアコン付きの客室を提供しています。無料Wi-Fiを利用できます。 孔子廟まで車で5分、ノイ・バイ国際空港までは車で45分です。 居心地の良い客室には、電子レンジ、冷蔵庫、専用バスルーム（ヘアドライヤー、バスローブ、バスアメニティ付）が備わっています。 併設ツアーデスクでは、レンタカーや観光の手配をしています。リクエストに応じて、コンシェルジュサービス、外貨両替サービスも提供しています。 館内レストランでは毎日ビュッフェ式朝食を用意しています。地元料理、各国料理を楽しめます。    ホアンキエム区は「ショッピング」「ストリートフード」「ムードのある場所」に興味がある人におすすめ。  ",
     "zone": " ハノイ",
     "latitude": "105.84629640",
-    "longtitude": "21.03185179"
+    "longtitude": "21.03185179",
+    "genre": "ホテル",
+    "genre_id": 3
   },
   {
     "name": "RedDoorz near HIECC Tan Binh",
@@ -797,6 +955,8 @@
     "desciption": "   この施設情報はただいま翻訳準備中です。ご迷惑をおかけいたしますが更新までしばらくお待ちください。  当サイトではホーチミンのベストセラー！ Providing free WiFi, RedDoorz near HIECC Tan Binh is located in Ho Chi Minh City. The property is situated less than 1 km from HIECC Ho Chi Minh International Exhibition Conference Center. The property is set 3.7 km from Giac Lam Pagoda. At the hotel, every room is equipped with a desk and a flat-screen TV. Each room comes with a private bathroom with a bath. Tan Dinh Market is 5 km from RedDoorz near HIECC Tan Binh. The nearest airport is Tan Son Nhat International Airport, 7 km from the accommodation.    Tan Binhは「ムードのある場所」「ストリート・ウォッチング」「コーヒー」に興味がある人におすすめ。  ",
     "zone": " ホーチミン",
     "latitude": "106.65933600",
-    "longtitude": "10.79596500"
+    "longtitude": "10.79596500",
+    "genre": "ホテル",
+    "genre_id": 3
   }
 ]
