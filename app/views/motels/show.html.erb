@@ -4,9 +4,10 @@
     <div class="name">
       <%= @motel.name %>
     </div>
-    <span>
-      <%= @motel.level %> ✩</span>
+    <span> レベル:
+      <%= @motel.level %></span>
   </div>
+  <%= social_share_button_tag(@motel.name) %>
   <div id="bookmark_id">
     <%= render "motels/bookmark", motel: @motel  %>
   </div>

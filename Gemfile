@@ -32,6 +32,8 @@ gem 'filterrific', :git => 'https://github.com/jhund/filterrific.git', :ref => '
 gem 'tiny_segmenter'
 gem 'text_rank'
 gem 'progressive_render'
+gem 'social-share-button'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
