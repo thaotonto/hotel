@@ -116,11 +116,19 @@ class Motel < ApplicationRecord
   }
 
   scope :with_room_price_gte, lambda { |price|
-    where('hotel_rooms.price BETWEEN ? AND ?', price, price+200000).joins(:hotel_rooms).distinct
+    if (price == 0)
+      Motel.all
+    else
+      where('hotel_rooms.price BETWEEN ? AND ?', price, price+200000).joins(:hotel_rooms).distinct
+    end
   }
 
   scope :with_equipment_price_gte, lambda { |price|
-    where('hotel_equips.price BETWEEN ? AND ?', price, price+5000).joins(:hotel_equips).distinct
+    if (price == 0)
+      Motel.all
+    else
+      where('hotel_equips.price BETWEEN ? AND ?', price, price+5000).joins(:hotel_equips).distinct
+    end
   }
 
 end
