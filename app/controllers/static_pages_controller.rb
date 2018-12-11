@@ -8,7 +8,9 @@ class StaticPagesController < ApplicationController
     ) or return
     @motels = @filterrific.find.page(params[:page]).search(params[:q]).order_level
                   .per(Settings.per_page)
-
+    if params[:filterrific]
+      @motels = @motels.search(params[:filterrific][:q])
+    end
     respond_to do |format|
       format.html
       format.js
