@@ -3,13 +3,13 @@
 <!--最新の口コミ。 お⁠得⁠な⁠料⁠金⁠。-->
 <!--</span>-->
 <div class="container" style=" margin:0;padding:0; margin-top:30px;">
-  <div class="col-md-2 home-form" style="height: auto; margin: 23px 0px; padding: 8px !important;">
+  <div class="col-md-3 home-form" style="height: auto; margin: 23px 0px; padding: 8px !important;">
     <%= render "static_pages/filter" %>
 
     <%#= render "static_pages/topmotel" %>
   </div>
 
-  <div class="col-md-10" id="motels">
+  <div class="col-md-9" id="motels">
     <div id="filterrific_results">
       <%= render partial: "static_pages/motel", collection: @motels %>
     </div>
