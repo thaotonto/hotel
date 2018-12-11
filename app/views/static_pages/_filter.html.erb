@@ -6,7 +6,15 @@
   <p style="width:100%">Equipment : </br><span id="equipment-gte">￥0</span>-<span id="equipment-gte-1">￥15000</span></p>
   <%= f.range_field :with_equipment_price_gte, min: '0', max: HotelEquip.order('price DESC').first.price, step:'500', value: '0',  id: "myRange-equipment-gte"  %>
   <br>
-  <h4><b>ホテルタイプ</b></h4>
+  <h4><b>ホテルのレベル</b></h4>
+  <div>
+    <% [1,2,3,4,5].each do |a| %>
+      <%= f.check_box(:with_all_level, {multiple: false}, a, false) %>
+      <%= a %>つ星</br>
+    <% end %>
+  </div>
+  <br>
+  <h4><b>ホテルのタイプ</b></h4>
   <div>
     <% Genre.all.each do |a| %>
       <%= f.check_box(:with_all_genre_id, {multiple: false}, a.id, false) %>

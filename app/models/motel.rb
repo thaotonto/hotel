@@ -73,6 +73,7 @@ class Motel < ApplicationRecord
       default_filter_params: {},
       available_filters: [
           :with_all_room_id,
+          :with_all_level,
           :with_all_equipment_id,
           :with_all_genre_id,
           :with_room_price_gte,
@@ -110,6 +111,9 @@ class Motel < ApplicationRecord
       Motel.joins(:genre).where("genres.id = ? ", "#{genre_id}")
   }
 
+  scope :with_all_level, lambda {|level|
+    Motel.where("motels.level = ? ", "#{level}")
+  }
 
   scope :with_room_price_gte, lambda { |price|
     where('hotel_rooms.price BETWEEN ? AND ?', price, price+200000).joins(:hotel_rooms).distinct
