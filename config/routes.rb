@@ -28,6 +28,7 @@ Rails.application.routes.draw do
     end
     get "/my_list_hotel", to: "users#list_hotel"
     get 'searchs/index'
+    get "/filter_load_more", to: "static_pages#load_more"
 
   end
 

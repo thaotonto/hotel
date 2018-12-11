@@ -6,32 +6,33 @@
   <p style="width:100%">アメニティ : ¥<span id="equipment-gte">0</span></p>
   <%= f.range_field :with_equipment_price_gte, in: 0..10000000, step: '5000', value: '0', id: "myRange-equipment-gte" %>
   <br>
-  <h4><b> 設備・アメニティ</b></h4>
-  <div>
-    <% Equipment.all.each do |a| %>
-      <%= f.check_box(:with_all_equipment_id, {multiple: true}, a.id, false) %>
-      <%= a.name %></br>
-    <% end %>
-  </div>
-  <!--<h4> Room</h4>-->
-  <!--<div>-->
-  <!--
-  <% Room.all.each do |a| %>-->
-    <!--    <%= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>-->
-    <!--    <%= a.room_type %></br>-->
-    <!--
-  <% end %>-->
-  <!--</div>-->
-  <br>
   <h4><b> ホテルのタイプ</b></h4>
   <div>
     <% Genre.all.each do |a| %>
-      <%= f.check_box(:with_all_genre_id, {multiple: true}, a.id, false) %>
+      <%= f.check_box(:with_all_genre_id, {multiple: false}, a.id, false) %>
       <%= a.name %></br>
     <% end %>
   </div>
+  <br>
+  <h4><b> 設備・アメニティ</b></h4>
+  <div id="filter-load-more" class="filter-load-more">
+    <% Equipment.all[1..6].each do |a| %>
+      <%= f.check_box(:with_all_equipment_id, {multiple: true}, a.id, false) %>
+      <%= a.name %></br>
+    <% end %>
+    <%#= link_to "...もっと見る", filter_load_more_path(filter: f), remote: true %>
+  </div>
+<!--  <h4> Room</h4>-->
+<!--  <div>-->
+  <%# Room.all.each do |a| %>
+        <%#= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
+<!--        <%#= a.room_type %></br>-->
+
+  <%# end %>
+<!--  </div>-->
   <div>
-    <%= link_to('Reset filters', reset_filterrific_url) %>
+    <br>
+    <%= link_to('リセット', reset_filterrific_url) %>
   </div>
 
 <% end %>
