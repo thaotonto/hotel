@@ -121,3 +121,8 @@
 .col1-container div:nth-child(2){
     flex:1;
 }
+
+
+.padding_fix {
+    padding:0;
+}
