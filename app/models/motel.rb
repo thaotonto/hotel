@@ -7,6 +7,7 @@ class Motel < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :user_hotels, inverse_of: :motel, dependent: :destroy
   has_many :users, through: :user_hotels
+  belongs_to :genre
 
   geocoded_by :address
 
@@ -20,13 +21,13 @@ class Motel < ApplicationRecord
   validates :address, presence: true,
             uniqueness: {case_sensitive: false}
   validates :phone, presence: true, :numericality => true,
-            :length => { :minimum => 10, :maximum => 15 }
+            :length => {:minimum => 10, :maximum => 15}
   validates :level, presence: true
   validate :validate_unique_equipment
   validate :validate_unique_room
   after_validation :geocode, :if => :address_changed?
 
-  scope :order_level, ->{order level: :desc}
+  scope :order_level, -> {order level: :desc}
 
   def avarege_point
     @point = reviews.average(:rate)
@@ -61,7 +62,7 @@ class Motel < ApplicationRecord
   end
 
   def self.search(search)
-    where("name LIKE ? OR address LIKE ? OR zone LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+    Motel.left_outer_joins(:genre).where("motels.name LIKE :search OR motels.address LIKE :search OR motels.zone LIKE :search OR genres.name LIKE :search", search: "%#{search}%")
   end
 
   def self.search_zone(search)
@@ -73,15 +74,16 @@ class Motel < ApplicationRecord
       available_filters: [
           :with_all_room_id,
           :with_all_equipment_id,
+          :with_all_genre_id,
           :with_room_price_gte,
           :with_equipment_price_gte
       ]
   )
 
-  scope :with_all_equipment_id, lambda { |equipment_ids|
+  scope :with_all_equipment_id, lambda {|equipment_ids|
     hotel_equips = HotelEquip.arel_table
     motels = Motel.arel_table
-    equipment_ids.map(&:to_i).inject(self) { |rel, equipment_id|
+    equipment_ids.map(&:to_i).inject(self) {|rel, equipment_id|
       rel.where(
           HotelEquip \
           .where(hotel_equips[:motel_id].eq(motels[:id])) \
@@ -91,10 +93,10 @@ class Motel < ApplicationRecord
     }
   }
 
-  scope :with_all_room_id, lambda { |room_ids|
+  scope :with_all_room_id, lambda {|room_ids|
     hotel_rooms = HotelRoom.arel_table
     motels = Motel.arel_table
-    room_ids.map(&:to_i).inject(self) { |rel, room_id|
+    room_ids.map(&:to_i).inject(self) {|rel, room_id|
       rel.where(
           HotelRoom \
           .where(hotel_rooms[:motel_id].eq(motels[:id])) \
@@ -104,7 +106,20 @@ class Motel < ApplicationRecord
     }
   }
 
-  scope :with_room_price_gte, lambda { |room_price|
+  scope :with_all_genre_id, lambda {|genre_ids|
+    genres = Genre.arel_table
+    motels = Motel.arel_table
+    genre_ids.map(&:to_i).inject(self) {|rel, genre_id|
+      rel.where(
+          Genre \
+             .where(motels[:genre_id].eq(genre_id)) \
+             .where(genres[:id].eq(genre_id)) \
+             .exists
+      )
+    }
+  }
+
+  scope :with_room_price_gte, lambda {|room_price|
     where([
               %(
         EXISTS (
@@ -117,7 +132,7 @@ class Motel < ApplicationRecord
           ])
   }
 
-  scope :with_equipment_price_gte, lambda { |equipment_price|
+  scope :with_equipment_price_gte, lambda {|equipment_price|
     where('hotel_equips.price >= ?', equipment_price).joins(:hotel_equips).distinct
   }
 
