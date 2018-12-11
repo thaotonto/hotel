@@ -4,11 +4,9 @@ class MotelsController < ApplicationController
 
   def index
     if params[:search]
-      @motels = Motel.order_level.search(params[:search]).page(params[:page])
-                    .per 5
+      @motels = Motel.order_level.search(params[:search]).page(params[:page]).per 5
     else
-      @motels = Motel.order_level.page(params[:page])
-                    .per 5
+      @motels = Motel.order_level.page(params[:page]).per 5
     end
   end
 
@@ -33,17 +31,9 @@ class MotelsController < ApplicationController
     end
 
     @ke = KeyphraseExtraction.new()
-    # all_reviews = @motel.reviews
-    reviews_text = []
-    #all_reviews.each do |t|
-    #  reviews_text.push(t.content)
-    #end
-    @reviews = @motel.reviews.page(params[:page])
-                   .per 15
+    @reviews = @motel.reviews.page(params[:page]).per 15
     @reviews_text = @motel.reviews.pluck(:content)
     review_rating = @motel.reviews.pluck(:rate)
-    # rv_keywords = ke.extract_keyphrase(reviews_text.join(""))
-    # @top_keywords = Hash[rv_keywords.sort_by { |k,v| -v }[0..20]]
     @ratecount_5 = review_rating.count {|x| x == 5}
     @ratecount_4 = review_rating.count {|x| x == 4}
     @ratecount_3 = review_rating.count {|x| x == 3}
@@ -84,7 +74,7 @@ class MotelsController < ApplicationController
   end
 
   def search
-    @motels = Motel.ransack(name_cont: params[:q], address_cont: params[:q], zone_cont: params[:q], m: "or").result(distinct: true)
+    @motels = Motel.ransack(name_cont: params[:q], address_cont: params[:q], zone_cont: params[:q], genre_cont: params[:q], m: "or").result(distinct: true)
     respond_to do |format|
       format.html {}
       format.json {
@@ -92,6 +82,7 @@ class MotelsController < ApplicationController
       }
     end
   end
+
   def  add_bookmark
       @motel = Motel.find_by id: params[:motel_id]
       UserHotel.create user_id: current_user.id , motel_id: @motel.id

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_08_155243) do
+ActiveRecord::Schema.define(version: 2018_12_10_152624) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(version: 2018_12_08_155243) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_equipment_on_name", unique: true
+  end
+
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "hotel_equips", force: :cascade do |t|
@@ -75,6 +81,8 @@ ActiveRecord::Schema.define(version: 2018_12_08_155243) do
     t.datetime "updated_at", null: false
     t.float "latitude", default: 21.03576383
     t.float "longitude", default: 105.85124142
+    t.integer "genre", default: 1
+    t.integer "genre_id", default: 1
     t.index ["address"], name: "index_motels_on_address"
   end
 

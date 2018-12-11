@@ -526,12 +526,12 @@ td, th {
 }
 
 #search-form-menu-x input {
-  width: 177px;
+  width: 290px;
   padding: 4px 15px;
   float: right;
   transition: 0.5s;
   &:focus {
-    width: 280px;
+    width: 400px;
     transition: 0.5s;
   }
 }
