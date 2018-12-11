@@ -8,9 +8,9 @@
       <% end %>
     </div>
     <div class = "home-form-top col-md-8">
-      <div class="col-md-12 padding_fix">
+      <div class="col-md-12 padding_fix" style="color: steelblue;">
       <h3><%= motel.name %></h3>
-      <h5>
+      <h5 style="color:#000;">
         <% motel.star.to_i.times do  %>
           <span class="glyphicon glyphicon-star "></span>
         <% end %>
@@ -21,10 +21,12 @@
       </h5>
       <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= motel.address %></p>
     </div>
-    <div class="col-md-12 " style="background:#e1fff4;">
+    <div class="col-md-12 " style="
+    color: #5a0000;
+    font-weight: 900;">
       <div class = "col-md-6 padding_fix ">
         <% if !motel.hotel_equips.blank? %>
-          <h5><span class="glyphicon glyphicon-lamp"></span> <%= t "activerecord.attributes.equipment.name"%></h5>
+        <h5><span class="glyphicon glyphicon-lamp"></span> <%= t "activerecord.attributes.equipment.name"%></h5>
           <% motel.hotel_equips.limit(3).each do |equip| %>
             <div class="col-md-12 padding_fix">
             <div class="col-md-8 padding_fix" id="name_a"><h6><%= equip.equipment.name %></h6></div>
@@ -32,13 +34,13 @@
           </div>
             <% end %>
           <% if motel.hotel_equips.count > 2 %>
-            <p style = "color: #16a085">....尚 <%= motel.hotel_equips.count - 2 %> アメニテイある。</p>
+            <h6 style = "color: steelblue">....尚 <%= motel.hotel_equips.count - 2 %> アメニテイある。</h6>
           <% end %>
         <% end %>
       </div>
       <div class = "col-md-6 padding_fix" >
         <% if !motel.hotel_rooms.blank? %>
-          <h5><span class="glyphicon glyphicon-list-alt"></span> <%= t "activerecord.attributes.room.room_type" %></h5>
+        <h5><span class="glyphicon glyphicon-list-alt"></span> <%= t "activerecord.attributes.room.room_type" %></h5>
           <% motel.hotel_rooms.limit(3).each do |room| %>
           <div class="col-md-12 padding_fix">  
           <div class="col-md-9 padding_fix"><h6 class="name-width"><%= room.room.room_type %></h6></div>
@@ -46,7 +48,7 @@
           </div>
             <% end %>
           <% if motel.hotel_rooms.count > 2 %>
-            <p style = "color: #16a085">....尚 <%= motel.hotel_rooms.count - 2 %> ルームタイプある。</p>
+            <h6 style = "color: steelblue">....尚 <%= motel.hotel_rooms.count - 2 %> ルームタイプある。</h6>
           <% end %>
         <% end %>
       </div>

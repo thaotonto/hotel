@@ -142,3 +142,8 @@ mark {
 .center a {
     font-size:20px !important;
 }
+
+
+.title span {
+    font-size: 19px;
+}
