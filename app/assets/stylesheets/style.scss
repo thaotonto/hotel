@@ -346,14 +346,16 @@ span.text-line{
   padding: 0 !important;
   @include background-tile;
   margin: 23px 18px 46px 0;
+  margin-right: 0;
   height: 320px;
   position: relative;
   color: black;
   text-transform: capitalize;
   &:hover {
-    box-shadow: 3px 3px 5px 0px #AAAAAA;
+    box-shadow: 2px 2px 9px 3px #AAAAAA;
   }
-  box-shadow: 3px 3px 5px 1px #ccc;
+  box-shadow: 1px 1px 5px 1px #ccc;
+  background: #ececec;
 }
 
 .home-form .col-md-4 img {
@@ -592,6 +594,19 @@ button {
 }
 
 body {
-  background: #d6d6d6 !important;
+  background: #fff;
+  font-family: fo;
 }
 
+.slider_tr_fix > .item > img {
+  height: 450px;
+}
+
+#motels {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#filterrific_results {
+  margin-right: 0;
+}
