@@ -106,18 +106,10 @@ class Motel < ApplicationRecord
     }
   }
 
-  scope :with_all_genre_id, lambda {|genre_ids|
-    genres = Genre.arel_table
-    motels = Motel.arel_table
-    genre_ids.map(&:to_i).inject(self) {|rel, genre_id|
-      rel.where(
-          Genre \
-             .where(motels[:genre_id].eq(genre_id)) \
-             .where(genres[:id].eq(genre_id)) \
-             .exists
-      )
-    }
+  scope :with_all_genre_id, lambda {|genre_id|
+      Motel.joins(:genre).where("genres.id = ? ", "#{genre_id}")
   }
+
 
   scope :with_room_price_gte, lambda {|room_price|
     where([
