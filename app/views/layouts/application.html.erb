@@ -12,12 +12,15 @@
   </head>
   <body>
     <%= render "layouts/header" %>
-    <div class="container">
+    <div class="container" style="margin:0 auto;padding:0">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
       <%= render "layouts/footer" %>
     </div>
+    <footer style="background:#451b5d; color:orange;">
+      <p class="text-center">© 2018<a style="color:#fff; text-decoration:none;" href="#">ハノイ工科大学の学生</a>-Version 1.0</p>
+  </footer>
   </body>
 </html>
