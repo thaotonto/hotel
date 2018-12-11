@@ -347,7 +347,7 @@ span.text-line{
   @include background-tile;
   margin: 23px 18px 46px 0;
   margin-right: 0;
-  height: 320px;
+  height: 350px;
   position: relative;
   color: black;
   text-transform: capitalize;
@@ -355,7 +355,6 @@ span.text-line{
     box-shadow: 2px 2px 9px 3px #AAAAAA;
   }
   box-shadow: 1px 1px 5px 1px #ccc;
-  background: #ececec;
 }
 
 .home-form .col-md-4 img {
