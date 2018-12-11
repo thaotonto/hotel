@@ -18,6 +18,7 @@
  */
 /*
  *= require progressive_render
+ *= require social-share-button
  */
 
  .form-search-review {
@@ -126,7 +127,8 @@
 
 
 .padding_fix {
-    padding:0;
+    padding: 0;
+}
 
 mark {
     font-weight: bold;

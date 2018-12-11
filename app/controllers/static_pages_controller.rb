@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
     @filterrific = initialize_filterrific(
         Motel,
         params[:filterrific],
-        persistence_id: true,
+        persistence_id: false,
         sanitize_params: true
     ) or return
     @motels = @filterrific.find.page(params[:page]).search(params[:q]).order_level

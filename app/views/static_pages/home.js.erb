@@ -13,7 +13,7 @@ var slider2 = document.getElementById("myRange-equipment-gte");
 var output2 = document.getElementById("equipment-gte");
 var output3 = document.getElementById("equipment-gte-1");
 output2.innerHTML = parseFloat(slider2.value).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
-output3.innerHTML = (parseFloat(slider2.value) + 5000).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
+output3.innerHTML = (parseFloat(slider2.value) + 15000).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
 
 $('#myRange-room-gte').on('click',function(){
     $('#range_clicked').attr('checked',true);

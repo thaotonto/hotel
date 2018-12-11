@@ -1,9 +1,9 @@
 <%= form_for_filterrific @filterrific do |f| %>
-     <%= f.hidden_field :q, :value => params[:q] %> 
+     <%= f.hidden_field :q, :value => params[:q] %>
   <h4><b>値段</b></h4>
-  <p style="width:100%">Room : </br><span id="room-gte">￥0</span>-<span id="room-gte-1">￥0</span></p>
+  <p style="width:100%">Room : </br><span id="room-gte">￥0</span>-<span id="room-gte-1">￥200000</span></p>
   <%= f.range_field :with_room_price_gte, min:'0', max: HotelRoom.order('price DESC').first.price, step: '5000', value: '0',  id: "myRange-room-gte"  %>
-  <p style="width:100%">Equipment : </br><span id="equipment-gte">￥0</span>-<span id="equipment-gte-1">￥0</span></p>
+  <p style="width:100%">Equipment : </br><span id="equipment-gte">￥0</span>-<span id="equipment-gte-1">￥15000</span></p>
   <%= f.range_field :with_equipment_price_gte, min: '0', max: HotelEquip.order('price DESC').first.price, step:'500', value: '0',  id: "myRange-equipment-gte"  %>
   <br>
   <h4><b>ホテルタイプ</b></h4>
@@ -29,8 +29,8 @@
       <%= a.name %></br>
     <% end %>
     </div>
-    <%= link_to '.... Read more', '', class: "read-more", remote: true %>
-    <%= link_to '.... Read less', '', class: "read-less", remote: true %>
+    <%= link_to '.... すべて表示 ', '', class: "read-more", remote: true %>
+    <%= link_to '.... 折りたたむ', '', class: "read-less", remote: true %>
     <script>
       var readmore = $(".read-more");
       var readless = $(".read-less");
@@ -48,16 +48,14 @@
         readless.hide();
       })
     </script>
-    <%#= link_to "...もっと見る", filter_load_more_path(filter: f), remote: true %>
-
-
-<!--  <h4> Room</h4>-->
+    <!--  <h4> Room</h4>-->
 <!--  <div>-->
     <%# Room.all.each do |a| %>
       <%#= f.check_box(:with_all_room_id, {multiple: true}, a.id, false) %>
 <!--      <%#= a.room_type %></br>-->
     <%# end %>
 <!--  </div>-->
+  <br>
   <br>
   <div>
     <%= link_to('リセット', reset_filterrific_url) %>
