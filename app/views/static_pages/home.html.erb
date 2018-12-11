@@ -21,13 +21,13 @@
 <div id="paginator1">
   <%= paginate @motels, remote: true %>
 </div>
-<div class="col-md-12">
-  <div class="col-md-12">
-    トップ都市
+<div class="col-md-12 padding_fix" style="margin-top:20px">
+  <div class="col-md-12 title-top padding_fix">
+      <h3 class="padding_fix"><span style="border-bottom:2px solid #fb9f9f;"> トップ都市</span></h3>
   </div>
-  <div class="col-md-12">
+  <div class="col-md-12 padding_fix ">
     <div class="col-md-4">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:80px;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:20px;">
         <% a = Motel.search('ハノイ') %>
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -43,7 +43,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -55,7 +55,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -66,7 +66,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:80px;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:20px;">
         <% a = Motel.search('ホーチミン') %>
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -105,7 +105,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -117,7 +117,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -128,7 +128,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -151,7 +151,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:80px;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:20px;">
         <% a = Motel.search('ダナン') %>
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -167,7 +167,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -179,7 +179,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>
@@ -190,7 +190,7 @@
             <%= image_tag p.images.first.image.url %>
             <%= link_to motel_path(p) do %>
               <div class="carousel-caption">
-                <h3><%= p.name %></h3>
+                <h5><%= p.name %></h5>
                 <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
               </div>
             <% end %>

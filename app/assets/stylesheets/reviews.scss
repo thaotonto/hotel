@@ -122,7 +122,6 @@ div.helpful.liked {
     cursor: pointer;
     background-image: none;
     white-space: nowrap;
-    padding: 10px 12px;
     font-size: 14px;
     line-height: 1.428571429;
     border-radius: 4px;
@@ -500,4 +499,16 @@ a.ybtn {
 
 .Review-comment-left a+a {
     margin-left: 5px;
+}
+
+.name-width {
+    display: block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    width: 100px;
+}
+
+.name-width:hover {
+    white-space:inherit;
 }

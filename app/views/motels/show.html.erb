@@ -1,6 +1,6 @@
 <%= render "slider", slider: @motel.images %>
-<div class="col-md-12">
-  <div class="col-md-12 title">
+<div class="container">
+  <div class="col-md-12 title" style="margin:0; padding:0">
     <div class="name">
       <%= @motel.name %>
     </div>
@@ -10,128 +10,139 @@
   <br>
   <hr>
   <hr>
-  <div class="address">
-    <% if user_signed_in? && (current_user.admin? || current_user.mod?) %>
-      <%= link_to t("change"), edit_motel_path(@motel) %>
-      <%= link_to t("delete"), motel_path(@motel), method: :delete,
-                  data: {confirm: t("delete_confirm")} %>
+  <div class="col-md-12" style="margin:0; padding:0">
+    <div class="address">
+      <% if user_signed_in? && (current_user.admin? || current_user.mod?) %>
+        <%= link_to t("change"), edit_motel_path(@motel) %>
+        <%= link_to t("delete"), motel_path(@motel), method: :delete,
+                    data: {confirm: t("delete_confirm")} %>
+      <% end %>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <div class="address">
+      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+      <%= @motel.address %>
+    </div>
+
+    <div class="phone">
+      <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+      <%= @motel.phone %>
+    </div>
+  </div>
+  <div class="col-md-12" style="margin:0; padding:0">
+    <div class="col-md-6" style="margin:0; padding:0;padding-right:22px">
+      <div id="map" style='width: 555pxx; height: 300px;'></div>
+    </div>
+    <div class="col-md-6" style="margin:0; padding:0">
+      <div class="col-sm-6" style="margin:0; padding:0; float: left;">
+        <div class="rating-block">
+          <h4>Average user rating</h4>
+          <h2 class="bold padding-bottom-7"><%= @motel.avarege_point %>
+            <small>/ 5</small>
+          </h2>
+          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <% %>
+          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-6" style="margin:0; padding:0;float: left;padding-left: 10px;">
+        <h4>Rating breakdown</h4>
+        <div class="pull-left">
+          <div class="pull-left" style="width:35px; line-height:1;">
+            <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
+          </div>
+          <div class="pull-left" style="width:180px;">
+            <div class="progress" style="height:9px; margin:8px 0;">
+              <div class="progress-bar progress-bar-success" role="progressbar" style="width: <%= @ratecount_5 * 100 / @max_num %>%">
+                <span class="sr-only">80% Complete (danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="pull-right" style="margin-left:10px;"><%= @ratecount_5 %></div>
+        </div>
+        <div class="pull-left">
+          <div class="pull-left" style="width:35px; line-height:1;">
+            <div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>
+          </div>
+          <div class="pull-left" style="width:180px;">
+            <div class="progress" style="height:9px; margin:8px 0;">
+              <div class="progress-bar progress-bar-primary" role="progressbar" style="width: <%= @ratecount_4 * 100 / @max_num %>%">
+                <span class="sr-only">80% Complete (danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="pull-right" style="margin-left:10px;"><%= @ratecount_4 %></div>
+        </div>
+        <div class="pull-left">
+          <div class="pull-left" style="width:35px; line-height:1;">
+            <div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>
+          </div>
+          <div class="pull-left" style="width:180px;">
+            <div class="progress" style="height:9px; margin:8px 0;">
+              <div class="progress-bar progress-bar-info" role="progressbar" style="width: <%= @ratecount_3 * 100 / @max_num %>%">
+                <span class="sr-only">80% Complete (danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="pull-right" style="margin-left:10px;"><%= @ratecount_3 %></div>
+        </div>
+        <div class="pull-left">
+          <div class="pull-left" style="width:35px; line-height:1;">
+            <div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>
+          </div>
+          <div class="pull-left" style="width:180px;">
+            <div class="progress" style="height:9px; margin:8px 0;">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="width: <%= @ratecount_2 * 100 / @max_num %>%">
+                <span class="sr-only">80% Complete (danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="pull-right" style="margin-left:10px;"><%= @ratecount_2 %></div>
+        </div>
+        <div class="pull-left">
+          <div class="pull-left" style="width:35px; line-height:1;">
+            <div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>
+          </div>
+          <div class="pull-left" style="width:180px;">
+            <div class="progress" style="height:9px; margin:8px 0;">
+              <div class="progress-bar progress-bar-danger" role="progressbar" style="width: <%= @ratecount_1 * 100 / @max_num %>%">
+                <span class="sr-only">80% Complete (danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="pull-right" style="margin-left:10px;"><%= @ratecount_1 %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% unless current_user.nil? %>
+    <% if current_user.motels.exists? @motel.id %>
+      <div class="col-md-4 btn-my-list">
+        <%= link_to t("undo_my_list"), motel_delete_my_list_path(@motel), cLass: "btn btn-primary", method: :post %>
+      </div>
+    <% else %>
+      <div class="col-md-4 btn-my-list">
+        <%= link_to t("add_my_list"), motel_add_my_list_path(@motel), cLass: "btn btn-primary", method: :post %>
+      </div>
     <% end %>
+  <% end %>
+  <div id="MAIN" class="delineation">
   </div>
-  <br>
-  <hr>
-  <hr>
-  <div class="address">
-    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-    <%= @motel.address %>
-  </div>
-
-  <div class="phone">
-    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-    <%= @motel.phone %>
-  </div>
-
-  <div style='width: 800px;'>
-    <div id="map" style='width: 800px; height: 400px;'></div>
-  </div>
-
-</div>
-
-
-<div class="row">
-			<div class="col-sm-3">
-				<div class="rating-block">
-					<h4>Average user rating</h4>
-					<h2 class="bold padding-bottom-7"><%= @motel.avarege_point %> <small>/ 5</small></h2>
-					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</button>
-					<% %>
-					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</button>
-					<button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</button>
-					<button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
-					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</button>
-					<button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
-					  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</button>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<h4>Rating breakdown</h4>
-				<div class="pull-left">
-					<div class="pull-left" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
-					</div>
-					<div class="pull-left" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-success" role="progressbar" style="width: <%= @ratecount_5 * 100 / @max_num %>%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
-						</div>
-					</div>
-					<div class="pull-right" style="margin-left:10px;"><%= @ratecount_5 %></div>
-				</div>
-				<div class="pull-left">
-					<div class="pull-left" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>
-					</div>
-					<div class="pull-left" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-primary" role="progressbar" style="width: <%= @ratecount_4 * 100 / @max_num %>%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
-						</div>
-					</div>
-					<div class="pull-right" style="margin-left:10px;"><%= @ratecount_4 %></div>
-				</div>
-				<div class="pull-left">
-					<div class="pull-left" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>
-					</div>
-					<div class="pull-left" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-info" role="progressbar"  style="width: <%= @ratecount_3 * 100 / @max_num %>%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
-						</div>
-					</div>
-					<div class="pull-right" style="margin-left:10px;"><%= @ratecount_3 %></div>
-				</div>
-				<div class="pull-left">
-					<div class="pull-left" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>
-					</div>
-					<div class="pull-left" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-warning" role="progressbar"  style="width: <%= @ratecount_2 * 100 / @max_num %>%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
-						</div>
-					</div>
-					<div class="pull-right" style="margin-left:10px;"><%= @ratecount_2 %></div>
-				</div>
-				<div class="pull-left">
-					<div class="pull-left" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>
-					</div>
-					<div class="pull-left" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-danger" role="progressbar" style="width: <%= @ratecount_1 * 100 / @max_num %>%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
-						</div>
-					</div>
-					<div class="pull-right" style="margin-left:10px;"><%= @ratecount_1 %></div>
-				</div>
-			</div>		
-      <div class="col-sm-6" id ="bookmark_id">
-          <%=render "bookmark", motel: @motel%>
-      </div>	
-		</div>			
 
   <div id="MAIN" class="delineation col1-container col-md-12">
     <% if @motel.hotel_rooms.count > 0 %>
@@ -259,7 +270,6 @@
 
 
 </div>
-
 <script type="text/javascript">
     $("#search_reviews").keyup(function () {
         $.ajax({

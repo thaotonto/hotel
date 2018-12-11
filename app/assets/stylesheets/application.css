@@ -124,7 +124,19 @@
     flex:1;
 }
 
+
+.padding_fix {
+    padding:0;
+
 mark {
     font-weight: bold;
     background: yellow;
+}
+
+.title-top{
+    margin: 20px 0px;
+}
+
+.center a {
+    font-size:20px !important;
 }
