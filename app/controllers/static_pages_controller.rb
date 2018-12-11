@@ -17,4 +17,10 @@ class StaticPagesController < ApplicationController
   def zone_top_motel
     @motels = Motel.joins(:reviews).search_zone(params[:param]).order_level.distinct
   end
+
+  def load_more
+    @equipment = Equipment.all
+    @filter = params[:filter]
+    render 'static_pages/load_more'
+  end
 end
