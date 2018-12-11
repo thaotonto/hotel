@@ -25,7 +25,7 @@
       <div class = "col-md-6 padding_fix ">
         <% if !motel.hotel_equips.blank? %>
           <h5><span class="glyphicon glyphicon-lamp"></span> <%= t "activerecord.attributes.equipment.name"%></h5>
-          <% motel.hotel_equips.limit(2).each do |equip| %>
+          <% motel.hotel_equips.limit(3).each do |equip| %>
             <div class="col-md-12 padding_fix">
             <div class="col-md-8 padding_fix" id="name_a"><h6><%= equip.equipment.name %></h6></div>
             <div class="col-md-4 padding_fix"><h6><%=  number_to_currency(equip.price, format: "%n %u") %></h6></div>
@@ -39,7 +39,7 @@
       <div class = "col-md-6 padding_fix" >
         <% if !motel.hotel_rooms.blank? %>
           <h5><span class="glyphicon glyphicon-list-alt"></span> <%= t "activerecord.attributes.room.room_type" %></h5>
-          <% motel.hotel_rooms.limit(2).each do |room| %>
+          <% motel.hotel_rooms.limit(3).each do |room| %>
           <div class="col-md-12 padding_fix">  
           <div class="col-md-6 padding_fix"><h6 class="name-width"><%= room.room.room_type %></h6></div>
             <div class="col-md-6 padding_fix "><h6><%=  number_to_currency(room.price, format: "%n %u") %></h6></div>
