@@ -46,22 +46,27 @@
           <h2 class="bold padding-bottom-7"><%= @motel.avarege_point %>
             <small>/ 5</small>
           </h2>
-          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </button>
-          <% %>
-          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </button>
+<!--          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">-->
+<!--            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+<!--          </button>-->
+          <%# %>
+<!--          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">-->
+<!--            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+<!--          </button>-->
+<!--          <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">-->
+<!--            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+<!--          </button>-->
+<!--          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">-->
+<!--            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+<!--          </button>-->
+<!--          <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">-->
+<!--            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>-->
+<!--          </button>-->
+          <div class="col-md-3 star-user">
+            <div class="star_home_page stars-outer">
+              <div class="stars-inner" style="width: <%= @motel.avarege_point*20 %>%"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-6" style="margin:0; padding:0;float: left;padding-left: 10px;">
