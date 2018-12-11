@@ -40,5 +40,5 @@ tmp/cache/*
 .idea/*
 log/*
 db/test.sqlite3
-log/development
+log/development.log
 Gemfile.lock
