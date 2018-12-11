@@ -73,6 +73,7 @@ class Motel < ApplicationRecord
       default_filter_params: {},
       available_filters: [
           :with_all_room_id,
+          :with_all_level,
           :with_all_equipment_id,
           :with_all_genre_id,
           :with_room_price_gte,
@@ -106,35 +107,20 @@ class Motel < ApplicationRecord
     }
   }
 
-  scope :with_all_genre_id, lambda {|genre_ids|
-    genres = Genre.arel_table
-    motels = Motel.arel_table
-    genre_ids.map(&:to_i).inject(self) {|rel, genre_id|
-      rel.where(
-          Genre \
-             .where(motels[:genre_id].eq(genre_id)) \
-             .where(genres[:id].eq(genre_id)) \
-             .exists
-      )
-    }
+  scope :with_all_genre_id, lambda {|genre_id|
+      Motel.joins(:genre).where("genres.id = ? ", "#{genre_id}")
   }
 
-  scope :with_room_price_gte, lambda {|room_price|
-    where([
-              %(
-        EXISTS (
-         SELECT 1
-           FROM hotel_rooms
-          WHERE motels.id = hotel_rooms.motel_id
-            AND hotel_rooms.price >= ?)
-      ),
-              room_price
-          ])
+  scope :with_all_level, lambda {|level|
+    Motel.where("motels.level = ? ", "#{level}")
   }
 
-  scope :with_equipment_price_gte, lambda {|equipment_price|
-    where('hotel_equips.price >= ?', equipment_price).joins(:hotel_equips).distinct
+  scope :with_room_price_gte, lambda { |price|
+    where('hotel_rooms.price BETWEEN ? AND ?', price, price+200000).joins(:hotel_rooms).distinct
   }
 
+  scope :with_equipment_price_gte, lambda { |price|
+    where('hotel_equips.price BETWEEN ? AND ?', price, price+5000).joins(:hotel_equips).distinct
+  }
 
 end

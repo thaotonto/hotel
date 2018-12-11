@@ -4,16 +4,17 @@ $("#paginator1").html("<%= j paginate(@motels, remote: true) %>");
 
 var slider = document.getElementById("myRange-room-gte");
 var output = document.getElementById("room-gte");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-    output.innerHTML = this.value;
-};
+//output.innerHTML = slider.value;
+var output1 = document.getElementById("room-gte-1");
+output.innerHTML = parseFloat(slider.value).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
+output1.innerHTML = (parseFloat(slider.value) +200000).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
 
 var slider2 = document.getElementById("myRange-equipment-gte");
 var output2 = document.getElementById("equipment-gte");
-output2.innerHTML = slider2.value;
+var output3 = document.getElementById("equipment-gte-1");
+output2.innerHTML = parseFloat(slider2.value).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
+output3.innerHTML = (parseFloat(slider2.value) + 15000).toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
 
-slider2.oninput = function() {
-    output2.innerHTML = this.value;
-};
+$('#myRange-room-gte').on('click',function(){
+    $('#range_clicked').attr('checked',true);
+});
