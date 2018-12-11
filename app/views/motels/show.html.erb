@@ -1,5 +1,5 @@
 <%= render "slider", slider: @motel.images %>
-<div class="col-md-12 " style="margin:0; padding:0">
+<div class="container">
   <div class="col-md-12 title" style="margin:0; padding:0">
     <div class="name">
       <%= @motel.name %>
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="col-md-12" style="margin:0; padding:0">
-    <div class="col-md-6" style="margin:0; padding-right:22px">
+    <div class="col-md-6" style="margin:0; padding:0;padding-right:22px">
       <div id="map" style='width: 555pxx; height: 300px;'></div>
     </div>
     <div class="col-md-6" style="margin:0; padding:0">
@@ -130,8 +130,6 @@
       </div>
     </div>
   </div>
-</div>
-<div class="row">
   <% unless current_user.nil? %>
     <% if current_user.motels.exists? @motel.id %>
       <div class="col-md-4 btn-my-list">
@@ -244,25 +242,34 @@
         <div class="col-md-12 list-key">
           <h4>レビューハイライト:</h4>
           <ul>
-            <% top_keywords = @ke.extract_keyphrase(@reviews_text.join("")) %>
-            <% top_keywords = Hash[top_keywords.sort_by {|k, v| -v}[0..20]] %>
-            <% top_keywords.each do |key, value| %>
-              <li><a href="#"><%= key %></a></li>
+            <%= progressive_render do %>
+              <% top_keywords = @ke.extract_keyphrase(@reviews_text.join("\n")) %>
+
+              <% top_keywords.each do |key, value| %>
+                <li>
+                  <%= link_to searchs_index_url(id: @motel.id, keyword: key), class: "search_reviews", remote: true, :method => 'get' do %>
+                    <%= key %>
+                  <% end %>
+                </li>
+              <% end %>
             <% end %>
           </ul>
         </div>
-        　
       </div>
     </div>
     <div style="margin-top: 100px;" class="review_search_content" id="reviews">
       <%= render partial: "motels/review", collection: @reviews.order_after_like %>
     </div>
+    <div id="paginator1">
+      <%= paginate @reviews, remote: true %>
+    </div>
+    <div id="loading-indicator">
+      <%= image_tag("ajax-loader.gif", :id => "loading-indicator", :style => "display:none") %>
+    </div>
   </div>
-  <div id="paginator1">
-    <%= paginate @reviews, remote: true %>
-  </div>
-</div>
 
+
+</div>
 <script type="text/javascript">
     $("#search_reviews").keyup(function () {
         $.ajax({

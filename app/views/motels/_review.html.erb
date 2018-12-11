@@ -50,15 +50,19 @@
   <div class="Review-comment-right">
     <div class="Review-comment-bubble blue">
       <div class="Review-comment-body" data-selenium="">
-        <div class="Review-comment-bodyTitle"><%= review.title %></div>
+        <div class="Review-comment-bodyTitle"><%= highlight(review.title, params[:keyword]) %></div>
         <div id="Review-comment-bodyText-<%= review.id %>" class="Review-comment-bodyText" data-type="comment">
-          <%= truncate(review.content, :length => 250) {link_to "もっと見る", load_more_path(review_id: review.id), remote: true} %>
+          <% if review.content.length <= 250%>
+          <%= raw highlight(review.content, params[:keyword]) %>
+          <% else %>
+          <%=raw highlight(review.content[0..250], params[:keyword])  %>
+          <%= link_to "...もっと見る", load_more_path(review_id: review.id, keyword: params[:keyword]), remote: true %>
+          <% end %>
         </div>
       </div>
       <div class="Review-statusBar">
         <div class="Review-statusBar-right">
-          <button class="Review-statusBar-translateButton" onclick="toggleComment(<%= review.id %>)">コメント(<%= review.comments.count %>
-            )
+          <button id="count-comment-<%= review.id %>"class="Review-statusBar-translateButton" onclick="toggleComment(<%= review.id %>)">コメント(<%= review.comments.count %>)
           </button>
         </div>
       </div>

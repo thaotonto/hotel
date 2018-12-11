@@ -1,8 +1,8 @@
 <%= link_to motel_path(motel) do %>
 <div class="home-form ">
   <div class = "col-md-4 ">
-  <% if motel.images? %>
-    <%= image_tag motel.images[0].url %>
+  <% if motel.images.count > 0 %>
+    <%= image_tag motel.images.first.image.url %>
   <% else %>
     <%= image_tag "default-hotel" %>
   <% end %>

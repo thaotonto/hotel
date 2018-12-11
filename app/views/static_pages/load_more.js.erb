@@ -1,0 +1,5 @@
+$('#filter-load-more').html("<%=escape_javascript @equipment.each do |a|
+    @filter.check_box(:with_all_equipment_id, {multiple: true}, a.id, false)
+    a.name
+  end
+%>")

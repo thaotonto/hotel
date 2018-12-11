@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     get "/zone_top_motel", to: "static_pages#zone_top_motel"
     resources :motels do
       resources :reviews
-      post "/add_my_list" , to: "motels#add_my_list"
-      post "/delete_my_list" , to: "motels#delete_my_list"
+      post "/add_bookmark" , to: "motels#add_bookmark"
+      post "/undo_bookmark" , to: "motels#undo_bookmark"
     end
     resources :rooms
     resources :equipments
@@ -28,6 +28,7 @@ Rails.application.routes.draw do
     end
     get "/my_list_hotel", to: "users#list_hotel"
     get 'searchs/index'
+    get "/filter_load_more", to: "static_pages#load_more"
 
   end
 

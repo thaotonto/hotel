@@ -49,7 +49,7 @@ class KeyphraseExtraction
 
     end
     # @keyphrases = @word_net
-    @keyphrases = Hash[@keyphrases.sort_by {|k, v| -v}[0..40]]
+    @keyphrases = Hash[@keyphrases.sort_by {|k, v| -v}[0..20]]
     
   end
 

@@ -16,7 +16,9 @@
  *= require_tree .
  *= require_self
  */
-
+/*
+ *= require progressive_render
+ */
 
  .form-search-review {
     padding: 7px 0px;
@@ -125,4 +127,16 @@
 
 .padding_fix {
     padding:0;
+
+mark {
+    font-weight: bold;
+    background: yellow;
+}
+
+.title-top{
+    margin: 20px 0px;
+}
+
+.center a {
+    font-size:20px !important;
 }

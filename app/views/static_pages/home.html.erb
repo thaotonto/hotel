@@ -1,13 +1,12 @@
 <%= render "static_pages/slide" %>
-<span class="text-line">
-最新の口コミ。 お⁠得⁠な⁠料⁠金⁠。
-</span>
-
+<!--<span class="text-line">-->
+<!--最新の口コミ。 お⁠得⁠な⁠料⁠金⁠。-->
+<!--</span>-->
 <div class="row" style="margin-top:30px;">
-  <div class ="col-md-2 home-form" style = "height: auto; margin: 23px 0px; padding: 8px !important;">
+  <div class="col-md-2 home-form" style="height: auto; margin: 23px 0px; padding: 8px !important;">
     <%= render "static_pages/filter" %>
 
-    <%= render "static_pages/topmotel" %>
+    <%#= render "static_pages/topmotel" %>
   </div>
 
   <div class="col-md-10" id="motels">
@@ -17,14 +16,201 @@
   </div>
 
 
+</div>
 
-  
-  
-
+<div id="paginator1">
+  <%= paginate @motels, remote: true %>
+</div>
+<div class="col-md-12 padding_fix" style="margin-top:20px">
+  <div class="col-md-12 title-top padding_fix">
+      <h3 class="padding_fix"><span style="border-bottom:2px solid #fb9f9f;"> トップ都市</span></h3>
   </div>
+  <div class="col-md-12 padding_fix ">
+    <div class="col-md-4">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:20px;">
+        <% a = Motel.search('ハノイ') %>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <!--          <li data-target="#myCarousel" data-slide-to="3"></li>-->
+          <!--          <li data-target="#myCarousel" data-slide-to="4"></li>-->
+          <!--          <li data-target="#myCarousel" data-slide-to="5"></li>-->
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <% p = a[0] if a[0].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
 
-  <div id="paginator1">
-    <%= paginate @motels, remote: true %>
+          <div class="item">
+
+            <% p = a[1] if a[1].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+            <% p = a[2] if a[2].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="col-md-12 center">
+        <%= link_to "ハノイ", zone_top_motel_path(:param => "ハノイ") %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:20px;">
+        <% a = Motel.search('ホーチミン') %>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <!--          <li data-target="#myCarousel" data-slide-to="3"></li>-->
+          <!--          <li data-target="#myCarousel" data-slide-to="4"></li>-->
+          <!--          <li data-target="#myCarousel" data-slide-to="5"></li>-->
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <% p = a[0] if a[0].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+
+            <% p = a[1] if a[1].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+            <% p = a[2] if a[2].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="col-md-12 center">
+        <%= link_to "ホーチミン", zone_top_motel_path(:param => "ホーチミン") %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:20px;">
+        <% a = Motel.search('ダナン') %>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <!--          <li data-target="#myCarousel" data-slide-to="3"></li>-->
+          <!--          <li data-target="#myCarousel" data-slide-to="4"></li>-->
+          <!--          <li data-target="#myCarousel" data-slide-to="5"></li>-->
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <% p = a[0] if a[0].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+
+            <% p = a[1] if a[1].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="item">
+            <% p = a[2] if a[2].present? %>
+            <%= image_tag p.images.first.image.url %>
+            <%= link_to motel_path(p) do %>
+              <div class="carousel-caption">
+                <h5><%= p.name %></h5>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <%= p.address %></p>
+              </div>
+            <% end %>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="col-md-12 center">
+        <%= link_to "ダナン", zone_top_motel_path(:param => "ダナン") %>
+      </div>
+    </div>
   </div>
-
 </div>
